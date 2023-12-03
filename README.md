@@ -1,5 +1,12 @@
 # Using Ridge Regression to Predict NBA Win Percentage
 
+<div style="text-align:center;">
+    <img src="https://myerberg.github.io/assets/images/fiery-basketball-wallpaper.jpg" width="500" />
+</div>
+
+##### Source:
+##### https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg
+
 ## Introduction
 Welcome to my data science tutorial, where I will guide you through the fascinating world of data science and its application in analyzing NBA professional basketball. The goal here is to unveil the “magic” of data science and regression analysis, demonstrating how they can be used to predict the performance of NBA teams accurately. This tutorial is designed to take you on a journey through the realm of NBA basketball statistics, where the analysis of comprehensive datasets has become an indispensable tool in shaping team strategies, player development, and making crucial financial decisions.
 
@@ -24,8 +31,7 @@ This process involves:
 This setup allows for targeted extraction of data from specific parts of a website, making it a powerful tool for collecting up-to-date sports data. However, it is crucial to be aware of the legal and ethical considerations, as not all websites permit scraping, and heavy scraping activity can burden a website’s servers.  For my project on professional basketball data analysis, I chose to utilize a ready-made dataset from Kaggle, which contained comprehensive NBA data spanning from 1937 to 2012. By using this dataset, I was able to skip the web scraping phase and focus directly on data exploration and analysis. This pre-compiled dataset saved time and effort that would otherwise be spent in writing and testing web scraping scripts, parsing the scraped data, and dealing with potential issues like web page changes or data access restrictions (ESPN imposes these very restrictions, blocking web scrapers from pulling its data). However, for projects where up-to-date or specific data is required, writing a web scraper in Python is an invaluable skill that allows for the collection of real-time data directly from the web.
 
 ##### Source:
-
-https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball  
+##### https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball  
 
 ## Data Ethics
 
@@ -271,7 +277,6 @@ for feature in features:
     </div>
 </div>
 
-
 #### 4) Original Ridge Regression
 
 We delve into the application of Ridge Regression, a robust form of linear regression, to our NBA dataset. The process begins by preparing the feature data for the regression analysis. The feature data, referred to as independent variables, are consolidated into a single dataset, designated ‘X’. This dataset is then processed through a pipeline that serves two primary functions: standardization and regression.
@@ -283,6 +288,8 @@ Following standardization, Ridge Regression is applied. Ridge Regression is an a
 Once the model is trained, it is used to make predictions on the dataset. The predicted win-loss percentages are computed and compared against the actual values. Additionally, the coefficients and intercept from the Ridge model are extracted, providing insight into the relationships between each feature and the target variable. The resulting linear equation of the Ridge model is formulated, and its effectiveness is evaluated using the R-squared value and Mean Squared Error (MSE). These metrics assess the model’s accuracy and the degree to which it captures the variance in the win-loss percentage.
 
 Finally, a scatter plot is generated to visually represent the model’s predictions alongside the actual data points. The plot includes the regression line, illustrating the model’s predictive trend, and is annotated with the model’s formula, R-squared value, and MSE for a comprehensive analysis.
+
+
 
 <div style="text-align:center;">
     <img src="https://myerberg.github.io/assets/images/plot-6-original-ridge-regression-analysis.png" width="600" />
@@ -302,14 +309,15 @@ After fitting the model, it is employed to make predictions on the dataset compr
 
 The final step involves visualizing the performance of this improved model. A scatter plot is generated, depicting the actual data points and the regression line derived from the model’s predictions. The plot is annotated with the model’s formula, R-squared value, and MSE, providing a comprehensive overview of its performance. This visual representation allows for an intuitive understanding of how well the new model fits the data, compared to the original model, and the degree of improvement achieved through feature selection.
 
+
+
 <div style="text-align:center;">
     <img src="https://myerberg.github.io/assets/images/plot-7-improved-(post-threshold)-ridge-regression-analysis.png" width="600" />
 </div>
 
 ##### Sources:
-
-https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
-https://machinelearningmastery.com/ridge-regression-with-python/
+##### https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
+##### https://machinelearningmastery.com/ridge-regression-with-python/
 
 ## Summary
 
@@ -336,4 +344,4 @@ This example of Ridge regression in NBA analytics is a testament to the broader 
 </div>
 
 ##### Source:
-https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg
+##### https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg
