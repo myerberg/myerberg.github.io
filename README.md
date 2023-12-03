@@ -1,3 +1,5 @@
+# **Using Ridge Regression to Predict NBA Win Percentage**
+
 ### **Introduction**
 Welcome to this tutorial where I will guide you through the fascinating world of data science and its application in analyzing NBA professional basketball. The goal here is to unveil the “magic” of data science and regression analysis, demonstrating how they can be used to predict the performance of NBA teams accurately. This tutorial is designed to take you on a journey through the realm of NBA basketball, where the analysis of comprehensive datasets has become an indispensable tool in shaping team strategies, player development, and making crucial financial decisions.
 
