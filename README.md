@@ -243,7 +243,9 @@ for feature in features:
     plt.show()
 ```
 
-Sources: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html https://machinelearningmastery.com/ridge-regression-with-python/
+Sources:
+https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
+https://machinelearningmastery.com/ridge-regression-with-python/
 
 ![](https://myerberg.github.io/assets/images/plot-1-regression-analysis-for-field-goal-percentage.png)
 ![](https://myerberg.github.io/assets/images/plot-2-regression-analysis-for-total-points-scored.png)
