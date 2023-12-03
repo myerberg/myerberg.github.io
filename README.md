@@ -23,7 +23,9 @@ This process involves:
 
 This setup allows for targeted extraction of data from specific parts of a website, making it a powerful tool for collecting up-to-date sports data. However, it is crucial to be aware of the legal and ethical considerations, as not all websites permit scraping, and heavy scraping activity can burden a website’s servers.  For my project on professional basketball data analysis, I chose to utilize a ready-made dataset from Kaggle, which contained comprehensive NBA data spanning from 1937 to 2012. By using this dataset, I was able to skip the web scraping phase and focus directly on data exploration and analysis. This pre-compiled dataset saved time and effort that would otherwise be spent in writing and testing web scraping scripts, parsing the scraped data, and dealing with potential issues like web page changes or data access restrictions (ESPN imposes these very restrictions, blocking web scrapers from pulling its data). However, for projects where up-to-date or specific data is required, writing a web scraper in Python is an invaluable skill that allows for the collection of real-time data directly from the web.
 
-Source: https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball  
+Source:
+
+https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball  
 
 ## Data Ethics
 
@@ -96,14 +98,20 @@ In my implementation of the Ridge regression model for the NBA dataset, I used a
 
 ### Let us examine my code step-by-step:
 
-1) Ensure that you have the necessaries Python libraries installed on your machine. You can comment this line of code out if they are already installed.
+The instructions provided here are primarily tailored for JupyterLab within the Anaconda Navigator environment. However, the principles and steps can be easily adapted to other environments where Jupyter notebooks are used.
+
+#### 1) Installations
+
+Ensure that you have the necessaries Python libraries installed on your machine. You can comment this line of code out if they are already installed.
 
 ```python
 #install the necessary libraries on your machine
 !pip install pandas numpy matplotlib scikit-learn
 ```
 
-2) We delve into the practical application of data science techniques using our NBA dataset loaded from a CSV file. Our first step involves importing the necessary Python libraries that provide tools for data manipulation, statistical modeling, and visualization. 
+#### 2) CSV Import and Feature Definitions
+
+We delve into the practical application of data science techniques using our NBA dataset loaded from a CSV file. Our first step involves importing the necessary Python libraries that provide tools for data manipulation, statistical modeling, and visualization. 
 
 We use Pandas for data handling, Numpy for numerical operations, and Matplotlib for plotting graphs. After loading the data, we calculate crucial basketball statistics like field goal percentage and win-loss percentage, providing us with insightful metrics for our analysis. These calculations are not just mere arithmetic; they transform raw data into meaningful information that reflects team performance.
 
@@ -152,7 +160,9 @@ feature_names = {
 }
 ```
 
-3) We take a closer look at each individual feature in our dataset and examine its relationship with the team’s win-loss percentage. To do this, we employ linear regression, a fundamental statistical technique that allows us to understand and quantify the relationship between a single independent variable (our feature) and a dependent variable (the win-loss percentage).
+3) Regression Models by Feature
+
+We take a closer look at each individual feature in our dataset and examine its relationship with the team’s win-loss percentage. To do this, we employ linear regression, a fundamental statistical technique that allows us to understand and quantify the relationship between a single independent variable (our feature) and a dependent variable (the win-loss percentage).
 
 For each feature, we create a separate plot. These plots show the actual data points for each team and include a regression line. This line is the result of our linear regression model, representing the best fit through the data points, thereby illustrating the trend or relationship between the feature and the win-loss percentage.
 
@@ -244,6 +254,7 @@ for feature in features:
 ```
 
 Sources:
+
 https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
 https://machinelearningmastery.com/ridge-regression-with-python/
 
