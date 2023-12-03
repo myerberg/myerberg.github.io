@@ -156,8 +156,8 @@ for feature in features:
     #this command renders the plot and displays it to the user
     plt.show()
 ```
-![assets/images/plot-1-regression-analysis-for-field-goal-percentage]
-![assets/images/plot-2-regression-analysis-for-total-points-scored]
-![assets/images/plot-3-regression-analysis-for-total-assists]
-![assets/images/plot-4-regression-analysis-for-total-points-allowed]
-![assets/images/plot-5-regression-analysis-for-total-free-throws-made]
+![assets/images/plot-1-regression-analysis-for-field-goal-percentage.png]
+![assets/images/plot-2-regression-analysis-for-total-points-scored.png]
+![assets/images/plot-3-regression-analysis-for-total-assists.png]
+![assets/images/plot-4-regression-analysis-for-total-points-allowed.png]
+![assets/images/plot-5-regression-analysis-for-total-free-throws-made.png]
