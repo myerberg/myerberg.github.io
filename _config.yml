@@ -1,1 +1,10 @@
-theme: jekyll-theme-minimal
+# Site settings
+title: Ridge Regression
+description: NBA analysis.
+baseurl: ""=
+url: "https://myerberg.github.io"
+# Build settings
+theme: jekyll-theme-hacker
+markdown: kramdown
+plugins:
+  - jekyll-feed
