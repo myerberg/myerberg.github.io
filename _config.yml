@@ -1,6 +1,6 @@
 # Site settings
-title: Tyler Myerberg
-description: Introduction to Data Science (COSC 360)
+title: Using Ridge Regression to Predict NBA Win Percentage
+description: Tyler Myerberg
 baseurl: ""
 url: "https://myerberg.github.io"
 # Build settings
