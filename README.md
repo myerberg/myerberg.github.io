@@ -80,6 +80,13 @@ Lastly, I addressed the issue of duplicate data. The dataset had instances where
 
 These transformations — handling missing values, removing irrelevant information, and eliminating duplicates — are integral to preparing the dataset for analysis. By cleaning and wrangling the data, I ensured that the dataset was optimized for developing a robust model, capable of providing insightful and accurate predictions about NBA team performances. This process not only enhances the quality of the analysis but also builds the foundation for deriving meaningful and trustworthy conclusions from the data.
 
+<div style="text-align:center;">
+    <img src="https://myerberg.github.io/assets/images/basketball-nba-wallpaper-score.jpg" width="500" />
+</div>
+
+##### Source:
+##### https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg
+
 ## Analysis
 
 My analysis of the NBA team dataset using regression models is rooted in the fundamental principles of statistical learning. Regression, at its core, is about establishing a relationship between a dependent variable and one or more independent variables. The objective is to predict the dependent variable based on the values of the independent variables. In this context, I aimed to predict a team’s win-loss percentage (dependent variable) from selected features (independent variables) such as field goal percentage, offensive points, assists, defensive points, and free throws made.
