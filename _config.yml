@@ -1,5 +1,6 @@
 # Site settings
 title: Tyler Myerberg
+description: Introduction to Data Science (COSC 360)
 baseurl: ""
 url: "https://myerberg.github.io"
 # Build settings
