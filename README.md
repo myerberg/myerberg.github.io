@@ -334,3 +334,6 @@ This example of Ridge regression in NBA analytics is a testament to the broader 
 <div style="text-align:center;">
     <img src="https://myerberg.github.io/assets/images/michael-jordan-kobe-bryant.jpg" width="500" />
 </div>
+
+##### Source:
+https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg
