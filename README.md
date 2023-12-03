@@ -1,5 +1,3 @@
-# Using Ridge Regression to Predict NBA Win Percentage
-
 <div style="text-align:center;">
     <img src="https://myerberg.github.io/assets/images/fiery-basketball-wallpaper.jpg" width="500" />
 </div>
