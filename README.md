@@ -272,11 +272,63 @@ for feature in features:
 </div>
 
 
-#### 4) 
+#### 4) Original Ridge Regression
+
+We delve into the application of Ridge Regression, a robust form of linear regression, to our NBA dataset. The process begins by preparing the feature data for the regression analysis. The feature data, referred to as independent variables, are consolidated into a single dataset, designated ‘X’. This dataset is then processed through a pipeline that serves two primary functions: standardization and regression.
+
+Standardization, implemented through the StandardScaler, ensures that each feature has a mean of zero and a standard deviation of one, making them comparable despite differing scales. This step is crucial for features that differ significantly in their units of measurement, such as points scored and assists.
+
+Following standardization, Ridge Regression is applied. Ridge Regression is an advanced form of linear regression that includes a regularization term. This term penalizes large coefficients, which helps in preventing overfitting—a scenario where a model performs well on the training data but poorly on new, unseen data. The Ridge regression model is fitted to the standardized data, and the optimal coefficients and alpha value—a parameter controlling the strength of the penalty—are determined.
+
+Once the model is trained, it is used to make predictions on the dataset. The predicted win-loss percentages are computed and compared against the actual values. Additionally, the coefficients and intercept from the Ridge model are extracted, providing insight into the relationships between each feature and the target variable. The resulting linear equation of the Ridge model is formulated, and its effectiveness is evaluated using the R-squared value and Mean Squared Error (MSE). These metrics assess the model’s accuracy and the degree to which it captures the variance in the win-loss percentage.
+
+Finally, a scatter plot is generated to visually represent the model’s predictions alongside the actual data points. The plot includes the regression line, illustrating the model’s predictive trend, and is annotated with the model’s formula, R-squared value, and MSE for a comprehensive analysis.
+
+<div style="text-align:center;">
+    <img src="https://myerberg.github.io/assets/images/plot-6-original-ridge-regression-analysis.png" width="600" />
+</div>
+
+#### 5) Improved (Post-Threshold) Ridge Regression
+
+We enhance the predictive accuracy of our Ridge regression model by refining the selection of features based on their significance. This process commences by establishing a threshold, which in this case is set at 0.01. This threshold serves as a criterion to identify features that have a substantial impact on the win-loss percentage. We retain for further analysis features with coefficients (parameters indicating the influence of each feature on the target variable) having an absolute value equal to or greater than the threshold.
+
+Once the significant features are identified, the data corresponding to these features is prepared for a new round of Ridge regression. This step involves creating a subset of the original dataset, focusing solely on the features that met the threshold criteria.
+
+A fresh Ridge regression pipeline is then established for these selected features. Similar to the initial model, this pipeline incorporates feature standardization and Ridge regression with cross-validation. Standardization ensures that all features contribute equally to the model, while cross-validation aids in selecting the optimal alpha value, balancing model complexity and prediction accuracy.
+
+The newly configured model is fitted to the selected features, adapting its coefficients and intercept to this refined dataset. This adaptation aims to enhance the model’s predictive power by focusing on the most influential aspects of the data.
+
+After fitting the model, it is employed to make predictions on the dataset comprising the selected features. These predictions are then assessed for accuracy using the R-squared value and the Mean Squared Error (MSE). R-squared quantifies how much of the variance in the win-loss percentage is explained by the model, while MSE measures the average squared difference between the actual and predicted values.
+
+The final step involves visualizing the performance of this improved model. A scatter plot is generated, depicting the actual data points and the regression line derived from the model’s predictions. The plot is annotated with the model’s formula, R-squared value, and MSE, providing a comprehensive overview of its performance. This visual representation allows for an intuitive understanding of how well the new model fits the data, compared to the original model, and the degree of improvement achieved through feature selection.
+
+<div style="text-align:center;">
+    <img src="https://myerberg.github.io/assets/images/plot-7-improved-(post-threshold)-ridge-regression-analysis.png" width="600" />
+</div>
 
 Sources:
 
 https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
 https://machinelearningmastery.com/ridge-regression-with-python/
 
+## Summary
 
+These statistical techniques, linear and Ridge regression, allow us to establish and evaluate relationships between different basketball statistics and team performance, providing valuable insights into what contributes to winning in professional basketball.
+
+In the NBA dataset analysis, the use of a threshold in refining the Ridge regression model is a key element. The threshold is essentially a predetermined value used to evaluate the importance of each feature in the model. It is based on the size of the feature’s coefficient in the Ridge regression model. Coefficients in regression are numbers that signify the strength and direction of the relationship between each feature and the dependent variable. In this analysis, if a feature’s coefficient is below the threshold (in absolute terms), it is deemed to have a minimal impact on predicting the team’s win-loss percentage and is thus excluded from the refined model to simplify it and potentially increase its predictive accuracy.
+
+For example, in the initial Ridge regression model, the coefficients for various features like fg_percentage, o_pts, o_asts, d_pts, and o_ftm were 0.0028, 0.4914, -0.0004, -0.4944, and 0.0017, respectively. Setting a threshold of 0.01, I determined that o_pts (0.4914) and d_pts (-0.4944) significantly impact the win-loss percentage as their coefficients are notably higher than the threshold. In contrast, fg_percentage, o_asts, and o_ftm, with much smaller coefficients, are considered less impactful.
+
+The comprehensive analysis using the Ridge regression model, which accounts for all these features, yielded a high R-squared value of 0.9251 and a low MSE of 0.0017. This indicates that the model can explain about 92.51% of the variance in the win-loss percentage – a substantial improvement compared to the individual linear regression models for each feature. For instance, the linear regression model for fg_percentage alone had an R-squared of only 0.0549, signifying its limited predictive power when used in isolation.
+
+Refining the Ridge model by applying the threshold led to a slight decrease in the R-squared value to 0.9250. This minor change suggests that the features excluded based on the threshold, while having smaller coefficients, still contributed somewhat to the overall predictive power of the model. However, the refined model, with its formula “Improved Ridge Model: Win-Loss = 0.4956*o_pts - 0.4957*d_pts + 0.4999”, continues to be highly effective. This formula highlights the significance of offensive points (o_pts) and defensive points (d_pts) as key predictors of a team’s success.
+
+The positive coefficient for o_pts (0.4956) implies that teams scoring higher offensive points generally have a better win-loss record. Conversely, the negative coefficient for d_pts (-0.4957) suggests that teams allowing more points to their opponents are likely to have a poorer win-loss record. These insights resonate well with the fundamental principles of basketball, where the goal is to score more points than the opponent while limiting their scoring.
+
+In conclusion, the application of the Ridge regression model in this NBA data analysis beautifully illustrates the ‘magic’ of data science. This model effectively navigates the complexities of multicollinearity and feature selection, which are common challenges in data-rich environments like professional sports. By resolving these issues, the model provides a nuanced and detailed understanding of what influences a basketball team’s performance. More than just confirming what basketball enthusiasts might intuitively know about offensive efficiency and defensive capability, it quantifies their impact in a precise manner. This quantification is a powerful aspect of data science – turning abstract concepts into measurable, actionable insights.
+
+The magic here lies in transforming raw, often overwhelming data into clear, evidence-based narratives. Data science, in this context, goes beyond mere statistics; it tells a story about team dynamics, player performance, and game strategies. It allows us to peek behind the curtain and understand the mechanics of winning in professional basketball. The insights gained from this analysis could be pivotal for coaches, players, and team management, offering a data-driven roadmap to optimize performance and strategies.
+
+This example of Ridge regression in NBA analytics is a testament to the broader capabilities of data science. It demonstrates how sophisticated analytical tools can harness vast amounts of data to uncover deeper truths, not only in sports but in various fields where data is crucial. This is the essence of the magic of data science — using rigorous methods to extract meaning from data, thus enabling better decisions, innovations, and understanding.
+
+Basketball Image
