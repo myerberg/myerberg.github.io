@@ -5,7 +5,7 @@
 </div>
 
 ##### Source:
-##### https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg
+##### https://images.freecreatives.com/wp-content/uploads/2016/03/Firey-Basketball-Wallpaper.jpg
 
 ## Introduction
 Welcome to my data science tutorial, where I will guide you through the fascinating world of data science and its application in analyzing NBA professional basketball. The goal here is to unveil the “magic” of data science and regression analysis, demonstrating how they can be used to predict the performance of NBA teams accurately. This tutorial is designed to take you on a journey through the realm of NBA basketball statistics, where the analysis of comprehensive datasets has become an indispensable tool in shaping team strategies, player development, and making crucial financial decisions.
@@ -289,7 +289,103 @@ Once the model is trained, it is used to make predictions on the dataset. The pr
 
 Finally, a scatter plot is generated to visually represent the model’s predictions alongside the actual data points. The plot includes the regression line, illustrating the model’s predictive trend, and is annotated with the model’s formula, R-squared value, and MSE for a comprehensive analysis.
 
+```python
+#prepare the feature data (independent variables) for Ridge Regression
+#this step consolidates the selected features into a single DataFrame
+#'X' will be used as the input for the Ridge regression model
+X = data[features]
 
+#set up a pipeline for Ridge regression, which includes standardization and the regression itself
+#the pipeline in scikit-learn is a sequence of data processing steps combined into one
+ridge_pipeline = Pipeline([
+    
+    #the first element in the pipeline is 'scaler', which uses StandardScaler()
+    #StandardScaler is used for standardizing the dataset, a common requirement for many machine learning estimators
+    #it transforms each feature (independent variable) to have zero mean and unit variance
+    #this is important because features might be measured in different units, and we want to ensure comparability
+    #for example, points scored (o_pts) and assists (o_asts) are on different scales and need standardizing
+    ('scaler', StandardScaler()),
+
+    #the second element is 'ridgecv', which uses RidgeCV for the Ridge regression
+    #RidgeCV applies Ridge regression with built-in cross-validation of the alpha parameter
+    #cross-validation is a technique to evaluate how effectively the model performs on unseen data
+    #Ridge regression is a type of linear regression that includes a regularization term
+    #the regularization term (alpha) penalizes large coefficients in the regression model
+    #this helps to prevent overfitting, where a model performs well on training data but poorly on new, unseen data
+    #the 'alphas' parameter here is a range of alpha values for which the cross-validation is performed
+    #the range goes from 10^-6 to 10^6, logarithmically spaced, allowing the model to explore a wide range of regularization strengths
+    ('ridgecv', RidgeCV(alphas=np.logspace(-6, 6, 13)))
+    
+])
+
+#fit the Ridge regression model to the data
+#the 'fit' method is called on the pipeline object
+#it first applies the standard scaler to the feature data (X), normalizing each feature
+#it then fits the Ridge regression model to this standardized data
+#the 'X' variable contains the feature data (like field goal percentage, total points scored, etc.)
+#the 'y' variable is the target variable, which is the win-loss percentage of NBA teams
+#this step trains the Ridge regression model, determining the best coefficients for each feature and the optimal alpha value
+#the model is now ready to make predictions or be evaluated for its performance
+ridge_pipeline.fit(X, y)
+
+#use the fitted model to make predictions on the dataset
+#the 'predict' method applies the trained Ridge regression model to the feature data 'X'
+#it outputs the predicted target variable values based on the learned relationships in the model
+#in this case, 'y_pred_ridge' will hold the win-loss percentage predictions made by the Ridge model
+y_pred_ridge = ridge_pipeline.predict(X)
+
+#extract the coefficients and intercept from the Ridge model
+#the coefficients represent the relationship between each feature and the target variable
+#in Ridge regression, these coefficients are optimized not only to fit the data but also to be as small as possible
+#this is done to improve the model's generalizability and prevent overfitting
+#'ridge_coefficients' holds these optimized coefficient values for each feature
+ridge_coefficients = ridge_pipeline.named_steps['ridgecv'].coef_
+
+#the intercept is a constant term in the regression equation
+#it represents the expected mean value of the target variable when all the feature values are set to zero
+#'ridge_intercept' holds the value of this intercept
+ridge_intercept = ridge_pipeline.named_steps['ridgecv'].intercept_
+
+#construct the Ridge regression formula as a string
+#the formula represents the linear equation used by the Ridge regression model
+#each term in the formula is a product of a feature's coefficient and the feature itself
+#the 'join' function concatenates these terms into a single string, with each term separated by ' + '
+#this provides a clear and concise representation of how each feature contributes to the predicted value
+ridge_formula = ' + '.join([f'{coef:.4f}*{feat}' for coef, feat in zip(ridge_coefficients, features)])
+
+#the final formula includes the intercept term, added at the end
+#this complete formula can be used to manually compute predictions for given feature values
+ridge_formula_full = f'Win-Loss = {ridge_formula} + {ridge_intercept:.4f}'
+
+#calculate the R-squared value for the Ridge model
+#'r2_ridge' will hold this R-squared value, indicating the proportion of variance in the win-loss percentage
+#that is predictable from the features
+r2_ridge = r2_score(y, y_pred_ridge)
+
+#calculate the Mean Squared Error (MSE) for the Ridge model
+mse_ridge = mean_squared_error(y, y_pred_ridge)
+
+#plot the scatterplot for the original Ridge Regression model
+fig, ax = plt.subplots(figsize=(8, 6))
+
+#plot the actual data points
+ax.scatter(y, y_pred_ridge, color='blue', alpha=0.5, label='Actual')
+
+#plot the regression line based on the model's predictions
+ax.plot([min(y), max(y)], [min(y_pred_ridge), max(y_pred_ridge)], color='red', label='Predicted')
+
+#set the title, labels, and legend for the plot
+ax.set_title('Original Ridge Regression Analysis')
+ax.set_xlabel('Actual Win-Loss Percentage')
+ax.set_ylabel('Predicted Win-Loss Percentage')
+ax.legend()
+
+#add the regression formula, R-squared, and MSE value as a caption below the plot
+plt.figtext(0.5, -0.1, f'Formula: {ridge_formula_full}\nR-squared: {r2_ridge:.4f}, MSE: {mse_ridge:.4f}', ha='center', fontsize=10)
+
+#display the plot
+plt.show()
+```
 
 <div style="text-align:center;">
     <img src="https://myerberg.github.io/assets/images/plot-6-original-ridge-regression-analysis.png" width="600" />
@@ -309,7 +405,74 @@ After fitting the model, it is employed to make predictions on the dataset compr
 
 The final step involves visualizing the performance of this improved model. A scatter plot is generated, depicting the actual data points and the regression line derived from the model’s predictions. The plot is annotated with the model’s formula, R-squared value, and MSE, providing a comprehensive overview of its performance. This visual representation allows for an intuitive understanding of how well the new model fits the data, compared to the original model, and the degree of improvement achieved through feature selection.
 
+```python
+#determine the threshold for identifying significant features
+threshold = 0.01
 
+#select features where the absolute value of the coefficient is greater than or equal to the threshold
+features_to_keep = [feat for coef, feat in zip(ridge_coefficients, features) if abs(coef) >= threshold]
+
+#prepare the data with the selected significant features
+X_selected = data[features_to_keep]
+
+#set up a new Ridge regression pipeline for the selected features
+ridge_pipeline_selected = Pipeline([
+
+    #as above, we use StandardScaler to standardize features by removing the mean and scaling to unit variance
+    #each feature will have a mean value of 0 and a standard deviation of 1, ensuring all features are on the same scale
+    ('scaler', StandardScaler()),
+
+    #as above, we use RidgeCV for Ridge regression with built-in cross-validation of the alpha parameter
+    ('ridgecv', RidgeCV(alphas=np.logspace(-6, 6, 13)))
+    
+])
+
+#fit the new Ridge model to the selected features
+#the 'X_selected' variable contains the data for the features that passed the threshold criteria
+#'y' is the target variable, which is the win-loss percentage of NBA teams
+ridge_pipeline_selected.fit(X_selected, y)
+
+#use the fitted model to make predictions on the selected features dataset
+#'y_pred_ridge_selected' will store these predicted values
+y_pred_ridge_selected = ridge_pipeline_selected.predict(X_selected)
+
+#calculate the R-squared value for the new Ridge model
+r2_ridge_selected = r2_score(y, y_pred_ridge_selected)
+
+#calculate the Mean Squared Error (MSE) for the new model
+mse_ridge_selected = mean_squared_error(y, y_pred_ridge_selected)
+
+#extract the coefficients and intercept from the new Ridge model
+ridge_coefficients_selected = ridge_pipeline_selected.named_steps['ridgecv'].coef_
+ridge_intercept_selected = ridge_pipeline_selected.named_steps['ridgecv'].intercept_
+
+#construct the formula for the new Ridge model using the extracted parameters
+#this formula represents the linear equation that the model uses to make predictions
+#each feature's contribution is shown with its corresponding coefficient
+ridge_formula_selected = ' + '.join([f'{coef:.4f}*{feat}' for coef, feat in zip(ridge_coefficients_selected, features_to_keep)])
+ridge_formula_selected_full = f'Win-Loss = {ridge_formula_selected} + {ridge_intercept_selected:.4f}'
+
+#plot the scatterplot for the new Ridge Regression model
+fig, ax = plt.subplots(figsize=(8, 6))
+
+#plot the actual data points
+ax.scatter(y, y_pred_ridge_selected, color='blue', alpha=0.5, label='Actual')
+
+#plot the regression line based on the model's predictions
+ax.plot([min(y), max(y)], [min(y_pred_ridge_selected), max(y_pred_ridge_selected)], color='red', label='Predicted')
+
+#set the title, labels, and legend for the plot
+ax.set_title('Improved (Post-Threshold) Ridge Regression Analysis')
+ax.set_xlabel('Actual Win-Loss Percentage')
+ax.set_ylabel('Predicted Win-Loss Percentage')
+ax.legend()
+
+#add the regression formula, R-squared, and Mean Squared Error values as a caption below the plot
+plt.figtext(0.5, -0.1, f'Formula (Improved): {ridge_formula_selected_full}\nR-squared: {r2_ridge_selected:.4f}, MSE: {mse_ridge_selected:.4f}', ha='center', fontsize=10)
+
+#display the plot
+plt.show()
+```
 
 <div style="text-align:center;">
     <img src="https://myerberg.github.io/assets/images/plot-7-improved-(post-threshold)-ridge-regression-analysis.png" width="600" />
