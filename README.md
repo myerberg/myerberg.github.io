@@ -35,6 +35,12 @@ This setup allows for targeted extraction of data from specific parts of a websi
 
 For my project on professional basketball data analysis, I chose to utilize a ready-made dataset from Kaggle, which contained comprehensive NBA data spanning from 1937 to 2012. By using this dataset, I was able to skip the web scraping phase and focus directly on data exploration and analysis. This pre-compiled dataset saved time and effort that would otherwise be spent in writing and testing web scraping scripts, parsing the scraped data, and dealing with potential issues like web page changes or data access restrictions (ESPN imposes these very restrictions, blocking web scrapers from pulling its data). However, for projects where up-to-date or specific data is required, writing a web scraper in Python is an invaluable skill that allows for the collection of real-time data directly from the web.
 
+<div style="text-align:center;">
+    <img src="https://myerberg.github.io/assets/images/dataset-sample.png" width="600" />
+</div>
+
+##### Not all columns shown here in the cleaned version of the dataset were used, though they do provide context for further investigation.
+
 ##### Source:
 ##### https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball  
 <br/><br/>
