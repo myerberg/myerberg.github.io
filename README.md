@@ -23,7 +23,7 @@ This process involves:
 
 This setup allows for targeted extraction of data from specific parts of a website, making it a powerful tool for collecting up-to-date sports data. However, it is crucial to be aware of the legal and ethical considerations, as not all websites permit scraping, and heavy scraping activity can burden a website’s servers.  For my project on professional basketball data analysis, I chose to utilize a ready-made dataset from Kaggle, which contained comprehensive NBA data spanning from 1937 to 2012. By using this dataset, I was able to skip the web scraping phase and focus directly on data exploration and analysis. This pre-compiled dataset saved time and effort that would otherwise be spent in writing and testing web scraping scripts, parsing the scraped data, and dealing with potential issues like web page changes or data access restrictions (ESPN imposes these very restrictions, blocking web scrapers from pulling its data). However, for projects where up-to-date or specific data is required, writing a web scraper in Python is an invaluable skill that allows for the collection of real-time data directly from the web.
 
-Source:
+##### Source:
 
 https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball  
 
@@ -306,7 +306,7 @@ The final step involves visualizing the performance of this improved model. A sc
     <img src="https://myerberg.github.io/assets/images/plot-7-improved-(post-threshold)-ridge-regression-analysis.png" width="600" />
 </div>
 
-Sources:
+##### Sources:
 
 https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
 https://machinelearningmastery.com/ridge-regression-with-python/
