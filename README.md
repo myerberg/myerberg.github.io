@@ -253,6 +253,25 @@ for feature in features:
     plt.show()
 ```
 
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div style="margin: 10px;">
+        <img src="https://myerberg.github.io/assets/images/plot-1-regression-analysis-for-field-goal-percentage.png" width="400" />
+    </div>
+    <div style="margin: 10px;">
+        <img src="https://myerberg.github.io/assets/images/plot-2-regression-analysis-for-total-points-scored.png" width="400" />
+    </div>
+    <div style="margin: 10px;">
+        <img src="https://myerberg.github.io/assets/images/plot-3-regression-analysis-for-total-assists.png" width="400" />
+    </div>
+    <div style="margin: 10px;">
+        <img src="https://myerberg.github.io/assets/images/plot-4-regression-analysis-for-total-points-allowed.png" width="400" />
+    </div>
+    <div style="margin: 10px;">
+        <img src="https://myerberg.github.io/assets/images/plot-5-regression-analysis-for-total-free-throws-made.png" width="400" />
+    </div>
+</div>
+
+
 #### 4) 
 
 Sources:
@@ -260,9 +279,4 @@ Sources:
 https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
 https://machinelearningmastery.com/ridge-regression-with-python/
 
-<img src="https://myerberg.github.io/assets/images/plot-1-regression-analysis-for-field-goal-percentage.png" width="400" />
-<img src="https://myerberg.github.io/assets/images/plot-2-regression-analysis-for-total-points-scored.png" width="400" />
-<img src="https://myerberg.github.io/assets/images/plot-3-regression-analysis-for-total-assists.png" width="400" />
-<img src="https://myerberg.github.io/assets/images/plot-4-regression-analysis-for-total-points-allowed.png" width="400" />
-<img src="https://myerberg.github.io/assets/images/plot-5-regression-analysis-for-total-free-throws-made.png" width="400" />
 
