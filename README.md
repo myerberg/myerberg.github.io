@@ -245,8 +245,8 @@ for feature in features:
 
 Sources: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html https://machinelearningmastery.com/ridge-regression-with-python/
 
-![https://myerberg.github.io/assets/images/plot-1-regression-analysis-for-field-goal-percentage.png]
-![https://myerberg.github.io/assets/images/plot-2-regression-analysis-for-total-points-scored.png]
-![https://myerberg.github.io/assets/images/plot-3-regression-analysis-for-total-assists.png]
-![https://myerberg.github.io/assets/images/plot-4-regression-analysis-for-total-points-allowed.png]
-![https://myerberg.github.io/assets/images/plot-5-regression-analysis-for-total-free-throws-made.png]
+![](https://myerberg.github.io/assets/images/plot-1-regression-analysis-for-field-goal-percentage.png)
+![](https://myerberg.github.io/assets/images/plot-2-regression-analysis-for-total-points-scored.png)
+![](https://myerberg.github.io/assets/images/plot-3-regression-analysis-for-total-assists.png)
+![](https://myerberg.github.io/assets/images/plot-4-regression-analysis-for-total-points-allowed.png)
+![](https://myerberg.github.io/assets/images/plot-5-regression-analysis-for-total-free-throws-made.png)
