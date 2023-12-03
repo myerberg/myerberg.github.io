@@ -331,4 +331,6 @@ The magic here lies in transforming raw, often overwhelming data into clear, evi
 
 This example of Ridge regression in NBA analytics is a testament to the broader capabilities of data science. It demonstrates how sophisticated analytical tools can harness vast amounts of data to uncover deeper truths, not only in sports but in various fields where data is crucial. This is the essence of the magic of data science — using rigorous methods to extract meaning from data, thus enabling better decisions, innovations, and understanding.
 
-Basketball Image
+<div style="text-align:center;">
+    <img src="https://myerberg.github.io/assets/images/michael-jordan-kobe-bryant.jpg" width="500" />
+</div>
