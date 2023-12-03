@@ -1,6 +1,6 @@
 # Site settings
-title: Ridge Regression
-description: NBA analysis.
+title: Using Ridge Regression to Predict NBA Win Percentage
+description: Tyler Myerberg
 baseurl: ""
 url: "https://myerberg.github.io"
 # Build settings
