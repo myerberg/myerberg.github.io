@@ -507,6 +507,7 @@ plt.show()
 ##### https://machinelearningmastery.com/ridge-regression-with-python/
 
 ## Summary
+<br/><br/>
 
 These statistical techniques, linear and Ridge regression, allow us to establish and evaluate relationships between different basketball statistics and team performance, providing valuable insights into what contributes to winning in professional basketball.
 
