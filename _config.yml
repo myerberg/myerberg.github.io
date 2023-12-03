@@ -1,7 +1,7 @@
 # Site settings
 title: Ridge Regression
 description: NBA analysis.
-baseurl: ""=
+baseurl: ""
 url: "https://myerberg.github.io"
 # Build settings
 theme: jekyll-theme-hacker
