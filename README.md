@@ -160,7 +160,7 @@ feature_names = {
 }
 ```
 
-3) Regression Models by Feature
+#### 3) Regression Models by Feature
 
 We take a closer look at each individual feature in our dataset and examine its relationship with the team’s win-loss percentage. To do this, we employ linear regression, a fundamental statistical technique that allows us to understand and quantify the relationship between a single independent variable (our feature) and a dependent variable (the win-loss percentage).
 
@@ -253,13 +253,16 @@ for feature in features:
     plt.show()
 ```
 
+#### 4) 
+
 Sources:
 
 https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
 https://machinelearningmastery.com/ridge-regression-with-python/
 
-![](https://myerberg.github.io/assets/images/plot-1-regression-analysis-for-field-goal-percentage.png)
-![](https://myerberg.github.io/assets/images/plot-2-regression-analysis-for-total-points-scored.png)
-![](https://myerberg.github.io/assets/images/plot-3-regression-analysis-for-total-assists.png)
-![](https://myerberg.github.io/assets/images/plot-4-regression-analysis-for-total-points-allowed.png)
-![](https://myerberg.github.io/assets/images/plot-5-regression-analysis-for-total-free-throws-made.png)
+<img src="https://myerberg.github.io/assets/images/plot-1-regression-analysis-for-field-goal-percentage.png" width="400" />
+<img src="https://myerberg.github.io/assets/images/plot-2-regression-analysis-for-total-points-scored.png" width="400" />
+<img src="https://myerberg.github.io/assets/images/plot-3-regression-analysis-for-total-assists.png" width="400" />
+<img src="https://myerberg.github.io/assets/images/plot-4-regression-analysis-for-total-points-allowed.png" width="400" />
+<img src="https://myerberg.github.io/assets/images/plot-5-regression-analysis-for-total-free-throws-made.png" width="400" />
+
