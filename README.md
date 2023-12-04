@@ -2,7 +2,7 @@
     <img src="https://myerberg.github.io/assets/images/fiery-basketball-wallpaper.jpg" width="500" />
 </div>
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let us explore the exciting intersection of data science and basketball. 
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Let us explore the exciting intersection of data science and basketball. 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Source: https://images.freecreatives.com/wp-content/uploads/2016/03/Firey-Basketball-Wallpaper.jpg
 <br/><br/>
 
@@ -110,9 +110,9 @@ These transformations — handling missing values, removing irrelevant informati
     <img src="https://myerberg.github.io/assets/images/dataset-sample.png" width="600" />
 </div>
 
-##### Not all columns shown here in the cleaned version of the dataset were used, though they do provide context for further investigation.
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Not all columns shown here in the cleaned version of the dataset were used, though they do provide context for further investigation.
 
-###### Source: https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball  
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Source: https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball  
 <br/><br/>
 
 ## Analysis
@@ -522,9 +522,9 @@ plt.show()
     <img src="https://myerberg.github.io/assets/images/plot-7-improved-(post-threshold)-ridge-regression-analysis.png" width="600" />
 </div>
 
-##### The “magic” of data science in action!
-###### Source 1: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
-###### Source 2://machinelearningmastery.com/ridge-regression-with-python/
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The “magic” of data science in action!
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Source 1: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Source 2://machinelearningmastery.com/ridge-regression-with-python/
 <br/><br/>
 
 ## Summary
@@ -551,5 +551,5 @@ This example of Ridge regression in NBA analytics is a testament to the broader 
     <img src="https://myerberg.github.io/assets/images/michael-jordan-kobe-bryant.jpg" width="500" />
 </div>
 
-##### Two of the all-time greats, MJ and Kobe!
-###### Source: https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Two of the all-time greats, MJ and Kobe!
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Source: https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg
