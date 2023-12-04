@@ -33,34 +33,32 @@ This setup allows for targeted extraction of data from specific parts of a websi
 
 In the United States, there are four primary legal grounds website owners might invoke to restrict or prevent web scraping:
 
-#### 1) Copyright Infringement:
+### 1) Copyright Infringement:
 While the direct duplication of original expression is often illegal, the U.S. legal system, as evidenced in the ruling of Feist Publications v. Rural Telephone Service, allows the duplication of facts. This distinction is crucial for web scraping projects focusing on data and facts rather than creative expression.
-#### 2) Computer Fraud and Abuse Act (CFAA):
+### 2) Computer Fraud and Abuse Act (CFAA):
 This act prohibits accessing a computer without authorization or exceeding authorized access. Therefore, scraping data from websites that require authorization or breaching any access barriers might fall under this violation.
-#### 3) Trespass to Chattels:
+### 3) Trespass to Chattels:
 This legal claim involves intentional interference with another’s personal property and requires proof of actual damage. In the context of web scraping, this could relate to activities that harm a server’s functionality or impede its intended use.
-#### 4) Terms of Service Violations:
+### 4) Terms of Service Violations:
 While not criminal, breaching a website’s terms of service can lead to contract breaches and subsequent legal actions, such as the removal of content obtained through scraping from your project.
 
 To ensure legal compliance in a web scraping project, one should:
 
-- Review the website’s Terms of Service for clauses on data collection and automated access.
-- Confirm the public availability of data, ensuring it does not contain sensitive personal information and is not protected by legal or technical barriers.
-- Respect directives in the website's robots.txt file, avoid overloading servers through rate limiting, and ensure scraping does not significantly impact the website’s traffic or revenue.
-- Ascertain that the data is not copyrighted, or, if it is, ensure usage falls under fair use, permission is obtained, or that the data or database is in the public domain.
+#### - Review the website’s Terms of Service for clauses on data collection and automated access.
+#### - Confirm the public availability of data, ensuring it does not contain sensitive personal information and is not protected by legal or technical barriers.
+#### - Respect directives in the website's robots.txt file, avoid overloading servers through rate limiting, and ensure scraping does not significantly impact the website’s traffic or revenue.
+#### - Ascertain that the data is not copyrighted, or, if it is, ensure usage falls under fair use, permission is obtained, or that the data or database is in the public domain.
 
 Considering these factors not only aligns the scraping activities with legal requirements but also upholds ethical standards in data collection.
 
 For my project on professional basketball data analysis, I chose to utilize a ready-made dataset from Kaggle, which contained comprehensive NBA data spanning from 1937 to 2012. By using this dataset, I was able to skip the web scraping phase and focus directly on data exploration and analysis. This pre-compiled dataset saved time and effort that would otherwise be spent in writing and testing web scraping scripts, parsing the scraped data, and dealing with potential issues like web page changes or data access restrictions (ESPN imposes these very restrictions, blocking web scrapers from pulling its data). However, for projects where up-to-date or specific data is required, writing a web scraper in Python is an invaluable skill that allows for the collection of real-time data directly from the web.
 
 <div style="text-align:center;">
-    <img src="https://myerberg.github.io/assets/images/dataset-sample.png" width="600" />
+    <img src="https://myerberg.github.io/assets/images/basketball-nba-wallpaper-score.jpg" width="500" />
 </div>
 
-##### Not all columns shown here in the cleaned version of the dataset were used, though they do provide context for further investigation.
-
 ##### Source:
-##### https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball  
+##### https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg
 <br/><br/>
 
 ## Data Ethics
@@ -107,11 +105,13 @@ Lastly, I addressed the issue of duplicate data. The dataset had instances where
 These transformations — handling missing values, removing irrelevant information, and eliminating duplicates — are integral to preparing the dataset for analysis. By cleaning and wrangling the data, I ensured that the dataset was optimized for developing a robust model, capable of providing insightful and accurate predictions about NBA team performances. This process not only enhances the quality of the analysis but also builds the foundation for deriving meaningful and trustworthy conclusions from the data.
 
 <div style="text-align:center;">
-    <img src="https://myerberg.github.io/assets/images/basketball-nba-wallpaper-score.jpg" width="500" />
+    <img src="https://myerberg.github.io/assets/images/dataset-sample.png" width="600" />
 </div>
 
+##### Not all columns shown here in the cleaned version of the dataset were used, though they do provide context for further investigation.
+
 ##### Source:
-##### https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg
+##### https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball  
 <br/><br/>
 
 ## Analysis
