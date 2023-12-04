@@ -144,7 +144,7 @@ In my analysis of NBA statistics, I chose Ridge Regression, an advanced variant 
 
 Ridge Regression modifies linear regression by introducing a penalty on the size of the coefficients. Here, coefficients are numerical values that represent the strength and direction of the relationship between each independent variable and the dependent variable. However, in Ridge Regression, there is an additional component in the calculation that penalizes large coefficients, which prevents any single feature from having a disproportionately large influence on the predictions. This approach is particularly effective in addressing the challenges posed by multicollinearity. The penalty term’s strength is determined by a parameter known as alpha. The higher the value of alpha, the greater the penalty imposed on large coefficients, which in turn reduces the risk of overfitting. Overfitting occurs when a model is too closely fitted to the specific details of the training data, making it perform poorly on new data.
 
-In my implementation of the Ridge regression model for the NBA dataset, I used a “pipeline” approach. The first step in this pipeline was standardization, a process that adjusts the values of each feature in the dataset to have a mean of zero and a standard deviation of one. Standardization is critical because it ensures that all features contribute equally to the prediction and no single feature with large values overpowers the model. This step is especially important for Ridge Regression, as the penalty applied to the coefficients is effective only when all features are on a comparable scale. This approach allowed me to accurately assess the impact of each basketball statistic on a team’s win-loss percentage, despite the potential correlations among these features.  
+In my implementation of the Ridge regression model for the NBA dataset, I used a “pipeline” approach. The first step in this pipeline was standardization, a process that adjusts the values of each feature in the dataset to have a mean of zero and a standard deviation of one. Standardization is critical because it ensures that all features contribute equally to the prediction and no single feature with large values overpowers the model. This step is especially important for Ridge regression, as the penalty applied to the coefficients is effective only when all features are on a comparable scale. This approach allowed me to accurately assess the impact of each basketball statistic on a team’s win-loss percentage, despite the potential correlations among these features.  
 
 ### Let us examine my code step-by-step:
 
@@ -152,7 +152,7 @@ The instructions provided here are primarily tailored for JupyterLab within the 
 
 #### 1) Installations
 
-Ensure that you have the necessaries Python libraries installed on your machine. You can comment this line of code out if they are already installed.
+Ensure that you have the necessaries Python libraries installed on your machine. You can disregard or comment out this line of code if they are already installed.
 
 ```python
 #install the necessary libraries on your machine
@@ -167,7 +167,7 @@ We use Pandas for data handling, Numpy for numerical operations, and Matplotlib 
 
 To ensure the quality and reliability of our analysis, we also address data cleaning by handling infinite values and removing any rows with missing data. This step is critical in preparing our dataset for accurate and meaningful analysis.
 
-Finally, we define a set of features for regression analysis. These features, such as total points scored and assists, are used to predict the win-loss percentage of teams, our target variable. By assigning descriptive titles to these features, we make our plots more understandable, laying a strong foundation for the regression analysis that follows.
+Finally, we define a set of features for regression analysis. These features, such as total points scored and total assists, are used to predict the win-loss percentage of teams, our target variable. By assigning descriptive titles to these features, we make our plots more understandable, laying a strong foundation for the regression analysis that follows.
 
 ```python
 #import the necessary libraries
@@ -323,15 +323,15 @@ for feature in features:
 
 #### 4) Original Ridge Regression
 
-We delve into the application of Ridge Regression, a robust form of linear regression, to our NBA dataset. The process begins by preparing the feature data for the regression analysis. The feature data, referred to as independent variables, are consolidated into a single dataset, designated ‘X’. This dataset is then processed through a pipeline that serves two primary functions: standardization and regression.
+We delve into the application of Ridge regression, a robust form of linear regression, to our NBA dataset. The process begins by preparing the feature data for the regression analysis. The feature data, referred to as independent variables, are consolidated into a single dataset, designated ‘X’. This dataset is then processed through a pipeline that serves two primary functions: standardization and regression.
 
 Standardization, implemented through the StandardScaler, ensures that each feature has a mean of zero and a standard deviation of one, making them comparable despite differing scales. This step is crucial for features that differ significantly in their units of measurement, such as points scored and assists.
 
-Following standardization, Ridge Regression is applied. Ridge Regression is an advanced form of linear regression that includes a regularization term. This term penalizes large coefficients, which helps in preventing overfitting — a scenario where a model performs well on the training data but poorly on new, unseen data. The Ridge regression model is fitted to the standardized data, and the optimal coefficients and alpha value — a parameter controlling the strength of the penalty — are determined.
+Following standardization, Ridge regression is applied. Ridge regression is an advanced form of linear regression that includes a regularization term. This term penalizes large coefficients, which helps in preventing overfitting — a scenario where a model performs well on the training data but poorly on new, unseen data. The Ridge regression model is fitted to the standardized data, and the optimal coefficients and alpha value — a parameter controlling the strength of the penalty — are determined.
 
 Once the model is trained, it is used to make predictions on the dataset. The predicted win-loss percentages are computed and compared against the actual values. Additionally, the coefficients and intercept from the Ridge model are extracted, providing insight into the relationships between each feature and the target variable. The resulting linear equation of the Ridge model is formulated, and its effectiveness is evaluated using the R-squared value and Mean Squared Error (MSE). These metrics assess the model’s accuracy and the degree to which it captures the variance in the win-loss percentage.
 
-Finally, a scatter plot is generated to visually represent the model’s predictions alongside the actual data points. The plot includes the regression line, illustrating the model’s predictive trend, and is annotated with the model’s formula, R-squared value, and MSE for a comprehensive analysis.
+A scatter plot is then generated to visually represent the model’s predictions alongside the actual data points. The plot includes the regression line, illustrating the model’s predictive trend, and is annotated with the model’s formula, R-squared value, and MSE for a comprehensive analysis.
 
 ```python
 #prepare the feature data (independent variables) for Ridge Regression
@@ -446,7 +446,7 @@ A fresh Ridge regression pipeline is then established for these selected feature
 
 The newly configured model is fitted to the selected features, adapting its coefficients and intercept to this refined dataset. This adaptation aims to enhance the model’s predictive power by focusing on the most influential aspects of the data.
 
-After fitting the model, it is employed to make predictions on the dataset comprising the selected features. These predictions are then assessed for accuracy using the R-squared value and the Mean Squared Error (MSE). R-squared quantifies how much of the variance in the win-loss percentage is explained by the model, while MSE measures the average squared difference between the actual and predicted values.
+After fitting the model, it is employed to make predictions on the dataset comprising the selected features. These predictions are then assessed for accuracy using the R-squared value and the Mean Squared Error (MSE). As we have discussed above, R-squared quantifies how much of the variance in the win-loss percentage is explained by the model, while MSE measures the average squared difference between the actual and predicted values.
 
 The final step involves visualizing the performance of this improved model. A scatter plot is generated, depicting the actual data points and the regression line derived from the model’s predictions. The plot is annotated with the model’s formula, R-squared value, and MSE, providing a comprehensive overview of its performance. This visual representation allows for an intuitive understanding of how well the new model fits the data, compared to the original model, and the degree of improvement achieved through feature selection.
 
