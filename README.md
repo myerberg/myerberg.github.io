@@ -44,10 +44,10 @@ While not criminal, breaching a website’s terms of service can lead to contrac
 
 To ensure legal compliance in a web scraping project, one should:
 
-#### - Review the website’s Terms of Service for clauses on data collection and automated access.
-#### - Confirm the public availability of data, ensuring it does not contain sensitive personal information and is not protected by legal or technical barriers.
-#### - Respect directives in the website's robots.txt file, avoid overloading servers through rate limiting, and ensure scraping does not significantly impact the website’s traffic or revenue.
-#### - Ascertain that the data is not copyrighted, or, if it is, ensure usage falls under fair use, permission is obtained, or that the data or database is in the public domain.
+-- Review the website’s Terms of Service for clauses on data collection and automated access.
+-- Confirm the public availability of data, ensuring it does not contain sensitive personal information and is not protected by legal or technical barriers.
+-- Respect directives in the website's robots.txt file, avoid overloading servers through rate limiting, and ensure scraping does not significantly impact the website’s traffic or revenue.
+-- Ascertain that the data is not copyrighted, or, if it is, ensure usage falls under fair use, permission is obtained, or that the data or database is in the public domain.
 
 Considering these factors not only aligns the scraping activities with legal requirements but also upholds ethical standards in data collection.
 
@@ -63,7 +63,7 @@ For my project on professional basketball data analysis, I chose to utilize a re
 
 ## Data Ethics
 
-Data ethics, an integral part of responsible data science practice, extends far beyond just sports analytics and is vital in all domains where data is used to make decisions. Ethical considerations in data science encompass how data is collected, processed, analyzed, and interpreted. This is particularly important as the outcomes of data analysis can significantly influence real-world decisions and perceptions.
+Data ethics, an integral part of responsibly navigating the field of data science, extends far beyond just sports analytics and is vital in all domains where data is used to make decisions. Ethical considerations in data science encompass how data is collected, processed, analyzed, and interpreted. This is particularly important as the outcomes of data analysis can significantly influence real-world decisions and perceptions.
 
 One key ethical concern in data science is bias. Bias in data can arise from various sources — from the way data is collected to how it is processed and interpreted.  
 
