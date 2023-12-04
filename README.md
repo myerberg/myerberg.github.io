@@ -580,4 +580,6 @@ This example of Ridge regression in NBA analytics is a testament to the broader 
 
 <br/>
 <br/>
+<br/>
+<br/>
 ##### Go Wizards! (Disclaimer: This tutorial was created by a Washington Wizards fan.) 🏀😊
