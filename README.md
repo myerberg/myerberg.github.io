@@ -122,8 +122,6 @@ My analysis of the NBA team dataset using regression models is rooted in the fun
 
 The process began by loading the dataset and calculating two critical metrics: field goal percentage and win-loss percentage. Field goal percentage (fg_percentage) is calculated as the ratio of field goals made (o_fgm) to field goals attempted (o_fga), and the win-loss percentage is the ratio of games won to total games played. These calculations are essential as they convert raw data into meaningful metrics that can be analyzed.
 
-Following data preparation, I addressed data quality by removing any infinite or NaN (Not a Number) values, as I mentioned above in the  Munging, Wrangling, and Cleaning Data section. This step is crucial for ensuring the integrity and reliability of the analysis, as regression models require numerical input and cannot interpret NaN values.
-
 In my analysis of NBA team data, I used two types of statistical models: linear regression and Ridge regression. Let us break down these concepts for clarity:
 
 ### Linear Regression:
@@ -146,7 +144,7 @@ Ridge Regression modifies linear regression by introducing a penalty on the size
 
 In my implementation of the Ridge regression model for the NBA dataset, I used a “pipeline” approach. The first step in this pipeline was standardization, a process that adjusts the values of each feature in the dataset to have a mean of zero and a standard deviation of one. Standardization is critical because it ensures that all features contribute equally to the prediction and no single feature with large values overpowers the model. This step is especially important for Ridge regression, as the penalty applied to the coefficients is effective only when all features are on a comparable scale. This approach allowed me to accurately assess the impact of each basketball statistic on a team’s win-loss percentage, despite the potential correlations among these features.  
 
-### Let us examine my code step-by-step:
+### Let us examine my code step-by-step. We will delve deeper into these important concepts within their respective contexts:
 
 The instructions provided here are primarily tailored for JupyterLab within the Anaconda Navigator environment. However, the principles and steps can be easily adapted to other environments where Jupyter notebooks are used.
 
@@ -165,7 +163,7 @@ We delve into the practical application of data science techniques using our NBA
 
 We use Pandas for data handling, Numpy for numerical operations, and Matplotlib for plotting graphs. After loading the data, we calculate crucial basketball statistics like field goal percentage and win-loss percentage, providing us with insightful metrics for our analysis. These calculations are not just mere arithmetic; they transform raw data into meaningful information that reflects team performance.
 
-To ensure the quality and reliability of our analysis, we also address data cleaning by handling infinite values and removing any rows with missing data. This step is critical in preparing our dataset for accurate and meaningful analysis.
+To ensure the quality and reliability of our analysis, we also address data cleaning by removing infinite or NaN (Not a Number) values, as I mentioned above in the  Munging, Wrangling, and Cleaning Data section. This step is crucial for ensuring the integrity and reliability of the analysis, as regression models require numerical input and cannot interpret NaN values.
 
 Finally, we define a set of features for regression analysis. These features, such as total points scored and total assists, are used to predict the win-loss percentage of teams, our target variable. By assigning descriptive titles to these features, we make our plots more understandable, laying a strong foundation for the regression analysis that follows.
 
@@ -527,7 +525,7 @@ plt.show()
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The “magic” of data science in action!
 <br/><br/>
 
-## Summary
+## Conclusion & Key Takeaways
 
 These statistical techniques, linear and Ridge regression, allow us to establish and evaluate relationships between different basketball statistics and team performance, providing valuable insights into what contributes to winning in professional basketball.
 
