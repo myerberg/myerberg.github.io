@@ -95,9 +95,9 @@ My goal throughout this rigorous process was to achieve a deeper, more nuanced u
 
 ## Munging, Wrangling, and Cleaning Data 
 
-In the realm of data science, particularly when working with extensive datasets like the one I accessed from Kaggle for NBA team analysis, data munging, wrangling, and cleaning are essential processes to ensure the reliability and accuracy of the outcomes. These datasets often contain a mix of relevant and irrelevant information, missing values, duplicates, and various formats that need to be addressed before any meaningful analysis can be conducted.
+In the realm of data science, particularly when working with extensive datasets like the one I accessed from Kaggle for NBA team analysis, data munging, wrangling, and cleaning are essential processes to ensure the reliability and accuracy of our analysis. Datasets often contain a mix of relevant and irrelevant information, missing values, duplicates, and various formats that need to be addressed before any meaningful analysis can be conducted.
 
-For my project, I meticulously combed through the CSV file, identifying and removing columns that contained a significant amount of missing data. An example of this was the statistics on rebounds, which were not consistently recorded throughout the years in the dataset. Including such incomplete data could have skewed the results of my analysis, leading to inaccurate predictions and conclusions. Hence, I chose to exclude these attributes from my analysis.
+For my project, I meticulously combed through the CSV file, identifying and removing columns that contained a significant amount of missing data. An example of this was the statistics on rebounds, which were not consistently recorded throughout the years in the dataset. Including such incomplete data could have skewed the results of my analysis, leading to inaccurate predictions and conclusions. Hence, I chose to exclude such attributes.
 
 Additionally, I limited the range of my “cleaned” CSV file to include years 1946 to 2011. This is because 1937 to 1945, as well as 2012, were missing the important attributes I looked to analyze.
 
@@ -105,9 +105,9 @@ Furthermore, I implemented methods in my code to handle NaN (Not a Number) entri
 
 In addition to handling missing data, part of the data munging process involved removing irrelevant information that does not contribute to the analysis’s objectives. For instance, the dataset included details about stadium names and capacities — information that, while interesting, was not pertinent to predicting team performances. By removing such irrelevant data, I could focus the analysis on variables that directly impact team success.
 
-Lastly, I addressed the issue of duplicate data. The dataset had instances where information was repeated under different column names, such as various ways of writing the team name. Identifying and removing these duplicates was vital to streamline the dataset and prevent redundancy, which could otherwise lead to inefficiencies in the analysis process.
+I also addressed the issue of duplicate data. The dataset had instances where information was repeated under different column names, such as various ways of writing the team name. Identifying and removing these duplicates was vital to streamline the dataset and prevent redundancy, which could otherwise lead to inefficiencies in the analysis process.
 
-These transformations — handling missing values, removing irrelevant information, and eliminating duplicates — are integral to preparing the dataset for analysis. By cleaning and wrangling the data, I ensured that the dataset was optimized for developing a robust model, capable of providing insightful and accurate predictions about NBA team performances. This process not only enhances the quality of the analysis but also builds the foundation for deriving meaningful and trustworthy conclusions from the data.
+These transformations — handling missing values, removing irrelevant information, and eliminating duplicates — are integral to preparing the dataset for analysis. By cleaning and wrangling the data, I ensured that the dataset was optimized for developing a robust model, capable of providing insightful and accurate predictions about NBA team performances. This process enhances the quality of the analysis and builds the foundation for deriving meaningful and trustworthy conclusions from the data.
 
 <div style="text-align:center;">
     <img src="https://myerberg.github.io/assets/images/dataset-sample.png" width="600" />
