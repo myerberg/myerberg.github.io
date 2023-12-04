@@ -56,6 +56,7 @@ For my project on professional basketball data analysis, I chose to utilize a re
     <img src="https://myerberg.github.io/assets/images/basketball-nba-wallpaper-score.jpg" width="500" />
 </div>
 
+##### Properly adhering to the ethics of data science is a guaranteed “score”!
 ###### Source: https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg
 <br/><br/>
 
@@ -75,10 +76,10 @@ Inaccurate or biased data can lead to misrepresentations, which distort our unde
 
 To avoid these pitfalls, it is crucial to approach data science with a critical eye. This means:
 
-#### 1) Actively seeking diverse and representative datasets to mitigate the risk of biased models.
-#### 2) Being transparent about the limitations of the data and the methods used in analysis.
-#### 3) Regularly revisiting and revising models and assumptions to incorporate new data and insights, thus ensuring that analyses remain relevant and accurate.
-#### 4) Employing robust statistical methods to understand and account for potential biases in the data.
+- Actively seeking diverse and representative datasets to mitigate the risk of biased models.
+- Being transparent about the limitations of the data and the methods used in analysis.
+- Regularly revisiting and revising models and assumptions to incorporate new data and insights, thus ensuring that analyses remain relevant and accurate.
+- Employing robust statistical methods to understand and account for potential biases in the data.
 
 Ethical data handling is paramount to ensure the accuracy and fairness of the conclusions drawn. This involves being vigilant about how data is sourced and ensuring it is representative of the diverse aspects of the sport. It is essential to question and understand the underlying assumptions in the data and to be transparent about the methodologies used in analysis.
 
@@ -519,9 +520,9 @@ plt.show()
     <img src="https://myerberg.github.io/assets/images/plot-7-improved-(post-threshold)-ridge-regression-analysis.png" width="600" />
 </div>
 
-##### Sources:
-##### https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
-##### https://machinelearningmastery.com/ridge-regression-with-python/
+##### The “magic” of data science in action!
+###### Source 1: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
+###### Source 2://machinelearningmastery.com/ridge-regression-with-python/
 
 ## Summary
 <br/><br/>
@@ -548,5 +549,5 @@ This example of Ridge regression in NBA analytics is a testament to the broader 
     <img src="https://myerberg.github.io/assets/images/michael-jordan-kobe-bryant.jpg" width="500" />
 </div>
 
-##### Source:
-##### https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg
+##### Two of the all-time greats, MJ and Kobe!
+###### Source: https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg
