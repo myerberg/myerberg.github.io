@@ -128,11 +128,11 @@ In my analysis of NBA team data, I used two types of statistical models: linear 
 
 ### Linear Regression:
 
-This is a basic form of regression analysis, which is a statistical method used to understand relationships between variables. Imagine it as finding the best straight line that goes through a scatter plot of data points. In linear regression, this best line represents the predicted relationship between an independent variable (or feature, like points scored) and a dependent variable (something you want to predict, like win-loss percentage). Each feature gets its own linear regression model in this analysis. To evaluate how well these models work, we use two metrics: 
+This is a basic form of regression analysis, which is a statistical method used to understand relationships between variables. Imagine it as finding the best straight line that goes through a scatter plot of data points. In linear regression, this best line represents the predicted relationship between an independent variable (i.e. feature, like total points scored) and a dependent variable (something you want to predict, i.e. win-loss percentage). Each feature gets its own linear regression model in this analysis. To evaluate how well these models work, we use two metrics: 
 
 ### R-squared:
 
-This tells us how much of the variation in our dependent variable (win-loss percentage) can be explained by the independent variable (like points scored). An R-squared value closer to 1 means the model explains a lot of the variation, which is good.
+This tells us how much of the variation in our dependent variable (win-loss percentage) can be explained by the independent variable (like total points scored). An R-squared value closer to 1 means the model explains much of the variation in our data, which is a sign that we have produced a useful model.
 
 ### Mean Squared Error (MSE):
 
