@@ -320,6 +320,7 @@ for feature in features:
         <img src="https://myerberg.github.io/assets/images/plot-5-regression-analysis-for-total-free-throws-made.png" width="400" />
     </div>
 </div>
+<br/>
 
 #### 4) Original Ridge Regression
 
