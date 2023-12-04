@@ -16,18 +16,18 @@ The focus will be on understanding and implementing two types of regression mode
 By the end of this tutorial, you should have a deeper understanding of the game of basketball from a data science perspective. This knowledge is not just academically fascinating; it equips team managers, coaches, and analysts with crucial insights, enabling informed decisions that could be the difference in a highly competitive sporting environment. Whether you are a data science enthusiast, a basketball fan, or someone interested in the intersection of sports and analytics, this tutorial is designed to offer you both foundational knowledge and practical skills in sports data analysis.  
 
 ## Data Gathering
-In data gathering for data science projects, web scraping is a prominent technique used to collect data from the internet. A web scraper is essentially a program that downloads and processes content from the web. When considering a specific sports website for data collection, setting up a web scraper involves several detailed steps, particularly when using Python.
+In data gathering for data science, web scraping is a prominent technique used to collect data from the internet. A web scraper is essentially a program that downloads and processes content from the web. When considering a specific sports website for data collection using a language such as Python, setting up a web scraper involves several detailed steps.
 
-A web crawler can be used to navigate through the website. It is essentially a bot that systematically browses the web to identify and access the pages containing the data of interest. In the context of a sports website, it might be programmed to access specific sections like game results, player statistics, or team profiles. Once the crawler reaches the relevant pages, the scraper comes into play.
+Before we examine these steps, I wanted to familiarize you with the concept of a web crawler, which can be used to navigate through websites. It is essentially a bot that systematically browses the web to identify and access the pages containing the data of interest. In the context of a sports website, it might be programmed to access specific sections like game results, player statistics, or team profiles. Once the crawler reaches the relevant pages, the scraper comes into play.
 
-To set up a scraper for a sports website, you could use a Python library such as Beautiful Soup. It is designed to parse and extract structured data from HTML content. For instance, if you are scraping a basketball statistics website, your scraper would be coded to identify and extract specific elements like tables of player statistics or scores from games based upon patterns in the HTML.
+To set up a scraper for a sports website, you could use a Python library such as Beautiful Soup. It is designed to parse and extract structured data from HTML content. For instance, if you are scraping a basketball statistics website, your scraper would be coded to identify and extract specific elements, like tables of player statistics or scores from games, based upon patterns in the HTML.
 
-This process involves:
+#### This process involves:
 
-1) Sending an HTTP request to the webpage URL.
-2) Parsing the HTML content of the page, which is received in response.
-3) Identifying the HTML elements that contain the data you need. This might involve inspecting the webpage to understand its structure, such as finding the specific tags, classes, or IDs that enclose the desired data.
-4) Extracting and storing this data, typically in a structured format like CSV or JSON, or directly into a Pandas DataFrame for further analysis.
+#### 1) Sending an HTTP request to the webpage URL.
+#### 2) Parsing the HTML content of the page, which is received in response.
+#### 3) Identifying the HTML elements that contain the data you need. This might involve inspecting the webpage to understand its structure, such as finding the specific tags, classes, or IDs that enclose the desired data.
+#### 4) Extracting and storing this data, typically in a structured format like CSV or JSON, or directly into a Pandas DataFrame for further analysis.
 
 This setup allows for targeted extraction of data from specific parts of a website, making it a powerful tool for collecting up-to-date sports data. However, it is crucial to be aware of the legal and ethical considerations, as not all websites permit scraping, and heavy scraping activity can burden a website’s servers.
 
