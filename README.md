@@ -44,10 +44,10 @@ While not criminal, breaching a website’s terms of service can lead to contrac
 
 To ensure legal compliance in a web scraping project, one should:
 
--- Review the website’s Terms of Service for clauses on data collection and automated access.
--- Confirm the public availability of data, ensuring it does not contain sensitive personal information and is not protected by legal or technical barriers.
--- Respect directives in the website's robots.txt file, avoid overloading servers through rate limiting, and ensure scraping does not significantly impact the website’s traffic or revenue.
--- Ascertain that the data is not copyrighted, or, if it is, ensure usage falls under fair use, permission is obtained, or that the data or database is in the public domain.
+#### -- Review the website’s Terms of Service for clauses on data collection and automated access.
+#### -- Confirm the public availability of data, ensuring it does not contain sensitive personal information and is not protected by legal or technical barriers.
+#### -- Respect directives in the website's robots.txt file, avoid overloading servers through rate limiting, and ensure scraping does not significantly impact the website’s traffic or revenue.
+#### -- Ascertain that the data is not copyrighted, or, if it is, ensure usage falls under fair use, permission is obtained, or that the data or database is in the public domain.
 
 Considering these factors not only aligns the scraping activities with legal requirements but also upholds ethical standards in data collection.
 
@@ -68,13 +68,15 @@ Data ethics, an integral part of responsibly navigating the field of data scienc
 One key ethical concern in data science is bias. Bias in data can arise from various sources — from the way data is collected to how it is processed and interpreted.  
 
 In sports analytics, data often involves human performance metrics, team strategies, and player statistics, making it a domain sensitive to ethical considerations. The way this data is collected, processed, and interpreted can have significant implications. For instance, biases in data collection or analysis can inadvertently reinforce stereotypes or lead to unfair assessments of players and teams. Historical data, for example, might carry legacy biases regarding player selection or team strategies, which, if not carefully accounted for, could skew the analysis and perpetuate these biases.
+
  Similarly, in broader data science applications, biases can manifest in algorithms that are trained on non-representative datasets. This could lead to models that perpetuate existing stereotypes or inequalities, as they essentially “learn” from biased historical patterns.
 
-Another ethical issue is the misrepresentation of information. Misinterpretation of data, either unintentionally or deliberately, can lead to erroneous conclusions. This is particularly risky when complex statistical methods are simplified for broader consumption, sometimes leading to the loss of crucial nuances.
+Another ethical issue is the misrepresentation of information. Misinterpretation of data, either unintentionally or deliberately, can lead to erroneous conclusions. This is particularly risky when complex statistical methods are simplified for broader consumption, sometimes leading to the loss of crucial nuances. In the context of NBA data, this might mean oversimplifying the contribution of a single player to a team’s success, ignoring the multifaceted nature of the game.
 
-In the context of NBA data, this might mean oversimplifying the contribution of a single player to a team’s success, ignoring the multifaceted nature of the game. Inaccurate or biased data can lead to misrepresentations, which not only distort our understanding of the game but could also impact decision-making processes in team management, player evaluation, and overall game strategy. The decisions based on such data could unfairly affect careers, team compositions, and the sport’s development.
+Inaccurate or biased data can lead to misrepresentations, which distort our understanding of the game. Additionally, they can impact decision-making processes in team management, player evaluation, and overall game strategy. The decisions based on such data could unfairly affect careers, team compositions, and the sport’s development.
 
 To avoid these pitfalls, it is crucial to approach data science with a critical eye. This means:
+
 1) Actively seeking diverse and representative datasets to mitigate the risk of biased models.
 2) Being transparent about the limitations of the data and the methods used in analysis.
 3) Regularly revisiting and revising models and assumptions to incorporate new data and insights, thus ensuring that analyses remain relevant and accurate.
