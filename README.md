@@ -120,11 +120,11 @@ These transformations — handling missing values, removing irrelevant informati
 
 My analysis of the NBA team dataset using regression models is rooted in the fundamental principles of statistical learning. Regression, at its core, is about establishing a relationship between a dependent variable and one or more independent variables. The objective is to predict the dependent variable based on the values of the independent variables. In this context, I aimed to predict a team’s win-loss percentage (dependent variable) from selected features (independent variables) such as field goal percentage, offensive points, assists, defensive points, and free throws made.
 
-The process began by loading the dataset and calculating two critical metrics: field goal percentage and win-loss percentage. The field goal percentage (fg_percentage) is calculated as the ratio of field goals made (o_fgm) to field goals attempted (o_fga), and the win-loss percentage is the ratio of games won to total games played. These calculations are essential as they convert raw data into meaningful metrics that can be analyzed.
+The process began by loading the dataset and calculating two critical metrics: field goal percentage and win-loss percentage. Field goal percentage (fg_percentage) is calculated as the ratio of field goals made (o_fgm) to field goals attempted (o_fga), and the win-loss percentage is the ratio of games won to total games played. These calculations are essential as they convert raw data into meaningful metrics that can be analyzed.
 
-Following data preparation, I addressed data quality by removing any infinite or NaN (Not a Number) values. This step is crucial for ensuring the integrity and reliability of the analysis, as regression models require numerical input and cannot interpret NaN values.
+Following data preparation, I addressed data quality by removing any infinite or NaN (Not a Number) values, as I mentioned above in the  Munging, Wrangling, and Cleaning Data section. This step is crucial for ensuring the integrity and reliability of the analysis, as regression models require numerical input and cannot interpret NaN values.
 
-In our analysis of NBA team data, we used two types of statistical models: linear regression and Ridge regression. Let’s break down these concepts for clarity:
+In my analysis of NBA team data, I used two types of statistical models: linear regression and Ridge regression. Let us break down these concepts for clarity:
 
 ### Linear Regression:
 
@@ -561,6 +561,7 @@ This example of Ridge regression in NBA analytics is a testament to the broader 
 </ul>
 
 <h4>Research Sources:</h4>
+<br/>
 <ul>
     <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html">https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html</a></li>
     <li><a href="https://machinelearningmastery.com/ridge-regression-with-python/">https://machinelearningmastery.com/ridge-regression-with-python/</a></li>
