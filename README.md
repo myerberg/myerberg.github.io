@@ -2,8 +2,7 @@
     <img src="https://myerberg.github.io/assets/images/fiery-basketball-wallpaper.jpg" width="500" />
 </div>
 
-##### Source:
-##### https://images.freecreatives.com/wp-content/uploads/2016/03/Firey-Basketball-Wallpaper.jpg
+###### Source: https://images.freecreatives.com/wp-content/uploads/2016/03/Firey-Basketball-Wallpaper.jpg
 <br/><br/>
 
 ## Introduction
@@ -44,12 +43,12 @@ While not criminal, breaching a website’s terms of service can lead to contrac
 
 To ensure legal compliance in a web scraping project, one should:
 
-#### -- Review the website’s Terms of Service for clauses on data collection and automated access.
-#### -- Confirm the public availability of data, ensuring it does not contain sensitive personal information and is not protected by legal or technical barriers.
-#### -- Respect directives in the website's robots.txt file, avoid overloading servers through rate limiting, and ensure scraping does not significantly impact the website’s traffic or revenue.
-#### -- Ascertain that the data is not copyrighted, or, if it is, ensure usage falls under fair use, permission is obtained, or that the data or database is in the public domain.
+- Review the website’s Terms of Service for clauses on data collection and automated access.
+- Confirm the public availability of data, ensuring it does not contain sensitive personal information and is not protected by legal or technical barriers.
+- Respect directives in the website's robots.txt file, avoid overloading servers through rate limiting, and ensure scraping does not significantly impact the website’s traffic or revenue.
+- Ascertain that the data is not copyrighted, or, if it is, ensure usage falls under fair use, permission is obtained, or that the data or database is in the public domain.
 
-Considering these factors not only aligns the scraping activities with legal requirements but also upholds ethical standards in data collection.
+Considering these factors aligns the scraping activities with legal requirements and upholds ethical standards in data collection.
 
 For my project on professional basketball data analysis, I chose to utilize a ready-made dataset from Kaggle, which contained comprehensive NBA data spanning from 1937 to 2012. By using this dataset, I was able to skip the web scraping phase and focus directly on data exploration and analysis. This pre-compiled dataset saved time and effort that would otherwise be spent in writing and testing web scraping scripts, parsing the scraped data, and dealing with potential issues like web page changes or data access restrictions (ESPN imposes these very restrictions, blocking web scrapers from pulling its data). However, for projects where up-to-date or specific data is required, writing a web scraper in Python is an invaluable skill that allows for the collection of real-time data directly from the web.
 
@@ -57,8 +56,7 @@ For my project on professional basketball data analysis, I chose to utilize a re
     <img src="https://myerberg.github.io/assets/images/basketball-nba-wallpaper-score.jpg" width="500" />
 </div>
 
-##### Source:
-##### https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg
+###### Source: https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg
 <br/><br/>
 
 ## Data Ethics
@@ -112,8 +110,7 @@ These transformations — handling missing values, removing irrelevant informati
 
 ##### Not all columns shown here in the cleaned version of the dataset were used, though they do provide context for further investigation.
 
-##### Source:
-##### https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball  
+###### Source: https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball  
 <br/><br/>
 
 ## Analysis
