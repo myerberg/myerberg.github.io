@@ -22,7 +22,7 @@ Before we examine these steps, I wanted to familiarize you with the concept of a
 
 To set up a scraper for a sports website, you could use a Python library such as Beautiful Soup. It is designed to parse and extract structured data from HTML content. For instance, if you are scraping a basketball statistics website, your scraper would be coded to identify and extract specific elements, like tables of player statistics or scores from games, based upon patterns in the HTML.
 
-#### This process involves:
+This process involves:
 
 #### 1) Sending an HTTP request to the webpage URL.
 #### 2) Parsing the HTML content of the page, which is received in response.
@@ -77,18 +77,18 @@ Inaccurate or biased data can lead to misrepresentations, which distort our unde
 
 To avoid these pitfalls, it is crucial to approach data science with a critical eye. This means:
 
-1) Actively seeking diverse and representative datasets to mitigate the risk of biased models.
-2) Being transparent about the limitations of the data and the methods used in analysis.
-3) Regularly revisiting and revising models and assumptions to incorporate new data and insights, thus ensuring that analyses remain relevant and accurate.
-4) Employing robust statistical methods to understand and account for potential biases in the data.
+#### 1) Actively seeking diverse and representative datasets to mitigate the risk of biased models.
+#### 2) Being transparent about the limitations of the data and the methods used in analysis.
+#### 3) Regularly revisiting and revising models and assumptions to incorporate new data and insights, thus ensuring that analyses remain relevant and accurate.
+#### 4) Employing robust statistical methods to understand and account for potential biases in the data.
 
-Ethical data handling is paramount to ensure the accuracy and fairness of the conclusions drawn. This involves being vigilant about how data is sourced and ensuring it is representative of the diverse aspects of the sport. It is essential to question and understand the underlying assumptions in the data, and to be transparent about the methodologies used in analysis.
+Ethical data handling is paramount to ensure the accuracy and fairness of the conclusions drawn. This involves being vigilant about how data is sourced and ensuring it is representative of the diverse aspects of the sport. It is essential to question and understand the underlying assumptions in the data and to be transparent about the methodologies used in analysis.
 
-In my analysis of NBA data, I approach the task with a keen awareness of data ethics. Initially, I meticulously assess the origins of my data, ensuring that it is sourced from reliable and credible platforms. For instance, the dataset used in my analysis is obtained from a reputable source, which guarantees a certain level of accuracy and comprehensiveness. During the analytical process, I rigorously examine the methods and techniques employed. This includes not just applying statistical models like linear and Ridge regression but also critically evaluating their appropriateness for the data at hand. For example, I chose Ridge regression specifically to address the multicollinearity in the dataset, ensuring that my model does not overly rely on interdependent variables. 
+In my analysis of NBA data, I approached the task with a keen awareness of data ethics. Initially, I meticulously assessed the origins of my data, ensuring that it was sourced from reliable and credible platforms. For instance, the dataset used in my analysis is obtained from a reputable source (Kaggle) and highly rated, which guarantees a certain level of accuracy and comprehensiveness. During the analytical process, I rigorously examined the methods and techniques employed. This included applying statistical models like linear and Ridge regression while critically evaluating their appropriateness for the data at hand. For example, I chose Ridge regression specifically to address the multicollinearity in the dataset, ensuring that my model does not overly rely on interdependent variables.
 
-Continual model refinement is a key part of my process. I frequently revisit my models to integrate new data, adjust assumptions, and revalidate findings. This iterative process is crucial, especially in a dynamic field like NBA basketball, where player performance and team strategies evolve over time. Such updates help in maintaining the relevance and accuracy of my analysis.
+Continual model refinement is a key part of the data science process. It is important to frequently revisit your models to integrate new data, adjust assumptions, and revalidate findings. This iterative process is crucial, especially in a dynamic field like NBA basketball, where player performance and team strategies evolve over time. Such updates help in maintaining the relevance and accuracy of one’s analysis.
 
-My goal through this rigorous process is to achieve a deeper, more nuanced understanding of basketball, grounded in data integrity and ethical practice. In doing so, I aim to contribute positively to the field of data science, ensuring that the insights and conclusions drawn are both fair and trustworthy. This commitment to ethical data practices is vital not only in sports analytics but across all domains where data plays a pivotal role in decision-making.  
+My goal throughout this rigorous process was to achieve a deeper, more nuanced understanding of basketball, grounded in data integrity and ethical practice. In doing so, I aim to contribute positively to the field of data science, ensuring that the insights and conclusions drawn are both fair and trustworthy. This commitment to ethical data practices is vital in sports analytics and across all domains where data plays a pivotal role in decision-making.  
 
 ## Munging, Wrangling, and Cleaning Data 
 
