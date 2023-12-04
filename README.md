@@ -433,6 +433,7 @@ plt.show()
 <div style="text-align:center;">
     <img src="https://myerberg.github.io/assets/images/plot-6-original-ridge-regression-analysis.png" width="600" />
 </div>
+<br/>
 
 #### 5) Improved (Post-Threshold) Ridge Regression
 
@@ -524,9 +525,9 @@ plt.show()
 ##### The “magic” of data science in action!
 ###### Source 1: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
 ###### Source 2://machinelearningmastery.com/ridge-regression-with-python/
+<br/><br/>
 
 ## Summary
-<br/><br/>
 
 These statistical techniques, linear and Ridge regression, allow us to establish and evaluate relationships between different basketball statistics and team performance, providing valuable insights into what contributes to winning in professional basketball.
 
