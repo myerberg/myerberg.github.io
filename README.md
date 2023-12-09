@@ -154,7 +154,7 @@ In my implementation of the Ridge regression model for the NBA dataset, I used a
 The instructions provided here are primarily tailored for JupyterLab within the Anaconda Navigator environment. However, the principles and steps can be easily adapted to other environments where Jupyter notebooks are used.
 
 <br/>
-#### 1) Installations
+### 1) Installations
 
 Ensure that you have the necessary Python libraries installed on your machine. You can disregard or comment out this line of code if they are already installed.
 
@@ -164,7 +164,7 @@ Ensure that you have the necessary Python libraries installed on your machine. Y
 ```
 
 <br/>
-#### 2) CSV Import and Feature Definitions
+### 2) CSV Import and Feature Definitions
 
 We delve into the practical application of data science techniques using our NBA dataset loaded from a CSV file. Our first step involves importing the necessary Python libraries that provide tools for data manipulation, statistical modeling, and visualization. 
 
@@ -216,7 +216,7 @@ feature_names = {
 ```
 
 <br/>
-#### 3) Regression Models by Feature
+### 3) Regression Models by Feature
 
 We take a closer look at each individual feature in our dataset and examine its relationship with the team’s win-loss percentage. To do this, we employ linear regression, a fundamental statistical technique that allows us to understand and quantify the relationship between a single independent variable (our feature) and a dependent variable (the win-loss percentage).
 
@@ -329,7 +329,7 @@ for feature in features:
 <br/>
 
 <br/>
-#### 4) Original Ridge Regression
+### 4) Original Ridge Regression
 
 We delve into the application of Ridge regression, a robust form of linear regression, to our NBA dataset. The process begins by preparing the feature data for the regression analysis. The feature data, referred to as independent variables, are consolidated into a single dataset, designated ‘X’. This dataset is then processed through a pipeline that serves two primary functions: standardization and regression.
 
@@ -445,7 +445,7 @@ plt.show()
 <br/>
 
 <br/>
-#### 5) Improved (Post-Threshold) Ridge Regression
+### 5) Improved (Post-Threshold) Ridge Regression
 
 We enhance the predictive accuracy of our Ridge regression model by refining the selection of features based upon their significance. This process commences by establishing a threshold, which in this case is set at 0.01. The threshold of 0.01 strikes a balance between model simplicity and predictive power; it is high enough to exclude features with negligible influence but low enough to retain those that contribute meaningfully to the prediction of win-loss percentage. This threshold serves as a criterion to identify features that have a substantial impact on the win-loss percentage. We retain for further analysis features with coefficients (parameters indicating the influence of each feature on the target variable) having an absolute value equal to or greater than the threshold.
 
