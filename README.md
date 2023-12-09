@@ -130,7 +130,7 @@ In my analysis of NBA team data, I used two types of statistical models: linear 
 
 ### Linear Regression:
 
-This is a basic form of regression analysis, which is a statistical method used to understand relationships between variables. Imagine it as finding the best straight line that goes through a scatter plot of data points. In linear regression, this best line represents the predicted relationship between an independent variable (i.e. feature, like total points scored) and a dependent variable (something you want to predict, i.e. win-loss percentage). Each feature gets its own linear regression model in this analysis. To evaluate how well these models work, we use two metrics: 
+This is a basic form of regression analysis, which is a statistical method used to understand relationships between variables. Imagine it as finding the best straight line to fit a scatter plot of data points. In linear regression, this best line represents the predicted relationship between an independent variable (i.e. feature, like total points scored) and a dependent variable (something you want to predict, i.e. win-loss percentage). Each feature received its own linear regression model in this part of the analysis. To evaluate how well these models work, we use two metrics: 
 
 ### R-squared:
 
@@ -142,11 +142,12 @@ This measures the average of the squares of the errors, that is, the average squ
 
 ### Ridge Regression:
 
-In my analysis of NBA statistics, I chose Ridge regression, an advanced variant of linear regression, to tackle a specific issue known as multicollinearity. Multicollinearity in this context refers to the situation where the independent variables (the features I am using for prediction) are highly correlated with each other. For example, in basketball, aspects such as field goals made and offensive points are likely to be correlated since more field goals generally lead to more points. This correlation between variables can cause problems in standard linear regression models, as it makes it difficult to determine the individual effect of each feature on the dependent variable, which in this case is the team’s win-loss percentage.
+In my analysis of NBA statistics, I chose Ridge regression, an advanced variant of linear regression, to tackle a specific issue known as multicollinearity. Multicollinearity in this context refers to a situation where the independent variables (the features I am using for prediction) are highly correlated with each other. For example, in basketball, aspects such as field goal percentage and total points scored are likely to be correlated since a higher field goal percentage generally leads to more points. This correlation between variables can cause problems in standard linear regression models, as it makes it difficult to determine the individual effect of each feature on the dependent variable, which in this case is the team’s win-loss percentage.
 
 Ridge regression modifies linear regression by introducing a penalty on the size of the coefficients. Here, coefficients are numerical values that represent the strength and direction of the relationship between each independent variable and the dependent variable. However, in Ridge regression, there is an additional component in the calculation that penalizes large coefficients, which prevents any single feature from having a disproportionately large influence on the predictions. This approach is particularly effective in addressing the challenges posed by multicollinearity. The penalty term’s strength is determined by a parameter known as alpha. The higher the value of alpha, the greater the penalty imposed on large coefficients, which in turn reduces the risk of overfitting. Overfitting occurs when a model is too closely fitted to the specific details of the training data, making it perform poorly on new data.
 
 In my implementation of the Ridge regression model for the NBA dataset, I used a “pipeline” approach. The first step in this pipeline was standardization, a process that adjusts the values of each feature in the dataset to have a mean of zero and a standard deviation of one. Standardization is critical because it ensures that all features contribute equally to the prediction and no single feature with large values overpowers the model. This step is especially important for Ridge regression, as the penalty applied to the coefficients is effective only when all features are on a comparable scale. This approach allowed me to accurately assess the impact of each basketball statistic on a team’s win-loss percentage, despite the potential correlations among these features.  
+<br/>
 
 ### Let us examine my code step-by-step. In the spirit of reiterating these important concepts, we will delve deeper within their respective contexts:
 
@@ -154,7 +155,7 @@ The instructions provided here are primarily tailored for JupyterLab within the 
 
 #### 1) Installations
 
-Ensure that you have the necessaries Python libraries installed on your machine. You can disregard or comment out this line of code if they are already installed.
+Ensure that you have the necessary Python libraries installed on your machine. You can disregard or comment out this line of code if they are already installed.
 
 ```python
 #install the necessary libraries on your machine
