@@ -566,7 +566,7 @@ By setting a threshold of 0.01 in our improved model, I determined that o_pts (0
 
 Refining the Ridge model by applying the threshold led to a slight decrease in the R-squared value to 0.9250. This minor change suggests that the features excluded based on the threshold, while having smaller coefficients, still contributed very slightly to the overall predictive power of the model. However, the improved model, with its formula:
 
-### “Improved Ridge Model: Win-Loss = 0.4956*o_pts - 0.4957*d_pts + 0.4999”,
+### Improved Ridge Model: Win-Loss = 0.4956 * o_pts - 0.4957 * d_pts + 0.4999
 
 continues to be highly effective. Importantly, a simpler equation with fewer variables enhances interpretability and practical applicability, making it easier for analysts and decision-makers to understand and utilize the model’s insights in strategic planning and performance analysis. This formula highlights the significance of offensive points (o_pts) and defensive points (d_pts) as key predictors of a team’s success.
 
