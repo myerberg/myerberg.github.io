@@ -587,13 +587,13 @@ Our example of Ridge regression in NBA analytics is a testament to the broader c
 
 <br/>
 <br/>
-<h4>Dataset Source:</h4>
+#### Dataset Source:
 <ul>
     <li><a href="https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball">https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball</a></li>
 </ul>
 
 <br/>
-<h4>Research Sources:</h4>
+#### Research Sources:
 <ul>
     <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html">https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html</a></li>
     <li><a href="https://machinelearningmastery.com/ridge-regression-with-python/">https://machinelearningmastery.com/ridge-regression-with-python/</a></li>
