@@ -6,6 +6,16 @@
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Source: https://images.freecreatives.com/wp-content/uploads/2016/03/Firey-Basketball-Wallpaper.jpg
 <br/><br/>
 
+## Table of Contents
+[Introduction](#introduction)
+[Data Gathering](#data-gathering)
+[Data Ethics](#data-ethics)
+[Munging, Wrangling, and Cleaning Data](#munging-wrangling-and-cleaning-data)
+[Analysis](#analysis)
+[Conclusion & Key Takeaways](#conclusion--key-takeaways)
+[Sources](#research-source)
+<br/><br/>
+
 ## Introduction
 Welcome to my data science tutorial, where I will guide you through this fascinating world and its application in analyzing professional basketball. The goal here is to unveil the “magic” of data science and regression analysis, demonstrating how they can be used to predict the performance of NBA teams accurately. This tutorial is designed to take you on a journey through the realm of NBA statistics, where the analysis of comprehensive datasets has become an indispensable tool in shaping team strategies, player development, and making crucial financial decisions.
 
