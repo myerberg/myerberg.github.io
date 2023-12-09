@@ -7,12 +7,12 @@
 <br/><br/>
 
 ## Table of Contents
-[Introduction](#introduction)
-[Data Gathering](#data-gathering)
-[Data Ethics](#data-ethics)
-[Munging, Wrangling, and Cleaning Data](#munging-wrangling-and-cleaning-data)
-[Analysis](#analysis)
-[Conclusion & Key Takeaways](#conclusion-key-takeaways)
+[Introduction](#introduction)<br/>
+[Data Gathering](#data-gathering)<br/>
+[Data Ethics](#data-ethics)<br/>
+[Munging, Wrangling, and Cleaning Data](#munging-wrangling-and-cleaning-data)<br/>
+[Analysis](#analysis)<br/>
+[Conclusion & Key Takeaways](#conclusion-key-takeaways)<br/>
 [Sources](#dataset-source)
 <br/><br/>
 
