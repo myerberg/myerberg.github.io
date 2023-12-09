@@ -18,7 +18,7 @@ By the end of this tutorial, you should have a deeper understanding of the game 
 ## Data Gathering
 In data gathering for data science, web scraping is a prominent technique used to collect data from the internet. A web scraper is essentially a program that downloads and processes content from the web. When considering a specific sports website for data collection using a language such as Python, setting up a web scraper involves several detailed steps.
 
-Before we examine these steps, I wanted to familiarize you with the concept of a web crawler, which can be used to navigate through websites. It is essentially a bot that systematically browses the web to identify and access the pages containing the data of interest. In the context of a sports website, it might be programmed to access specific sections like game results, player statistics, or team profiles. Once the crawler reaches the relevant pages, the scraper comes into play.
+Before we examine these steps, I wanted to familiarize you with the concept of a web crawler, which can be used to navigate through websites. It is essentially a bot that systematically browses the web to identify and access pages containing the data of interest. In the context of a sports website, it might be programmed to access specific sections like game results, player statistics, or team profiles. Once the crawler reaches the relevant pages, the scraper comes into play.
 
 To set up a scraper for a sports website, you could use a Python library such as Beautiful Soup. It is designed to parse and extract structured data from HTML content. For instance, if you are scraping a basketball statistics website, your scraper would be coded to identify and extract specific elements, like tables of player statistics or scores from games, based upon patterns in the HTML.
 
@@ -29,20 +29,21 @@ This process involves:
 #### 3) Identifying the HTML elements that contain the data you need. This might involve inspecting the webpage to understand its structure, such as finding the specific tags, classes, or IDs that enclose the desired data.
 #### 4) Extracting and storing this data, typically in a structured format like CSV or JSON, or directly into a Pandas DataFrame for further analysis.
 
-This setup allows for targeted extraction of data from specific parts of a website, making it a powerful tool for collecting up-to-date sports data. However, it is crucial to be aware of the legal and ethical considerations, as not all websites permit scraping, and heavy scraping activity can burden a website’s servers.
+This setup allows for targeted extraction of data from specific parts of a website, making it a powerful tool for collecting up-to-date sports data. However, it is crucial to be aware of the applicable legal and ethical considerations, as not all websites permit scraping, and heavy scraping activity can burden a website’s servers.
 
 In the United States, there are four primary legal grounds website owners might invoke to restrict or prevent web scraping:
 
-### 1) Copyright Infringement:
-While the direct duplication of original expression is often illegal, the U.S. legal system, as evidenced in the ruling of Feist Publications v. Rural Telephone Service, allows the duplication of facts. This distinction is crucial for web scraping projects focusing on data and facts rather than creative expression.
-### 2) Computer Fraud and Abuse Act (CFAA):
+### 1) Copyright Infringement
+In the United States, copyright protection is “automatic” and extends to online content. Fair use also applies online, as well as the concept of the public domain. While the direct duplication of original expression is often illegal, the U.S. legal system, as evidenced in the ruling of Feist Publications, Inc. v. Rural Telephone Service Company, Inc., allows the duplication of facts. This distinction is crucial for web scraping projects focusing on data and facts rather than creative expression.
+### 2) Computer Fraud and Abuse Act (CFAA)
 This act prohibits accessing a computer without authorization or exceeding authorized access. Therefore, scraping data from websites that require authorization or breaching any access barriers might fall under this violation.
-### 3) Trespass to Chattels:
+### 3) Trespass to Chattels
 This legal claim involves intentional interference with another’s personal property and requires proof of actual damage. In the context of web scraping, this could relate to activities that harm a server’s functionality or impede its intended use.
-### 4) Terms of Service Violations:
+### 4) Terms of Service Violations
 While not criminal, breaching a website’s terms of service can lead to contract breaches and subsequent legal actions, such as the removal of content obtained through scraping from your project.
+<br/>
 
-To ensure legal compliance in a web scraping project, one should:
+#### To ensure legal compliance in a web scraping project, one should:
 
 - Review the website’s Terms of Service for clauses on data collection and automated access.
 - Confirm the public availability of data, ensuring it does not contain sensitive personal information and is not protected by legal or technical barriers.
@@ -77,8 +78,9 @@ In sports analytics, data often involves human performance metrics, team strateg
 Another ethical issue is the misrepresentation of information. Misinterpretation of data, either unintentionally or deliberately, can lead to erroneous conclusions. This is particularly risky when complex statistical methods are simplified for broader consumption, sometimes leading to the loss of crucial nuances. In the context of NBA data, this might mean oversimplifying the contribution of a single player to a team’s success, ignoring the multifaceted nature of the game.
 
 Inaccurate or biased data can lead to misrepresentations, which distort our understanding of the game. Additionally, they can impact decision-making processes in team management, player evaluation, and overall game strategy. The decisions based on such data could unfairly affect careers, team compositions, and the sport’s development.
+<br/>
 
-To avoid these pitfalls, it is crucial to approach data science with a critical eye. This means:
+#### To avoid these pitfalls, it is crucial to approach data science with a critical eye. This means:
 
 - Actively seeking diverse and representative datasets to mitigate the risk of biased models.
 - Being transparent about the limitations of the data and the methods used in analysis.
