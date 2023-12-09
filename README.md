@@ -13,7 +13,7 @@
 [Munging, Wrangling, and Cleaning Data](#munging-wrangling-and-cleaning-data)<br/>
 [Analysis](#analysis)<br/>
 [Conclusion & Key Takeaways](#conclusion--key-takeaways)<br/>
-[Sources](#dataset-source)
+[Sources](#sources)
 <br/><br/>
 
 ## Introduction
@@ -587,13 +587,16 @@ Our example of Ridge regression in NBA analytics is a testament to the broader c
 
 <br/>
 <br/>
-#### Dataset Source:
+
+## Sources
+<br/>
+<h4>Dataset Source:</h4>
 <ul>
     <li><a href="https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball">https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball</a></li>
 </ul>
 
 <br/>
-#### Research Sources:
+<h4>Research Sources:</h4>
 <ul>
     <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html">https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html</a></li>
     <li><a href="https://machinelearningmastery.com/ridge-regression-with-python/">https://machinelearningmastery.com/ridge-regression-with-python/</a></li>
