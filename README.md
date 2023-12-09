@@ -168,7 +168,7 @@ Ensure that you have the necessary Python libraries installed on your machine. Y
 
 We delve into the practical application of data science techniques using our NBA dataset loaded from a CSV file. Our first step involves importing the necessary Python libraries that provide tools for data manipulation, statistical modeling, and visualization. 
 
-We use Pandas for data handling, Numpy for numerical operations, and Matplotlib for plotting graphs. After loading the data, we calculate crucial basketball statistics like field goal percentage and win-loss percentage, providing us with insightful metrics for our analysis. As we alluded to earlier, these calculations are not just mere arithmetic; they transform raw data into meaningful information that reflects team performance.
+We use [pandas](https://pandas.pydata.org/) for data handling, [NumPy](https://numpy.org) for numerical operations, [Matplotlib](https://matplotlib.org/) for plotting graphs, and [scikit-learn](https://scikit-learn.org/stable/index.html) for our regression models. After loading the data, we calculate crucial basketball statistics like field goal percentage and win-loss percentage, providing us with insightful metrics for our analysis. As we alluded to earlier, these calculations are not just mere arithmetic; they transform raw data into meaningful information that reflects team performance.
 
 To ensure the quality and reliability of our analysis, we also address data cleaning by removing infinite or NaN (Not a Number) values, as I mentioned above in the Munging, Wrangling, and Cleaning Data section. This step is crucial for ensuring the integrity and reliability of the analysis, as regression models require numerical input and cannot interpret NaN values.
 
