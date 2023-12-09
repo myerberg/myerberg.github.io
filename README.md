@@ -589,7 +589,6 @@ Our example of Ridge regression in NBA analytics is a testament to the broader c
 <br/>
 
 ## Sources
-<br/>
 <h4>Dataset Source:</h4>
 <ul>
     <li><a href="https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball">https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball</a></li>
