@@ -147,12 +147,13 @@ In my analysis of NBA statistics, I chose Ridge regression, an advanced variant 
 Ridge regression modifies linear regression by introducing a penalty on the size of the coefficients. Here, coefficients are numerical values that represent the strength and direction of the relationship between each independent variable and the dependent variable. However, in Ridge regression, there is an additional component in the calculation that penalizes large coefficients, which prevents any single feature from having a disproportionately large influence on the predictions. This approach is particularly effective in addressing the challenges posed by multicollinearity. The penalty term’s strength is determined by a parameter known as alpha. The higher the value of alpha, the greater the penalty imposed on large coefficients, which in turn reduces the risk of overfitting. Overfitting occurs when a model is too closely fitted to the specific details of the training data, making it perform poorly on new data.
 
 In my implementation of the Ridge regression model for the NBA dataset, I used a “pipeline” approach. The first step in this pipeline was standardization, a process that adjusts the values of each feature in the dataset to have a mean of zero and a standard deviation of one. Standardization is critical because it ensures that all features contribute equally to the prediction and no single feature with large values overpowers the model. This step is especially important for Ridge regression, as the penalty applied to the coefficients is effective only when all features are on a comparable scale. This approach allowed me to accurately assess the impact of each basketball statistic on a team’s win-loss percentage, despite the potential correlations among these features.  
-<br/>
+<br/><br/>
 
 ### Let us examine my code step-by-step. In the spirit of reiterating these important concepts, we will delve deeper within their respective contexts:
 
 The instructions provided here are primarily tailored for JupyterLab within the Anaconda Navigator environment. However, the principles and steps can be easily adapted to other environments where Jupyter notebooks are used.
 
+<br/>
 #### 1) Installations
 
 Ensure that you have the necessary Python libraries installed on your machine. You can disregard or comment out this line of code if they are already installed.
@@ -162,15 +163,16 @@ Ensure that you have the necessary Python libraries installed on your machine. Y
 !pip install pandas numpy matplotlib scikit-learn
 ```
 
+<br/>
 #### 2) CSV Import and Feature Definitions
 
 We delve into the practical application of data science techniques using our NBA dataset loaded from a CSV file. Our first step involves importing the necessary Python libraries that provide tools for data manipulation, statistical modeling, and visualization. 
 
-We use Pandas for data handling, Numpy for numerical operations, and Matplotlib for plotting graphs. After loading the data, we calculate crucial basketball statistics like field goal percentage and win-loss percentage, providing us with insightful metrics for our analysis. These calculations are not just mere arithmetic; they transform raw data into meaningful information that reflects team performance.
+We use Pandas for data handling, Numpy for numerical operations, and Matplotlib for plotting graphs. After loading the data, we calculate crucial basketball statistics like field goal percentage and win-loss percentage, providing us with insightful metrics for our analysis. As we alluded to earlier, these calculations are not just mere arithmetic; they transform raw data into meaningful information that reflects team performance.
 
-To ensure the quality and reliability of our analysis, we also address data cleaning by removing infinite or NaN (Not a Number) values, as I mentioned above in the  Munging, Wrangling, and Cleaning Data section. This step is crucial for ensuring the integrity and reliability of the analysis, as regression models require numerical input and cannot interpret NaN values.
+To ensure the quality and reliability of our analysis, we also address data cleaning by removing infinite or NaN (Not a Number) values, as I mentioned above in the Munging, Wrangling, and Cleaning Data section. This step is crucial for ensuring the integrity and reliability of the analysis, as regression models require numerical input and cannot interpret NaN values.
 
-Finally, we define a set of features for regression analysis. These features, such as total points scored and total assists, are used to predict the win-loss percentage of teams, our target variable. By assigning descriptive titles to these features, we make our plots more understandable, laying a strong foundation for the regression analysis that follows.
+Additionally, we define a set of features for regression analysis. These features, such as total points scored and total assists, are used to predict the win-loss percentage of teams, our target (dependent) variable. By assigning descriptive titles to these features, we make our plots more understandable, laying a strong foundation for the regression analysis that follows.
 
 ```python
 #import the necessary libraries
@@ -213,13 +215,14 @@ feature_names = {
 }
 ```
 
+<br/>
 #### 3) Regression Models by Feature
 
 We take a closer look at each individual feature in our dataset and examine its relationship with the team’s win-loss percentage. To do this, we employ linear regression, a fundamental statistical technique that allows us to understand and quantify the relationship between a single independent variable (our feature) and a dependent variable (the win-loss percentage).
 
 For each feature, we create a separate plot. These plots show the actual data points for each team and include a regression line. This line is the result of our linear regression model, representing the best fit through the data points, thereby illustrating the trend or relationship between the feature and the win-loss percentage.
 
-By fitting a linear regression model to each feature, we also extract valuable statistics like the coefficient (indicating the rate of change of win-loss percentage with respect to the feature) and the intercept (the expected win-loss percentage when the feature value is zero). We also compute the R-squared value, which tells us how well the model explains the variation in win-loss percentage, and the Mean Squared Error, giving us a sense of the average prediction error. 
+By fitting a linear regression model to each feature, we also extract valuable statistics like the coefficient (indicating the rate of change of win-loss percentage with respect to the feature) and the intercept (the expected win-loss percentage when the feature value is zero). We also compute the R-squared value, which tells us how well the model explains the variation in win-loss percentage, and the Mean Squared Error, giving us a sense of the average prediction error.
 
 Each plot displays these insights, making it easier to understand the impact of each individual basketball statistic on a team’s overall performance. This approach provides a clear, visual representation of the data, aiding in our understanding of the complex dynamics of basketball team performance.
 
@@ -325,6 +328,7 @@ for feature in features:
 </div>
 <br/>
 
+<br/>
 #### 4) Original Ridge Regression
 
 We delve into the application of Ridge regression, a robust form of linear regression, to our NBA dataset. The process begins by preparing the feature data for the regression analysis. The feature data, referred to as independent variables, are consolidated into a single dataset, designated ‘X’. This dataset is then processed through a pipeline that serves two primary functions: standardization and regression.
@@ -440,6 +444,7 @@ plt.show()
 </div>
 <br/>
 
+<br/>
 #### 5) Improved (Post-Threshold) Ridge Regression
 
 We enhance the predictive accuracy of our Ridge regression model by refining the selection of features based on their significance. This process commences by establishing a threshold, which in this case is set at 0.01. The threshold of 0.01 strikes a balance between model simplicity and predictive power; it is high enough to exclude features with negligible influence but low enough to retain those that contribute meaningfully to the prediction of win-loss percentage. This threshold serves as a criterion to identify features that have a substantial impact on the win-loss percentage. We retain for further analysis features with coefficients (parameters indicating the influence of each feature on the target variable) having an absolute value equal to or greater than the threshold.
@@ -530,6 +535,7 @@ plt.show()
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The “magic” of data science in action!
 <br/><br/>
 
+<br/>
 ## Conclusion & Key Takeaways
 
 These statistical techniques, linear and Ridge regression, allow us to establish and evaluate relationships between different basketball statistics and team performance, providing valuable insights into what contributes to winning in professional basketball.
