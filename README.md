@@ -12,8 +12,8 @@
 [Data Ethics](#data-ethics)
 [Munging, Wrangling, and Cleaning Data](#munging-wrangling-and-cleaning-data)
 [Analysis](#analysis)
-[Conclusion & Key Takeaways](#conclusion--key-takeaways)
-[Sources](#research-source)
+[Conclusion & Key Takeaways](#conclusion-&-key-takeaways)
+[Sources](#dataset-source)
 <br/><br/>
 
 ## Introduction
