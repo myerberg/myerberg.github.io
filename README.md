@@ -70,8 +70,8 @@ For my project on professional basketball data analysis, I chose to utilize a re
 <div class="centered-content" style="text-align:center;">
 
   <img src="https://myerberg.github.io/assets/images/basketball-nba-wallpaper-score.jpg" width="500" />
-  <h4 style="color:#B5E853; text-transform:uppercase;">Properly adhering to the ethics of data science is a guaranteed “score”!</h4>
-  <h5 style="color:#999999;">SOURCE: https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg</h5>
+  <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Properly adhering to the ethics of data science is a guaranteed “score”!</h4>
+  <h5 style="color:#999999; margin: 0;">SOURCE: https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg</h5>
 
 </div>
 
