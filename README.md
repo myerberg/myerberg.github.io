@@ -79,7 +79,7 @@ For my project on professional basketball data analysis, I chose to utilize a re
 
   <img src="https://myerberg.github.io/assets/images/basketball-nba-wallpaper-score.jpg" width="500" />
   
-  <h3 style="color:#B5E853; text-transform:uppercase;">Properly adhering to the ethics of data science is a guaranteed "score"!</h1>
+  <h4 style="color:#B5E853; text-transform:uppercase;">Properly adhering to the ethics of data science is a guaranteed "score"!</h4>
   
   <p style="color:#999999;">SOURCE: https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg</p>
 
