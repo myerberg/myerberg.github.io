@@ -75,6 +75,16 @@ For my project on professional basketball data analysis, I chose to utilize a re
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Source: https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg
 <br/>
 
+<div class="centered-content" style="text-align:center;">
+
+  <img src="https://myerberg.github.io/assets/images/basketball-nba-wallpaper-score.jpg" width="500" />
+  
+  <h3 style="color:#B5E853; text-transform:uppercase;">Properly adhering to the ethics of data science is a guaranteed "score"!</h1>
+  
+  <p style="color:#999999;">SOURCE: https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg</p>
+
+</div>
+
 ## Data Ethics
 
 Data ethics, an integral part of responsibly navigating the field of data science, extends far beyond just sports analytics and is vital in all domains where data is used to make decisions. Ethical considerations in data science encompass how data is collected, processed, analyzed, and interpreted. This is particularly important as the outcomes of data analysis can significantly influence real-world decisions and perceptions.
