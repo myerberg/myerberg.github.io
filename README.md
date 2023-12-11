@@ -548,6 +548,7 @@ plt.show()
 
   <img src="https://myerberg.github.io/assets/images/plot-7-improved-(post-threshold)-ridge-regression-analysis.png" width="600" />
   <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">The “magic” of data science in action!</h4>
+  <h5 style="color:#999999; margin: 0;">On the surface, this plot appears to be very similar to our original Ridge regression plot. However, because we implemented our threshold to remove variables with minimal impact, we see improvement both in simplicity and comprehensibility. This ultimately makes our model more versatile and robust, where less computational resources are needed to draw our conclusions.</h5>
 
 </div>
 
