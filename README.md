@@ -130,7 +130,7 @@ These transformations — handling missing/inconsistent values, removing irrelev
 <div class="centered-content" style="text-align:center;">
 
   <img src="https://myerberg.github.io/assets/images/dataset-sample.png" width="500" />
-  <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Not all columns shown here in the cleaned version of the dataset were used, though they do provide context for further investigation.  </h4>
+  <h5 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Not all columns shown here in the cleaned version of the dataset were used, though they do provide context for further investigation.  </h5>
 
 </div>
 
