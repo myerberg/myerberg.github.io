@@ -464,7 +464,7 @@ plt.show()
 <div class="centered-content" style="text-align:center;">
 
     <img src="https://myerberg.github.io/assets/images/plot-6-original-ridge-regression-analysis.png" width="600" />
-    <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Notice the high R-squared value and low MSE, which tell us our model has high predictive power.</h4>
+    <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Notice the high R-squared and low MSE, which tell us our model has high predictive power.</h4>
 
 </div>
 <br/>
