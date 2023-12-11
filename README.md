@@ -624,4 +624,8 @@ Our example of Ridge regression in NBA analytics is a testament to the broader c
 <br/>
 <br/>
 <br/>
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Go Wizards! (Disclaimer: This tutorial was created by a Washington Wizards fan.) 🏀😊
+<div class="centered-content" style="text-align:center;">
+  
+  <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Go Wizards! (Disclaimer: This tutorial was created by a Washington Wizards fan.) 🏀😊</h4>
+
+</div>
