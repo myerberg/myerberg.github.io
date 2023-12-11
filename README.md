@@ -572,7 +572,7 @@ The comprehensive analysis used in our initial Ridge regression model, which acc
 
 By setting a threshold of 0.01 in our improved model, I determined that o_pts (0.4914) and d_pts (-0.4944) significantly impact the win-loss percentage as their coefficients are notably higher than the threshold. In contrast, fg_percentage, o_asts, and o_ftm, with much smaller coefficients, are considered less impactful.
 
-Refining the Ridge model by applying the threshold led to a slight decrease in the R-squared value to 0.9250. This minor change suggests that the features excluded based on the threshold, while having smaller coefficients, still contributed very slightly to the overall predictive power of the model. However, the improved model, with its formula:
+Refining the Ridge model by applying the threshold led to a slight decrease in the R-squared value to 0.9250. This minor change suggests that the features excluded based on the threshold, while having smaller coefficients, still contributed very slightly to the overall predictive power of the model. However, the improved model, with its formula
 
 ### Improved Ridge Model: Win-Loss = 0.4956 * o_pts - 0.4957 * d_pts + 0.4999
 
