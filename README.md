@@ -341,6 +341,7 @@ for feature in features:
     <div style="margin: 10px;">
         <img src="https://myerberg.github.io/assets/images/plot-5-regression-analysis-for-total-free-throws-made.png" width="400" />
     </div>
+    <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">While our field percentage plot has the highest R-squared among the five features, its value of 0.0549 (much closer to 0 than 1) tells us we should continue our search for a more powerful predictive relationship.</h4>
 </div>
 <br/>
 
@@ -455,8 +456,10 @@ plt.figtext(0.5, -0.1, f'Formula: {ridge_formula_full}\nR-squared: {r2_ridge:.4f
 plt.show()
 ```
 
-<div style="text-align:center;">
+<div class="centered-content" style="text-align:center;">
+
     <img src="https://myerberg.github.io/assets/images/plot-6-original-ridge-regression-analysis.png" width="600" />
+    <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Notice the high R-squared value and low MSE, which tell us our model has high predictive power.</h4>
 </div>
 <br/>
 
