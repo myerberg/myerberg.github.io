@@ -1,9 +1,11 @@
-<div style="text-align:center;">
-    <img src="https://myerberg.github.io/assets/images/fiery-basketball-wallpaper.jpg" width="500" />
+<div class="centered-content" style="text-align:center;">
+
+  <img src="https://myerberg.github.io/assets/images/fiery-basketball-wallpaper.jpg" width="500" />
+  <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Let us explore the exciting intersection of data science and basketball.</h4>
+  <h5 style="color:#999999; margin: 0;">SOURCE: https://images.freecreatives.com/wp-content/uploads/2016/03/Firey-Basketball-Wallpaper.jpg</h5>
+
 </div>
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Let us explore the exciting intersection of data science and basketball. 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Source: https://images.freecreatives.com/wp-content/uploads/2016/03/Firey-Basketball-Wallpaper.jpg
 <br/><br/>
 
 ## Table of Contents
@@ -125,11 +127,13 @@ I also addressed the issue of unnecessary duplicate data. The dataset had instan
 
 These transformations — handling missing/inconsistent values, removing irrelevant information, and eliminating unnecessary duplicates — are integral to preparing the dataset for analysis. By wrangling/cleaning the data, I ensured that the dataset was optimized for developing a robust model, capable of providing insightful and accurate predictions about NBA team performance. This process enhances the quality of the analysis and builds a foundation for deriving meaningful and trustworthy conclusions from the data.
 
-<div style="text-align:center;">
-    <img src="https://myerberg.github.io/assets/images/dataset-sample.png" width="600" />
+<div class="centered-content" style="text-align:center;">
+
+  <img src="https://myerberg.github.io/assets/images/dataset-sample.png" width="500" />
+  <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Not all columns shown here in the cleaned version of the dataset were used, though they do provide context for further investigation.  </h4>
+
 </div>
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Not all columns shown here in the cleaned version of the dataset were used, though they do provide context for further investigation.  
 <br/><br/>
 
 ## Analysis
@@ -540,11 +544,13 @@ plt.figtext(0.5, -0.1, f'Formula (Improved): {ridge_formula_selected_full}\nR-sq
 plt.show()
 ```
 
-<div style="text-align:center;">
-    <img src="https://myerberg.github.io/assets/images/plot-7-improved-(post-threshold)-ridge-regression-analysis.png" width="600" />
+<div class="centered-content" style="text-align:center;">
+
+  <img src="https://myerberg.github.io/assets/images/plot-7-improved-(post-threshold)-ridge-regression-analysis.png" width="600" />
+  <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">The “magic” of data science in action!</h4>
+
 </div>
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The “magic” of data science in action!
 <br/><br/>
 
 <br/>
@@ -580,12 +586,13 @@ The magic here lies in transforming raw, often overwhelming data into clear, evi
 
 Our example of Ridge regression in NBA analytics is a testament to the broader capabilities of data science. It demonstrates how sophisticated analytical tools can harness vast amounts of data to uncover deeper truths in sports, as well as any other field where data is crucial. This is the essence of the magic of data science: using rigorous methods to extract meaning from data, thus enabling better decisions, innovations, and understanding.
 
-<div style="text-align:center;">
-    <img src="https://myerberg.github.io/assets/images/michael-jordan-kobe-bryant.jpg" width="500" />
-</div>
+<div class="centered-content" style="text-align:center;">
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Two of the all-time greats, MJ and Kobe!
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Source: https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg
+  <img src="https://myerberg.github.io/assets/images/michael-jordan-kobe-bryant.jpg" width="500" />
+  <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Two of the all-time greats, MJ and Kobe!</h4>
+  <h5 style="color:#999999; margin: 0;">SOURCE: https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg</h5>
+
+</div>
 
 <br/>
 <br/>
