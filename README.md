@@ -625,7 +625,7 @@ Our example of Ridge regression in NBA analytics is a testament to the broader c
   <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html">scikit-learn Documentation: Ridge Regression</a></li>
   <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html">scikit-learn Documentation: R² Score</a></li>
   <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html">scikit-learn Documentation: Pipeline</a></li>
-  <li><a href="https://scikit-learn.org/stable/modules/preprocessing.html">scikit-learn Documentation: Preprocessing</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/preprocessing.html">scikit-learn Documentation: Preprocessing Data</a></li>
   <li><a href="https://pythonsimplified.com/what-is-a-scikit-learn-pipeline/">What is a Scikit-learn Pipeline? - Python Simplified</a></li>
   <li><a href="https://docs.google.com/document/d/11LZweIYD9MmjiZgY-VW1IXUPOP1k-SwXNiOdJDVC7Vw/edit#heading=h.ut4ttuudwb6i">Web-scraping, Web-crawling, and APIs Guidebook - University of Michigan</a></li>
 </ol>
