@@ -614,7 +614,7 @@ Our example of Ridge regression in NBA analytics is a testament to the broader c
 </ul>
 
 <h4>Research Sources (Learn More!)</h4>
-<ul>
+<ol>
   <li><a href="https://machinelearningmastery.com/ridge-regression-with-python/">How to Develop Ridge Regression Models in Python - Machine Learning Mastery</a></li>
   <li><a href="https://www.statology.org/ridge-regression/">Introduction to Ridge Regression - Statology</a></li>
   <li><a href="https://datagy.io/python-sklearn-linear-regression/">Linear Regression in Scikit-Learn (sklearn): An Introduction - datagy</a></li>
@@ -628,7 +628,7 @@ Our example of Ridge regression in NBA analytics is a testament to the broader c
   <li><a href="https://scikit-learn.org/stable/modules/preprocessing.html">scikit-learn Documentation: Preprocessing</a></li>
   <li><a href="https://pythonsimplified.com/what-is-a-scikit-learn-pipeline/">What is a Scikit-learn Pipeline? - Python Simplified</a></li>
   <li><a href="https://docs.google.com/document/d/11LZweIYD9MmjiZgY-VW1IXUPOP1k-SwXNiOdJDVC7Vw/edit#heading=h.ut4ttuudwb6i">Web-scraping, Web-crawling, and APIs Guidebook - University of Michigan</a></li>
-</ul>
+</ol>
 
 <br/>
 <br/>
