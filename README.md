@@ -608,26 +608,26 @@ Our example of Ridge regression in NBA analytics is a testament to the broader c
 <br/>
 
 ## Sources
-<h4>Dataset Source:</h4>
+<h4>Dataset Source</h4>
 <ul>
-    <li><a href="https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball">https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball</a></li>
+    <li><a href="https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball">Men’s Professional Basketball - Kaggle</a></li>
 </ul>
 
-<h4>Research Sources:</h4>
+<h4>Research Sources (Learn More!)</h4>
 <ul>
-    <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html">https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html</a></li>
-    <li><a href="https://machinelearningmastery.com/ridge-regression-with-python/">https://machinelearningmastery.com/ridge-regression-with-python/</a></li>
-    <li><a href="https://www.statology.org/ridge-regression/">https://www.statology.org/ridge-regression/</a></li>
-    <li><a href="https://cs229.stanford.edu/notes2021fall/lecture10-ridge-regression.pdf">https://cs229.stanford.edu/notes2021fall/lecture10-ridge-regression.pdf</a></li>
-    <li><a href="https://www.askpython.com/python/examples/ridge-regression">https://www.askpython.com/python/examples/ridge-regression</a></li>
-    <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html">https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html</a></li>
-    <li><a href="https://datagy.io/python-sklearn-linear-regression/">https://datagy.io/python-sklearn-linear-regression/</a></li>
-    <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html">https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html</a></li>
-    <li><a href="https://pythonsimplified.com/what-is-a-scikit-learn-pipeline/">https://pythonsimplified.com/what-is-a-scikit-learn-pipeline/</a></li>
-    <li><a href="https://scikit-learn.org/stable/modules/preprocessing.html">https://scikit-learn.org/stable/modules/preprocessing.html</a></li>
-    <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html</a></li>
-    <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html</a></li>
-    <li><a href="https://docs.google.com/document/d/11LZweIYD9MmjiZgY-VW1IXUPOP1k-SwXNiOdJDVC7Vw/edit#heading=h.ut4ttuudwb6i">https://docs.google.com/document/d/11LZweIYD9MmjiZgY-VW1IXUPOP1k-SwXNiOdJDVC7Vw/edit#heading=h.ut4ttuudwb6i</a></li>
+  <li><a href="https://machinelearningmastery.com/ridge-regression-with-python/">How to Develop Ridge Regression Models in Python - Machine Learning Mastery</a></li>
+  <li><a href="https://www.statology.org/ridge-regression/">Introduction to Ridge Regression - Statology</a></li>
+  <li><a href="https://datagy.io/python-sklearn-linear-regression/">Linear Regression in Scikit-Learn (sklearn): An Introduction - datagy</a></li>
+  <li><a href="https://www.askpython.com/python/examples/ridge-regression">Ridge Regression in Python - AskPython</a></li>
+  <li><a href="https://cs229.stanford.edu/notes2021fall/lecture10-ridge-regression.pdf">Ridge Regression: Regulating overfitting when using many features - Stanford CS229</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html">scikit-learn Documentation: Mean Squared Error</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html">scikit-learn Documentation: Linear Regression</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html">scikit-learn Documentation: Ridge Regression</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html">scikit-learn Documentation: R² Score</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html">scikit-learn Documentation: Pipeline</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/preprocessing.html">scikit-learn Documentation: Preprocessing</a></li>
+  <li><a href="https://pythonsimplified.com/what-is-a-scikit-learn-pipeline/">What is a Scikit-learn Pipeline? - Python Simplified</a></li>
+  <li><a href="https://docs.google.com/document/d/11LZweIYD9MmjiZgY-VW1IXUPOP1k-SwXNiOdJDVC7Vw/edit#heading=h.ut4ttuudwb6i">Web-scraping, Web-crawling, and APIs Guidebook - University of Michigan</a></li>
 </ul>
 
 <br/>
