@@ -2,7 +2,7 @@
 
   <img src="https://myerberg.github.io/assets/images/fiery-basketball-wallpaper.jpg" width="500" />
   <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Let us explore the exciting intersection of data science and basketball.</h4>
-  <h5 style="color:#999999; margin: 0;">SOURCE: https://images.freecreatives.com/wp-content/uploads/2016/03/Firey-Basketball-Wallpaper.jpg</h5>
+  <h5 style="color:#999999; margin: 0;"><a href="https://images.freecreatives.com/wp-content/uploads/2016/03/Firey-Basketball-Wallpaper.jpg" target="_blank">SOURCE</a></h5>
 
 </div>
 
@@ -73,7 +73,7 @@ For my project on professional basketball data analysis, I chose to utilize a <a
 
   <img src="https://myerberg.github.io/assets/images/basketball-nba-wallpaper-score.jpg" width="500" />
   <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Properly adhering to the ethics of data science is a guaranteed “score”!</h4>
-  <h5 style="color:#999999; margin: 0;">SOURCE: https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg</h5>
+  <h5 style="color:#999999; margin: 0;"><a href="https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg" target="_blank">SOURCE</a></h5>
 
 </div>
 
@@ -600,7 +600,7 @@ Our example of Ridge regression in NBA analytics is a testament to the broader c
 
   <img src="https://myerberg.github.io/assets/images/michael-jordan-kobe-bryant.jpg" width="500" />
   <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Two of the all-time greats, MJ and Kobe!</h4>
-  <h5 style="color:#999999; margin: 0;">SOURCE: https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg</h5>
+  <h5 style="color:#999999; margin: 0;"><a href="https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg" target="_blank">SOURCE</h5>
 
 </div>
 
