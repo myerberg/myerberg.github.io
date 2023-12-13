@@ -600,7 +600,7 @@ Our example of Ridge regression in NBA analytics is a testament to the broader c
 
   <img src="https://myerberg.github.io/assets/images/michael-jordan-kobe-bryant.jpg" width="500" />
   <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Two of the all-time greats, MJ and Kobe!</h4>
-  <h5 style="color:#999999; margin: 0;"><a href="https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg" target="_blank">SOURCE</h5>
+  <h5 style="color:#999999; margin: 0;"><a href="https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg" target="_blank">SOURCE</a></h5>
 
 </div>
 
