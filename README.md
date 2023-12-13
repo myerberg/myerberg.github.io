@@ -64,7 +64,7 @@ While not criminal, breaching a website’s terms of service can lead to contrac
 
 Considering these factors aligns the scraping activities with legal requirements and upholds ethical standards in data collection.
 
-For my project on professional basketball data analysis, I chose to utilize a <a href="https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball">ready-made dataset from Kaggle</a>, which contained comprehensive NBA data spanning from 1937 to 2012. By using this dataset, I was able to skip the web scraping phase and focus directly on data exploration and analysis. This pre-compiled dataset saved time and effort that would otherwise be spent in writing and testing web scraping scripts, parsing the scraped data, and dealing with potential issues like web page changes or data access restrictions (ESPN imposes these very restrictions, blocking web scrapers from pulling its data). However, for projects where up-to-date or specific data is required, writing a web scraper in Python is an invaluable skill that allows for the collection of real-time data directly from the web.
+For my project on professional basketball data analysis, I chose to utilize a <a href="https://www.kaggle.com/datasets/open-source-sports/mens-professional-basketball" target="_blank">ready-made dataset from Kaggle</a>, which contained comprehensive NBA data spanning from 1937 to 2012. By using this dataset, I was able to skip the web scraping phase and focus directly on data exploration and analysis. This pre-compiled dataset saved time and effort that would otherwise be spent in writing and testing web scraping scripts, parsing the scraped data, and dealing with potential issues like web page changes or data access restrictions (ESPN imposes these very restrictions, blocking web scrapers from pulling its data). However, for projects where up-to-date or specific data is required, writing a web scraper in Python is an invaluable skill that allows for the collection of real-time data directly from the web.
 
 <br/>
 <br/>
@@ -615,19 +615,19 @@ Our example of Ridge regression in NBA analytics is a testament to the broader c
 
 <h4>Research Sources (Learn More!)</h4>
 <ol>
-  <li><a href="https://machinelearningmastery.com/ridge-regression-with-python/">How to Develop Ridge Regression Models in Python - Machine Learning Mastery</a></li>
-  <li><a href="https://www.statology.org/ridge-regression/">Introduction to Ridge Regression - Statology</a></li>
-  <li><a href="https://datagy.io/python-sklearn-linear-regression/">Linear Regression in Scikit-Learn (sklearn): An Introduction - datagy</a></li>
-  <li><a href="https://www.askpython.com/python/examples/ridge-regression">Ridge Regression in Python - AskPython</a></li>
-  <li><a href="https://cs229.stanford.edu/notes2021fall/lecture10-ridge-regression.pdf">Ridge Regression: Regulating overfitting when using many features - Stanford CS229</a></li>
-  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html">scikit-learn Documentation: Mean Squared Error</a></li>
-  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html">scikit-learn Documentation: Linear Regression</a></li>
-  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html">scikit-learn Documentation: Ridge Regression</a></li>
-  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html">scikit-learn Documentation: R² Score</a></li>
-  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html">scikit-learn Documentation: Pipeline</a></li>
-  <li><a href="https://scikit-learn.org/stable/modules/preprocessing.html">scikit-learn Documentation: Preprocessing Data</a></li>
-  <li><a href="https://pythonsimplified.com/what-is-a-scikit-learn-pipeline/">What is a Scikit-learn Pipeline? - Python Simplified</a></li>
-  <li><a href="https://docs.google.com/document/d/11LZweIYD9MmjiZgY-VW1IXUPOP1k-SwXNiOdJDVC7Vw/edit#heading=h.ut4ttuudwb6i">Web-scraping, Web-crawling, and APIs Guidebook - University of Michigan</a></li>
+  <li><a href="https://machinelearningmastery.com/ridge-regression-with-python/" target="_blank">How to Develop Ridge Regression Models in Python - Machine Learning Mastery</a></li>
+  <li><a href="https://www.statology.org/ridge-regression/" target="_blank">Introduction to Ridge Regression - Statology</a></li>
+  <li><a href="https://datagy.io/python-sklearn-linear-regression/" target="_blank">Linear Regression in Scikit-Learn (sklearn): An Introduction - datagy</a></li>
+  <li><a href="https://www.askpython.com/python/examples/ridge-regression" target="_blank">Ridge Regression in Python - AskPython</a></li>
+  <li><a href="https://cs229.stanford.edu/notes2021fall/lecture10-ridge-regression.pdf" target="_blank">Ridge Regression: Regulating overfitting when using many features - Stanford CS229</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html" target="_blank">scikit-learn Documentation: Mean Squared Error</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html" target="_blank">scikit-learn Documentation: Linear Regression</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html" target="_blank">scikit-learn Documentation: Ridge Regression</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html" target="_blank">scikit-learn Documentation: R² Score</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html" target="_blank">scikit-learn Documentation: Pipeline</a></li>
+  <li><a href="https://scikit-learn.org/stable/modules/preprocessing.html" target="_blank">scikit-learn Documentation: Preprocessing Data</a></li>
+  <li><a href="https://pythonsimplified.com/what-is-a-scikit-learn-pipeline/" target="_blank">What is a Scikit-learn Pipeline? - Python Simplified</a></li>
+  <li><a href="https://docs.google.com/document/d/11LZweIYD9MmjiZgY-VW1IXUPOP1k-SwXNiOdJDVC7Vw/edit#heading=h.ut4ttuudwb6i" target="_blank">Web-scraping, Web-crawling, and APIs Guidebook - University of Michigan</a></li>
 </ol>
 
 <br/>
