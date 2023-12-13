@@ -23,7 +23,7 @@ Welcome to my data science tutorial, where I will guide you through this fascina
 
 Throughout this tutorial, I will explore the statistical analysis of NBA team performance using a dataset that encompasses a broad spectrum of team features, including scoring patterns and defensive capabilities. You will learn how to apply data science methodologies to analyze a rich dataset effectively. We will delve into identifying key predictors of a team’s win percentage, a process that involves using historical data to forecast a team’s future success accurately.
 
-The focus will be on understanding and implementing two types of regression models — linear regression<a href="#sources"><sup>(3)(7)</sup> and Ridge regression<a href="#sources"><sup>(1)(2)(4)(5)(8)</sup></a> — and unraveling their significance in making predictions. You will get insights into how multicollinearity affects the predictive models and how Ridge regression addresses this issue. Also, you will see firsthand how standardization plays a role in preparing our data for these models.
+The focus will be on understanding and implementing two types of regression models — linear regression<a href="#sources"><sup>(3)(7)</sup></a> and Ridge regression<a href="#sources"><sup>(1)(2)(4)(5)(8)</sup></a> — and unraveling their significance in making predictions. You will get insights into how multicollinearity affects the predictive models and how Ridge regression addresses this issue. Also, you will see firsthand how standardization plays a role in preparing our data for these models.
 
 By the end of this tutorial, you should have a deeper understanding of the game of basketball from a data science perspective. This knowledge is not just academically fascinating; it equips team managers, coaches, and analysts with crucial insights, enabling informed decisions that could be the difference in a highly competitive sporting environment. Whether you are a data science enthusiast, a basketball fan, or someone interested in the intersection of sports and analytics, this tutorial is designed to offer you both foundational knowledge and practical skills in sports data analysis.  
 
@@ -43,7 +43,7 @@ This process involves:
 
 This setup allows for targeted extraction of data from specific parts of a website, making it a powerful tool for collecting up-to-date sports data. However, it is crucial to be aware of the applicable legal and ethical considerations, as not all websites permit scraping, and heavy scraping activity can burden a website’s servers.
 
-In the United States, there are four primary legal grounds<a href="#sources"><sup>(13)</sup> website owners might invoke to restrict or prevent web scraping:
+In the United States, there are four primary legal grounds<a href="#sources"><sup>(13)</sup></a> website owners might invoke to restrict or prevent web scraping:
 
 ### 1) Copyright Infringement
 In the United States, copyright protection is “automatic” and extends to online content. Fair use also applies online, as well as the concept of the public domain. While the direct duplication of original expression is often illegal, the U.S. legal system, as evidenced in the ruling of Feist Publications, Inc. v. Rural Telephone Service Company, Inc., allows the duplication of facts. This distinction is crucial for web scraping projects focusing on data and facts rather than creative expression.
@@ -150,11 +150,11 @@ This is a basic form of regression analysis, which is a statistical method used 
 
 ### R-squared:
 
-This<a href="#sources"><sup>(9)</sup> tells us how much of the variation in our dependent variable (win-loss percentage) can be explained by the independent variable (like total points scored). An R-squared value closer to 1 means the model explains much of the variation in our data, which is a sign that we have produced a useful model.
+This<a href="#sources"><sup>(9)</sup></a> tells us how much of the variation in our dependent variable (win-loss percentage) can be explained by the independent variable (like total points scored). An R-squared value closer to 1 means the model explains much of the variation in our data, which is a sign that we have produced a useful model.
 
 ### Mean Squared Error (MSE):
 
-This<a href="#sources"><sup>(6)</sup> measures the average of the squares of the errors, that is, the average squared difference between the actual values and the values predicted by the model. A lower MSE means the model is more accurate.
+This<a href="#sources"><sup>(6)</sup></a> measures the average of the squares of the errors, that is, the average squared difference between the actual values and the values predicted by the model. A lower MSE means the model is more accurate.
 
 ### Ridge Regression:
 
@@ -162,7 +162,7 @@ In my analysis of NBA statistics, I chose Ridge regression, an advanced variant 
 
 The theory behind Ridge regression involves modifying linear regression by introducing a penalty on the size of the coefficients. Here, coefficients are numerical values that represent the strength and direction of the relationship between each independent variable and the dependent variable. However, in Ridge regression, there is an additional component in the calculation that penalizes large coefficients, which prevents any single feature from having a disproportionately large influence on the predictions. This approach is particularly effective in addressing the challenges posed by multicollinearity. The penalty term’s strength is determined by a parameter known as alpha. The higher the value of alpha, the greater the penalty imposed on large coefficients, which in turn reduces the risk of overfitting. Overfitting occurs when a model is too closely fitted to the specific details of the training data, making it perform poorly on new data.
 
-In my implementation of the Ridge regression model for the NBA dataset, I used a “pipeline”<a href="#sources"><sup>(10)(12)</sup> approach. The first step in this pipeline was standardization<a href="#sources"><sup>(11)</sup>, a process that adjusts the values of each feature in the dataset to have a mean of zero and a standard deviation of one. Standardization is critical because it ensures that all features contribute equally to the prediction and no single feature with large values overpowers the model. This step is especially important for Ridge regression, as the penalty applied to the coefficients is effective only when all features are on a comparable scale. This approach allowed me to accurately assess the impact of each basketball statistic on a team’s win-loss percentage, despite the potential correlations among these features.  
+In my implementation of the Ridge regression model for the NBA dataset, I used a “pipeline”<a href="#sources"><sup>(10)(12)</sup></a> approach. The first step in this pipeline was standardization<a href="#sources"><sup>(11)</sup></a>, a process that adjusts the values of each feature in the dataset to have a mean of zero and a standard deviation of one. Standardization is critical because it ensures that all features contribute equally to the prediction and no single feature with large values overpowers the model. This step is especially important for Ridge regression, as the penalty applied to the coefficients is effective only when all features are on a comparable scale. This approach allowed me to accurately assess the impact of each basketball statistic on a team’s win-loss percentage, despite the potential correlations among these features.  
 <br/><br/>
 
 ### Let us examine my code step-by-step. In the spirit of reiterating these important concepts, we will delve deeper within their respective contexts:
