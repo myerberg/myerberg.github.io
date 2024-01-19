@@ -2,6 +2,8 @@
   {% assign site_settings = site.data.RidgeRegressionNBA %}
 {% elsif page.path contains 'AdvancedDataScience/PivotTables' %}
   {% assign site_settings = site.data.PivotTables %}
+{% else %}
+  {% assign site_settings = site %}
 {% endif %}
 
 <!DOCTYPE html>
@@ -13,17 +15,29 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
 
-{% seo %}
+    {% seo %}
+    <title>
+      {% if page.url == '/' %}
+        My Software Projects
+      {% else %}
+        {{ site_settings.title | default: site.title | default: site.github.repository_name }}
+      {% endif %}
+    </title>
   </head>
 
   <body>
-
     <header>
       <div class="container">
         <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <h1>
+            {% if page.url == '/' %}
+              My Software Projects
+            {% else %}
+              {{ site_settings.title | default: site.title | default: site.github.repository_name }}
+            {% endif %}
+          </h1>
         </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        <h2>{{ site_settings.description | default: site.description | default: site.github.project_tagline }}</h2>
 
         <section id="downloads">
           {% if site.show_downloads %}
