@@ -40,12 +40,12 @@ Pivot Tables are an invaluable tool for dealing with large and complex datasets,
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/assets/images/" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">'PivotTable' option in ribbon.</h4>
-
+</div>
 - In the "Create PivotTable" dialog box, ensure your table range is correct and choose where you want the Pivot Table to be placed (New Worksheet is often preferred for clarity).
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/assets/images/" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Create PivotTable dialog box.</h4>
-
+</div>
 #### 3. Setting Up Pivot Table:
 
 - In the PivotTable Fields pane, drag "Product Category" to the Rows area.
