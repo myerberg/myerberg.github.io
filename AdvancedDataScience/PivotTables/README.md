@@ -25,8 +25,8 @@ Pivot Tables are an invaluable tool for dealing with large and complex datasets,
 
 ## 1. Data Preparation:
 
-— Ensure the dataset is in a table format with clear headers.
-— Each column should have a unique name (i.e. Date, Product Category, Salesperson, etc.).
+- Ensure the dataset is in a table format with clear headers.
+- Each column should have a unique name (i.e. Date, Product Category, Salesperson, etc.).
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/assets/images/" width="500" />
@@ -35,8 +35,8 @@ Pivot Tables are an invaluable tool for dealing with large and complex datasets,
 
 ## 2. Inserting a Pivot Table:
 
-— Click anywhere inside your dataset.
-— Navigate to the "Insert" tab on the Excel ribbon.
+- Click anywhere inside your dataset.
+- Navigate to the "Insert" tab on the Excel ribbon.
 - Click on "PivotTable."
 
 <div class="centered-content" style="text-align:center;">
@@ -182,7 +182,7 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/assets/images/" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Sorted by hours worked./h4>
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Sorted by hours worked.</h4>
 </div>
 
 - This setup shows the total hours worked by each employee and department.
