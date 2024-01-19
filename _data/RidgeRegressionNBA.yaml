@@ -1,0 +1,5 @@
+title: "Using Ridge Regression to Predict NBA Win Percentage"
+description: "Tyler Myerberg"
+baseurl: ""
+url: "https://myerberg.github.io/DataScience/RidgeRegressionNBA"
+theme: "jekyll-theme-hacker"
