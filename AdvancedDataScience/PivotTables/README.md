@@ -192,7 +192,7 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 - Click on any number in the "Sum of Hours Worked" column.
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/assets/images/" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">First sorted by sum of hours worked./h4>
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">First sorted by sum of hours worked.</h4>
 </div>
 - Use the "Sort Largest to Smallest" feature under the "Data" tab.
 <div class="centered-content" style="text-align:center;">
