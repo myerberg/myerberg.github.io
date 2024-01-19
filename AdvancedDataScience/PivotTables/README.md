@@ -1,6 +1,6 @@
 <div class="centered-content" style="text-align:center;">
   
-  <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Pivot Tables are integral in the world of data analysis and visualization.</h4>
+  <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">PivotTables are integral in the world of data analysis and visualization.</h4>
 
 </div>
 
@@ -14,16 +14,16 @@
 <br/><br/>
 
 ## What
-In this tutorial on Pivot Tables in Microsoft Excel, we will learn how this powerful tool can be used to summarize, analyze, explore, and present your data. Pivot Tables allow us to easily rearrange and manipulate large amounts of data in a dynamic way, offering insights and patterns that might not be immediately evident. We can group and sort data, as well as perform calculations like sums, averages, and counts, all with simple drag-and-drop functionality. Pivot Tables are ideal for large datasets, where we can create concise reports and visualizations, making our data more accessible and understandable.
+In this tutorial on PivotTables in Microsoft Excel, we will learn how this powerful tool can be used to summarize, analyze, explore, and present your data. PivotTables allow us to easily rearrange and manipulate large amounts of data in a dynamic way, offering insights and patterns that might not be immediately evident. We can group and sort data, as well as perform calculations like sums, averages, and counts, all with simple drag-and-drop functionality. PivotTables are ideal for large datasets, where we can create concise reports and visualizations, making our data more accessible and understandable.
 <br/><br/>
 
 ## Why
-Pivot Tables are an invaluable tool for dealing with large and complex datasets, such as business analysts, researchers, or financial professionals. They are particularly useful for summarizing and analyzing data, allowing us to spot trends, patterns, and anomalies quickly. Example uses could include creating comprehensive sales reports, performing customer segmentation, or analyzing financial data. Pivot Tables offer a flexible and efficient way to rearrange, group, and summarize data. They are also extremely helpful in preparing data for presentations or decision-making, as they can turn extensive datasets into concise tables and clear charts. In essence, Pivot Tables save time and enhance the clarity of data analysis.
+PivotTables are an invaluable tool for dealing with large and complex datasets, such as business analysts, researchers, or financial professionals. They are particularly useful for summarizing and analyzing data, allowing us to spot trends, patterns, and anomalies quickly. Example uses could include creating comprehensive sales reports, performing customer segmentation, or analyzing financial data. PivotTables offer a flexible and efficient way to rearrange, group, and summarize data. They are also extremely helpful in preparing data for presentations or decision-making, as they can turn extensive datasets into concise tables and clear charts. In essence, Pivot Tables save time and enhance the clarity of data analysis.
 <br/><br/>
 
 ## How
 
-### Dataset 1 - Sales Data
+### Product Sales (Dataset 1)
 
 ## 1. Data Preparation:
 
@@ -31,7 +31,7 @@ Pivot Tables are an invaluable tool for dealing with large and complex datasets,
 - Each column should have a unique name (i.e. Date, Product Category, Salesperson, etc.).
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_1.0.png" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">An example dataset formatted correctly in Excel.</h4>
 </div>
 
@@ -42,30 +42,32 @@ Pivot Tables are an invaluable tool for dealing with large and complex datasets,
 - Click on "PivotTable."
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_2.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">'PivotTable' option in ribbon.</h4>
 </div>
 
-- In the "Create PivotTable" dialog box, ensure your table range is correct and choose where you want the Pivot Table to be placed (New Worksheet is often preferred for clarity).
+- In the "Create PivotTable" dialog box, ensure your table range is correct and choose where you want the PivotTable to be placed (New Worksheet is often preferred for clarity). You can rename the Sheet where you PivotTable is populated for clarity. 
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_2.1" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Create PivotTable dialog box.</h4>
+<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_2.2" width="500" />
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">New sheet.</h4>
 </div>
 
-## 3. Setting Up Pivot Table:
+## 3. Setting Up PivotTable:
 
 - In the PivotTable Fields pane, drag "Product Category" to the Rows area.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_3.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Product Category" to Rows.</h4>
 </div>
 
 - Drag "Total Sale" to the Values area. By default, Excel will sum the values.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_3.1" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Total Sale" to Values.</h4>
 </div>
 
@@ -77,7 +79,7 @@ Pivot Tables are an invaluable tool for dealing with large and complex datasets,
 - Now, the Pivot Table shows total sales per category and further breaks it down by each salesperson.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_4.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Updated Pivot Table with both categories and salesperson details.</h4>
 </div>
 
@@ -87,14 +89,14 @@ Pivot Tables are an invaluable tool for dealing with large and complex datasets,
 - Go to the "Data" tab, and use the "Sort Largest to Smallest" feature.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_5.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Before Sort.</h4> 
 </div>
 
 - This sorts categories by total sales and salespeople by total sales within each category.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_5.1" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">After Sort.</h4>
 </div>
 
@@ -104,7 +106,7 @@ Pivot Tables are an invaluable tool for dealing with large and complex datasets,
 - Within each category, the top-listed salesperson is the one with the highest sales.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_6.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Highlighted top of the list.</h4>
 </div>
 
@@ -120,7 +122,7 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 — Each column should have a unique name (i.e. Date, Product Category, Salesperson, etc.).
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_1.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">An example dataset formatted correctly in Excel.</h4>
 </div>
 
@@ -131,14 +133,14 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 - Click on "PivotTable."
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_2.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"PivotTable" option in ribbon.</h4>
 </div>
 
-- In the "Create PivotTable" dialog box, ensure your table range is correct and choose where you want the Pivot Table to be placed (New Worksheet is often preferred for clarity).
+- In the "Create PivotTable" dialog box, ensure your table range is correct and choose where you want the Pivot Table to be placed (New Worksheet is often preferred for clarity). As with Dataset, you can rename the new Sheet for clarity.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_2.1" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Create PivotTable dialog box.</h4>
 </div>
 
@@ -147,21 +149,21 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 - In the PivotTable Fields pane, drag "Department" to the Rows area.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_3.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Department" to Rows.</h4>
 </div>
 
 - Drag "Status" to the Columns area.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_3.1" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Status" to Columns.</h4>
 </div>
 
 - Drag 'Status' again to the Values area. Change the Value Field Setting to "Count".
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_3.2" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Status" to Values and change setting to "Count."</h4>
 </div>
 
@@ -173,7 +175,7 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 - Sort this data to identify which department has the highest and lowest attendance rates.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_4.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Sorted by attendance.</h4>
 </div>
 
@@ -183,7 +185,7 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 - Drag "Hours Worked" to the Values area. By default, it will sum the hours.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_5.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Sorted by hours worked.</h4>
 </div>
 
@@ -193,12 +195,12 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 
 - Click on any number in the "Sum of Hours Worked" column.
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_6.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">First sorted by sum of hours worked.</h4>
 </div>
 - Use the "Sort Largest to Smallest" feature under the "Data" tab.
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_6.1" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Next we sort smallest to largest.</h4>
 </div>
 - This sorts the departments and employees based on the total hours worked.
@@ -208,7 +210,7 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 - The top item(s) in your Pivot Table now represent the department(s) with the most hours worked.
 - Within each department, the top-listed employee is the one with the most hours.
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_7.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Final Pivot Table with sorted results, highlighting departments and employees with the most hours worked.</h4>
 </div>
 
@@ -219,8 +221,6 @@ As we mentioned above in our first example using Sales Data, we can refresh our 
 
 ## Data
 
-### Here you can find my two pseudo-datasets used above in Excel format. :)
+### Here you can find my two pseudo-datasets used above in Excel spreadsheet, with the PivotTables generated according to the above instructions. :)
 <br/>
-<h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">Sales Data</a></h2>
-<br/>
-<h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">Employee Attendance</a></h2>
+<h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">Product Sales & Employee Attendance Data</a></h2>
