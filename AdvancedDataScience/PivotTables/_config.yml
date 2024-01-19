@@ -2,7 +2,7 @@
 title: Pivot Tables
 description: Tyler Myerberg
 baseurl: ""
-url: "https://myerberg.github.io/DataScience/PivotTables"
+url: "https://myerberg.github.io/AdvancedDataScience/PivotTables"
 # Build settings
 theme: jekyll-theme-hacker
 markdown: kramdown
