@@ -1,8 +1,8 @@
 # Site settings
-title: Using Ridge Regression to Predict NBA Win Percentage
+title: Pivot Tables
 description: Tyler Myerberg
 baseurl: ""
-url: "https://myerberg.github.io"
+url: "https://myerberg.github.io/DataScience/PivotTables"
 # Build settings
 theme: jekyll-theme-hacker
 markdown: kramdown
