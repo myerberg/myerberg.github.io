@@ -19,7 +19,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 ### Product Sales (Dataset 1)
 <br/>
 
-## 1. Data Preparation:
+## Step 1: Data Preparation
 
 - Ensure the dataset is in a table format with clear headers.
 - Each column should have a unique name (i.e. Date, Product Category, Salesperson, etc.).
@@ -30,7 +30,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 </div>
 <br/><br/>
 
-## 2. Inserting a Pivot Table:
+## Step 2: Inserting a PivotTable
 
 - Click anywhere inside your dataset.
 - Navigate to the "Insert" tab on the Excel ribbon.
@@ -51,7 +51,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 </div>
 <br/><br/>
 
-## 3. Setting Up PivotTable:
+## Step 3: Setting Up PivotTable
 
 - In the PivotTable Fields pane, drag "Product Category" to the Rows area.
 
@@ -70,7 +70,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 -  This setup will show the total sales per category.
 <br/><br/>
 
-## 4. Adding a Layer to Identify Top Salesperson:
+## Step 4: Adding a Layer to Identify Top Salesperson
 
 - Drag "Salesperson" to the Rows area, placing it below "Product Category." This will breakdown the sales within each category by salesperson.
 - Now, the PivotTable shows total sales per category and further breaks it down by each salesperson.
@@ -81,7 +81,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 </div>
 <br/><br/>
 
-## 5. Sorting to Identify Best-Selling Category and Top Salesperson:
+## Step 5: Sorting to Identify Best-Selling Category and Top Salesperson
 
 - Click on any number in the "Sum of Total Sale" column that corresponds to a "product category."
 - Go to the "Data" tab, select Sort & Filter, and choose the "Descending" feature. Ensure that the Summary description matches your intended results. It should read "Sort Product Category by Sum of Total Sale in descending order". Select OK.
@@ -99,7 +99,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 </div>
 <br/><br/>
 
-## 6. Analyzing and Interpreting the Data:
+## Step 6: Analyzing and Interpreting the Data
 
 - The top item in the PivotTable is now the best-selling category.
 - Within each category, the top-listed salesperson is the one with the highest sales.
@@ -118,7 +118,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 ### Dataset 2 - Employee Attendance
 <br/>
 
-## 1. Data Preparation:
+## Step 1: Data Preparation
 
 — Ensure the dataset is in a table format with clear headers.
 — Each column should have a unique name (i.e. Date, Product Category, Salesperson, etc.).
@@ -129,7 +129,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 </div>
 <br/><br/>
 
-## 2. Inserting a Pivot Table:
+## Step 2: Inserting a PivotTable
 
 — Click anywhere inside your dataset.
 — Navigate to the "Insert" tab on the Excel ribbon and click "PivotTable".
@@ -150,7 +150,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 </div>
 <br/><br/>
 
-## 3. Setting Up Pivot Table:
+## Step 3: Setting Up PivotTable
 
 - In the PivotTable Fields pane, drag "Department" to the Rows area.
 
@@ -176,7 +176,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 - This setup provides a count of different attendance statuses (Present, Absent, Late) for each department.
 <br/><br/>
 
-## 4. Setting Up Pivot Table to Analyze Hours Worked:
+## Step 4: Setting Up Pivot Table to Analyze Hours Worked
 
 - Drag "Department" to the Rows area and "Employee Name" below it.
 - Drag "Hours Worked" to the Values area. By default, it will sum the hours.
@@ -189,7 +189,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 - This setup shows the total hours worked by each employee and department.
 <br/><br/>
 
-## 5. Sorting to Identify Departments and Employees with Most Hours Worked:
+## Step 5: Sorting to Identify Departments and Employees with Most Hours Worked
 
 - Click on any number in the "Total Sum of Hours Worked" column that corresponds to a "department" row.
 - Go to the “Data” tab, select Sort & Filter, and choose the “Ascending” feature.
@@ -202,7 +202,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 - This sorts the departments based upon the total hours worked. It will also sort each department in ascending order by employee.
 <br/><br/>
 
-## 6. Analyzing and Interpreting the Data:
+## Step 6: Analyzing and Interpreting the Data
 
 - The top item in your PivotTable now represents the department with the least hours worked (in this case, Operations).
 - Within each department, the top-listed employee is the one with the least hours.
