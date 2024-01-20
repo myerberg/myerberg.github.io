@@ -83,8 +83,8 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 
 ## 5. Sorting to Identify Best-Selling Category and Top Salesperson:
 
-- Click on any number in the "Sum of Total Sale" column that corresponds to a sales category.
-- Go to the "Data" tab, select Sort & Filter, and choose the "Descending" feature. Ensure that the Summary description matches your intended results. Select OK.
+- Click on any number in the "Sum of Total Sale" column that corresponds to a "product category."
+- Go to the "Data" tab, select Sort & Filter, and choose the "Descending" feature. Ensure that the Summary description matches your intended results. It should read "Sort Product Category by Sum of Total Sale in descending order". Select OK.
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_5.0.png" width="600" />
@@ -195,7 +195,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 - Go to the “Data” tab, select Sort & Filter, and choose the “Ascending” feature.
 - Ensure that the Summary description matches your intended results. It should read "Sort Department by Sum of Hours Worked in ascending order using values in this column: Total Sum of Hours Worked". Select OK.
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_5.0.png" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_5.0.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">We sort departments and the associated employees smallest to largest.</h4>
 </div>
 <br/><br/>
