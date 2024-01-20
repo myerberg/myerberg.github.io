@@ -31,7 +31,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 - Each column should have a unique name (i.e. Date, Product Category, Salesperson, etc.).
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_1.0.png" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_1.0.png" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">An example dataset formatted correctly in Excel.</h4>
 </div>
 
@@ -42,16 +42,16 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 - Click on "PivotTable."
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_2.0" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_2.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">'PivotTable' option in ribbon.</h4>
 </div>
 
 - In the "Create PivotTable" dialog box, ensure your table range is correct and choose where you want the PivotTable to be placed (New Worksheet is often preferred for clarity). You can rename the Sheet where you PivotTable is populated for clarity. 
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_2.1" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_2.1" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Create PivotTable dialog box.</h4>
-<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_2.2" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_2.2" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">New sheet.</h4>
 </div>
 
@@ -60,14 +60,14 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 - In the PivotTable Fields pane, drag "Product Category" to the Rows area.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_3.0" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_3.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Product Category" to Rows.</h4>
 </div>
 
 - Drag "Total Sale" to the Values area. By default, Excel will sum the values.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_3.1" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_3.1" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Total Sale" to Values.</h4>
 </div>
 
@@ -79,7 +79,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 - Now, the Pivot Table shows total sales per category and further breaks it down by each salesperson.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_4.0" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_4.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Updated Pivot Table with both categories and salesperson details.</h4>
 </div>
 
@@ -89,14 +89,14 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 - Go to the "Data" tab, select Sort & Filter, and choose the "Descending" feature. Select OK.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_5.0" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Before Sort.</h4> 
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_5.0" width="500" />
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Sort dialog box.</h4> 
 </div>
 
 - This sorts categories by total sales and salespeople by total sales within each category.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_5.1" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_5.1" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">After Sort.</h4>
 </div>
 
@@ -106,7 +106,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 - Within each category, the top-listed salesperson is the one with the highest sales.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_1_Step_6.0" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_6.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Highlighted top of the list.</h4>
 </div>
 
@@ -122,26 +122,28 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 — Each column should have a unique name (i.e. Date, Product Category, Salesperson, etc.).
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_1.0" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_1.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">An example dataset formatted correctly in Excel.</h4>
 </div>
 
 ## 2. Inserting a Pivot Table:
 
 — Click anywhere inside your dataset.
-— Navigate to the "Insert" tab on the Excel ribbon.
-- In this example, Excel will have you Click on "Tables" and then "PivotTable" in the small sub-menu.
+— Navigate to the "Insert" tab on the Excel ribbon and click "PivotTable".
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_2.0" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_2.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"PivotTable" option in ribbon.</h4>
+<br/><br/>
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_2.1" width="500" />
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"PivotTable" dialog box.</h4>
 </div>
 
 - In the "Create PivotTable" dialog box, ensure your table range is correct and choose where you want the Pivot Table to be placed (New Worksheet is often preferred for clarity). As with Dataset, you can rename the new Sheet for clarity.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_2.1" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Create PivotTable dialog box.</h4>
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_2.2" width="500" />
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Renamed sheet.</h4>
 </div>
 
 ## 3. Setting Up Pivot Table:
@@ -149,7 +151,7 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 - In the PivotTable Fields pane, drag "Department" to the Rows area.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_3.0" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_3.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Department" to Rows.</h4>
 </div>
 
@@ -163,7 +165,7 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 - Drag 'Status' again to the Values area. The Field Setting should automatically set to "Count" (if not, adjust this setting accordingly).
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_3.2" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_3.2" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Status" to Values and change setting to "Count."</h4>
 </div>
 
@@ -175,7 +177,7 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 - Drag "Hours Worked" to the Values area. By default, it will sum the hours.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_5.0" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_4.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Showing hours worked.</h4>
 </div>
 
@@ -184,13 +186,9 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 ## 5. Sorting to Identify Departments and Employees with Most Hours Worked:
 
 - Click on any number in the "Total Sum of Hours Worked" column.
+- Go to the "Data" tab, select "Sort Smallest to Largest" (a button with A, Z, and a downwards arrow).
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_5.0" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">The sort menu.</h4>
-</div>
-- Go to the "Data" tab, select Sort & Filter, and choose the "Ascending" feature. Select OK.
-<div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_5.1" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_5.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Next we sort smallest to largest.</h4>
 </div>
 - This sorts the departments and employees based on the total hours worked.
@@ -200,7 +198,7 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 - The top item in your Pivot Table now represent the department with the least hours worked (in this case, Operations).
 - Within each department, the top-listed employee is the one with the least hours.
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_6.0" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_6.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Final Pivot Table with sorted results, highlighting departments and employees with the most hours worked.</h4>
 </div>
 
