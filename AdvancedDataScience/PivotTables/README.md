@@ -217,7 +217,6 @@ As we mentioned above in our first example using Sales Data, we can refresh our 
 <br/><br/>
 
 ## Data
-<br/>
 
 ### Here you can find the two pseudo-datasets used above in a single Excel spreadsheet (.xlsx), with the PivotTables generated according to the above instructions. :)
 <br/>
