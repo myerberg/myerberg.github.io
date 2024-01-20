@@ -176,7 +176,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 - This setup provides a count of different attendance statuses (Present, Absent, Late) for each department.
 <br/><br/>
 
-## Step 4: Setting Up Pivot Table to Analyze Hours Worked
+## Step 4: Setting Up PivotTable to Analyze Hours Worked
 
 - Drag "Department" to the Rows area and "Employee Name" below it.
 - Drag "Hours Worked" to the Values area. By default, it will sum the hours.
