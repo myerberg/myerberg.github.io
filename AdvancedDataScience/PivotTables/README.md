@@ -202,7 +202,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 
 ## 6. Analyzing and Interpreting the Data:
 
-- The top item in your PivotTable now represent the department with the least hours worked (in this case, Operations).
+- The top item in your PivotTable now represents the department with the least hours worked (in this case, Operations).
 - Within each department, the top-listed employee is the one with the least hours.
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_6.0.png" width="800" />
@@ -215,8 +215,10 @@ As we mentioned above in our first example using Sales Data, we can refresh our 
 <br/><br/>
 
 ## Data
-<br/><br/>
+<br/>
 
 ### Here you can find the two pseudo-datasets used above in a single Excel spreadsheet (.xlsx), with the PivotTables generated according to the above instructions. :)
 <br/>
+<div class="centered-content" style="text-align:center;">
 <h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">Product Sales & Employee Attendance Data</a></h2>
+</div>
