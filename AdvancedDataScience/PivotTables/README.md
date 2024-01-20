@@ -83,7 +83,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 
 ## Step 5: Sorting to Identify Best-Selling Category and Top Salesperson
 
-- Click on any number in the "Sum of Total Sale" column that corresponds to a "product category."
+- Click on any number in the "Sum of Total Sale" column that corresponds to a "Product Category".
 - Go to the "Data" tab, select Sort & Filter, and choose the "Descending" feature. Ensure that the Summary description matches your intended results. It should read "Sort Product Category by Sum of Total Sale in descending order". Select OK.
 
 <div class="centered-content" style="text-align:center;">
@@ -115,7 +115,7 @@ This PivotTable helps in quickly identifying which categories are most lucrative
 PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotTable to reflect the latest data. This makes them incredibly powerful for ongoing analysis.
 <br/><br/>
 
-### Dataset 2 - Employee Attendance
+### Employee Attendance (Dataset 2)
 <br/>
 
 ## Step 1: Data Preparation
