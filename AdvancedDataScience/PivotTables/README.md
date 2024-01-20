@@ -14,10 +14,10 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 <br/><br/>
 
 ## How
-<br/><br/>
+<br/>
 
 ### Product Sales (Dataset 1)
-<br/><br/>
+<br/>
 
 ## 1. Data Preparation:
 
@@ -116,7 +116,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 <br/><br/>
 
 ### Dataset 2 - Employee Attendance
-<br/><br/>
+<br/>
 
 ## 1. Data Preparation:
 
