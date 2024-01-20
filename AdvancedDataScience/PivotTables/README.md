@@ -14,8 +14,10 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 <br/><br/>
 
 ## How
+<br/><br/>
 
 ### Product Sales (Dataset 1)
+<br/><br/>
 
 ## 1. Data Preparation:
 
@@ -26,6 +28,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_1.0.png" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">An example dataset formatted correctly in Excel.</h4>
 </div>
+<br/><br/>
 
 ## 2. Inserting a Pivot Table:
 
@@ -46,6 +49,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_2.2.png" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">New sheet.</h4>
 </div>
+<br/><br/>
 
 ## 3. Setting Up PivotTable:
 
@@ -64,6 +68,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 </div>
 
 -  This setup will show the total sales per category.
+<br/><br/>
 
 ## 4. Adding a Layer to Identify Top Salesperson:
 
@@ -74,6 +79,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_4.0.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Updated Pivot Table with both categories and salesperson details.</h4>
 </div>
+<br/><br/>
 
 ## 5. Sorting to Identify Best-Selling Category and Top Salesperson:
 
@@ -91,6 +97,7 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_5.1.png" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">After Sort.</h4>
 </div>
+<br/><br/>
 
 ## 6. Analyzing and Interpreting the Data:
 
@@ -106,8 +113,10 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 This PivotTable helps in quickly identifying which categories are most lucrative and which salespeople are performing best in each category. Such insights are essential for strategic decision-making in sales management, like incentivizing top performers, allocating resources, or tailoring marketing strategies based on successful categories.
 
 PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotTable to reflect the latest data. This makes them incredibly powerful for ongoing analysis.
+<br/><br/>
 
 ### Dataset 2 - Employee Attendance
+<br/><br/>
 
 ## 1. Data Preparation:
 
@@ -118,6 +127,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_1.0.png" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">An example dataset formatted correctly in Excel.</h4>
 </div>
+<br/><br/>
 
 ## 2. Inserting a Pivot Table:
 
@@ -138,6 +148,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_2.2.png" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Renamed sheet.</h4>
 </div>
+<br/><br/>
 
 ## 3. Setting Up Pivot Table:
 
@@ -163,6 +174,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 </div>
 
 - This setup provides a count of different attendance statuses (Present, Absent, Late) for each department.
+<br/><br/>
 
 ## 4. Setting Up Pivot Table to Analyze Hours Worked:
 
@@ -175,6 +187,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 </div>
 
 - This setup shows the total hours worked by each employee and department.
+<br/><br/>
 
 ## 5. Sorting to Identify Departments and Employees with Most Hours Worked:
 
@@ -185,7 +198,8 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Next we sort smallest to largest.</h4>
 </div>
 - This sorts the departments and employees based on the total hours worked.
-  
+<br/><br/>
+
 ## 6. Analyzing and Interpreting the Data:
 
 - The top item in your PivotTable now represent the department with the least hours worked (in this case, Operations).
@@ -201,6 +215,7 @@ As we mentioned above in our first example using Sales Data, we can refresh our 
 <br/><br/>
 
 ## Data
+<br/><br/>
 
 ### Here you can find the two pseudo-datasets used above in a single Excel spreadsheet (.xlsx), with the PivotTables generated according to the above instructions. :)
 <br/>
