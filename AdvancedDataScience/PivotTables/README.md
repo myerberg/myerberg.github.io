@@ -178,7 +178,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 
 ## Step 4: Setting Up PivotTable to Analyze Hours Worked
 
-- Drag "Department" to the Rows area and "Employee Name" below it.
+- Drag "Employee Name" below "Department" in Rows area.
 - Drag "Hours Worked" to the Values area. By default, it will sum the hours.
 
 <div class="centered-content" style="text-align:center;">
