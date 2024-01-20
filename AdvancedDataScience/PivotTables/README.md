@@ -85,8 +85,8 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 
 ## 5. Sorting to Identify Best-Selling Category and Top Salesperson:
 
-- Click on any number in the "Sum of Total Sale" column.
-- Go to the "Data" tab, and use the "Sort Largest to Smallest" feature.
+- Click on any number in the "Sum of Total Sale" column that corresponds to a sales category.
+- Go to the "Data" tab, select Sort & Filter, and choose the "Descending" feature. Select OK.
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/assets/images/DataSet_1_Step_5.0" width="500" />
@@ -130,7 +130,7 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 
 — Click anywhere inside your dataset.
 — Navigate to the "Insert" tab on the Excel ribbon.
-- Click on "PivotTable."
+- In this example, Excel will have you Click on "Tables" and then "PivotTable" in the small sub-menu.
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/assets/images/DataSet_2_Step_2.0" width="500" />
@@ -160,57 +160,47 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Status" to Columns.</h4>
 </div>
 
-- Drag 'Status' again to the Values area. Change the Value Field Setting to "Count".
+- Drag 'Status' again to the Values area. The Field Setting should automatically set to "Count" (if not, adjust this setting accordingly).
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/assets/images/DataSet_2_Step_3.2" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Status" to Values and change setting to "Count."</h4>
 </div>
 
--  This setup provides a count of different attendance statuses (Present, Absent, Late) for each department.
+- This setup provides a count of different attendance statuses (Present, Absent, Late) for each department.
 
-## 4. Analyzing Departmental Attendance:
-
-- We can now see the attendance record for each department.
-- Sort this data to identify which department has the highest and lowest attendance rates.
-
-<div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_4.0" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Sorted by attendance.</h4>
-</div>
-
-## 5. Setting Up Pivot Table to Analyze Hours Worked:
+## 4. Setting Up Pivot Table to Analyze Hours Worked:
 
 - Drag "Department" to the Rows area and "Employee Name" below it.
 - Drag "Hours Worked" to the Values area. By default, it will sum the hours.
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/assets/images/DataSet_2_Step_5.0" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Sorted by hours worked.</h4>
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Showing hours worked.</h4>
 </div>
 
 - This setup shows the total hours worked by each employee and department.
 
-## 6. Sorting to Identify Departments and Employees with Most Hours Worked:
+## 5. Sorting to Identify Departments and Employees with Most Hours Worked:
 
-- Click on any number in the "Sum of Hours Worked" column.
+- Click on any number in the "Total Sum of Hours Worked" column.
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_6.0" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">First sorted by sum of hours worked.</h4>
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_5.0" width="500" />
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">The sort menu.</h4>
 </div>
-- Use the "Sort Largest to Smallest" feature under the "Data" tab.
+- Go to the "Data" tab, select Sort & Filter, and choose the "Ascending" feature. Select OK.
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_6.1" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_5.1" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Next we sort smallest to largest.</h4>
 </div>
 - This sorts the departments and employees based on the total hours worked.
   
-## 7. Analyzing and Interpreting the Data:
+## 6. Analyzing and Interpreting the Data:
 
-- The top item(s) in your Pivot Table now represent the department(s) with the most hours worked.
-- Within each department, the top-listed employee is the one with the most hours.
+- The top item in your Pivot Table now represent the department with the least hours worked (in this case, Operations).
+- Within each department, the top-listed employee is the one with the least hours.
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_7.0" width="500" />
+<img src="https://myerberg.github.io/assets/images/DataSet_2_Step_6.0" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Final Pivot Table with sorted results, highlighting departments and employees with the most hours worked.</h4>
 </div>
 
