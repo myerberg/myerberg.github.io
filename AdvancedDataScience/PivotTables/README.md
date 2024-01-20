@@ -1,11 +1,3 @@
-<div class="centered-content" style="text-align:center;">
-  
-  <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">PivotTables are integral in the world of data analysis and visualization.</h4>
-
-</div>
-
-<br/><br/>
-
 ## Table of Contents
 [What](#what)<br/>
 [Why](#why)<br/>
