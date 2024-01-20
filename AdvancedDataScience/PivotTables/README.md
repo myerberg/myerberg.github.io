@@ -52,14 +52,14 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 - In the PivotTable Fields pane, drag "Product Category" to the Rows area.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_3.0.png" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_3.0.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Product Category" to Rows.</h4>
 </div>
 
 - Drag "Total Sale" to the Values area. By default, Excel will sum the values.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_3.1.png" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_3.1.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Total Sale" to Values.</h4>
 </div>
 
@@ -68,20 +68,20 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 ## 4. Adding a Layer to Identify Top Salesperson:
 
 - Drag "Salesperson" to the Rows area, placing it below "Product Category." This will breakdown the sales within each category by salesperson.
-- Now, the Pivot Table shows total sales per category and further breaks it down by each salesperson.
+- Now, the PivotTable shows total sales per category and further breaks it down by each salesperson.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_4.0.png" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_4.0.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Updated Pivot Table with both categories and salesperson details.</h4>
 </div>
 
 ## 5. Sorting to Identify Best-Selling Category and Top Salesperson:
 
 - Click on any number in the "Sum of Total Sale" column that corresponds to a sales category.
-- Go to the "Data" tab, select Sort & Filter, and choose the "Descending" feature. Select OK.
+- Go to the "Data" tab, select Sort & Filter, and choose the "Descending" feature. Ensure that the Summary description matches your intended results. Select OK.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_5.0.png" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_5.0.png" width="600" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Sort dialog box.</h4> 
 </div>
 
@@ -94,17 +94,18 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 
 ## 6. Analyzing and Interpreting the Data:
 
-- The top item in the Pivot Table is now the best-selling category.
+- The top item in the PivotTable is now the best-selling category.
 - Within each category, the top-listed salesperson is the one with the highest sales.
+- These top results were manually highlighted for clarity.
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_6.0.png" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Highlighted top of the list.</h4>
 </div>
 
-This Pivot Table helps in quickly identifying which categories are most lucrative and which salespeople are performing best in each category. Such insights are essential for strategic decision-making in sales management, like incentivizing top performers, allocating resources, or tailoring marketing strategies based on successful categories.
+This PivotTable helps in quickly identifying which categories are most lucrative and which salespeople are performing best in each category. Such insights are essential for strategic decision-making in sales management, like incentivizing top performers, allocating resources, or tailoring marketing strategies based on successful categories.
 
-Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot Table to reflect the latest data. This makes them incredibly powerful for ongoing analysis.
+PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotTable to reflect the latest data. This makes them incredibly powerful for ongoing analysis.
 
 ### Dataset 2 - Employee Attendance
 
@@ -143,21 +144,21 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 - In the PivotTable Fields pane, drag "Department" to the Rows area.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_3.0.png" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_3.0.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Department" to Rows.</h4>
 </div>
 
 - Drag "Status" to the Columns area.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_3.1.png" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_3.1.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Status" to Columns.</h4>
 </div>
 
 - Drag 'Status' again to the Values area. The Field Setting should automatically set to "Count" (if not, adjust this setting accordingly).
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_3.2.png" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_3.2.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Status" to Values and change setting to "Count."</h4>
 </div>
 
@@ -169,7 +170,7 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
 - Drag "Hours Worked" to the Values area. By default, it will sum the hours.
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_4.0.png" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_4.0.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Showing hours worked.</h4>
 </div>
 
@@ -187,20 +188,20 @@ Pivot Tables are dynamic. As the dataset updates/grows, we can refresh the Pivot
   
 ## 6. Analyzing and Interpreting the Data:
 
-- The top item in your Pivot Table now represent the department with the least hours worked (in this case, Operations).
+- The top item in your PivotTable now represent the department with the least hours worked (in this case, Operations).
 - Within each department, the top-listed employee is the one with the least hours.
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_6.0.png" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Final Pivot Table with sorted results, highlighting departments and employees with the most hours worked.</h4>
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_6.0.png" width="800" />
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Final PivotTable with sorted results, highlighting departments and employees with the most hours worked.</h4>
 </div>
 
 This analysis can help human resource managers understand attendance patterns and workload distribution across departments and employees. Such insights are crucial for managing workforce efficiency, identifying departments or employees that may be overburdened and ensuring equitable workload distribution.
 
-As we mentioned above in our first example using Sales Data, we can refresh our Pivot Tables to reflect updated data, making them an effective tool for ongoing HR data analysis.
+As we mentioned above in our first example using Sales Data, we can refresh our PivotTables to reflect updated data, making them an effective tool for ongoing HR data analysis.
 <br/><br/>
 
 ## Data
 
-### Here you can find my two pseudo-datasets used above in Excel spreadsheet, with the PivotTables generated according to the above instructions. :)
+### Here you can find the two pseudo-datasets used above in a single Excel spreadsheet (.xlsx), with the PivotTables generated according to the above instructions. :)
 <br/>
 <h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">Product Sales & Employee Attendance Data</a></h2>
