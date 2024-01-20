@@ -191,13 +191,15 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 
 ## 5. Sorting to Identify Departments and Employees with Most Hours Worked:
 
-- Click on any number in the "Total Sum of Hours Worked" column.
-- Go to the "Data" tab, select "Sort Smallest to Largest" (a button with A, Z, and a downwards arrow).
+- Click on any number in the "Total Sum of Hours Worked" column that corresponds to a "department" row.
+- Go to the “Data” tab, select Sort & Filter, and choose the “Ascending” feature.
+- Ensure that the Summary description matches your intended results. It should read "Sort Department by Sum of Hours Worked in ascending order using values in this column: Total Sum of Hours Worked". Select OK.
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_5.0.png" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Next we sort smallest to largest.</h4>
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">We sort departments and the associated employees smallest to largest.</h4>
 </div>
-- This sorts the departments and employees based on the total hours worked.
+<br/><br/>
+- This sorts the departments based upon the total hours worked. It will also sort each department in ascending order by employee.
 <br/><br/>
 
 ## 6. Analyzing and Interpreting the Data:
