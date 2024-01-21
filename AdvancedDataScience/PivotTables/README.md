@@ -6,7 +6,7 @@
 <br/><br/>
 
 ## What
-In this tutorial on PivotTables in Microsoft Excel, we will learn how this powerful tool can be used to summarize, analyze, explore, and present your data. PivotTables allow us to easily rearrange and manipulate large amounts of data in a dynamic way, offering insights and patterns that might not be immediately evident. We can group and sort data, as well as perform calculations like sums, averages, and counts, all with simple drag-and-drop functionality. PivotTables are ideal for large datasets, where we can create concise reports and visualizations, making our data more accessible and understandable.
+In this tutorial on PivotTables in Microsoft Excel, we will learn how this powerful tool can be used to summarize, analyze, explore, and present your data. PivotTables allow us to easily rearrange and manipulate large amounts of data in a dynamic way, offering insights and patterns that might not be immediately evident. We can group and sort data, as well as perform calculations like sums, averages, and counts, all with simple drag-and-drop functionality. PivotTables are ideal for large datasets, where we can create concise reports and visualizations, making our data more accessible and understandable. We can also refresh our PivotTables as our datasets change, allowing for seamless updates of these reports and visualizations.
 <br/><br/>
 
 ## Why
@@ -53,12 +53,18 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 
 ## Step 3: Setting Up PivotTable
 
-- In the PivotTable Fields pane, drag "Product Category" to the Rows area.
-
+- In the PivotTable Fields pane, drag "Product Category" to the Rows field.
+- Notice the four different "PivotTable Fields" on the right.
+- 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_3.0.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Product Category" to Rows.</h4>
 </div>
+
+- The Rows field populates the rows in your PivotTable, the Columns field populates the columns in your PivotTable, and the Values field populates the intersection of the rows and columns in interior of your PivotTable.
+- The Filters field can be used to narrow down the scope of the data included in your PivotTable, by a particular attribute from your original dataset (i.e. only include a certain region).
+
+<br/>
 
 - Drag "Total Sale" to the Values area. By default, Excel will sum the values.
 
