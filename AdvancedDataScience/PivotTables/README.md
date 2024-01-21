@@ -3,6 +3,8 @@
 [Why](#why)<br/>
 [How](#how)<br/>
 [Data](#data)<br/>
+[Product Sales (Dataset 1)](#product-sales-dataset-1)<br/>
+[Employee Attendance (Dataset 2)](#employee-attendance-dataset-2)<br/>
 <br/><br/>
 
 ## What
@@ -10,13 +12,13 @@ In this tutorial on PivotTables in Microsoft Excel, we will learn how this power
 <br/><br/>
 
 ## Why
-PivotTables are an invaluable tool for dealing with large and complex datasets, such as business analysts, researchers, or financial professionals. They are particularly useful for summarizing and analyzing data, allowing us to spot trends, patterns, and anomalies quickly. Example uses could include creating comprehensive sales reports, performing customer segmentation, or analyzing financial data. PivotTables offer a flexible and efficient way to rearrange, group, and summarize data. They are also extremely helpful in preparing data for presentations or decision-making, as they can turn extensive datasets into concise tables and clear charts. In essence, Pivot Tables save time and enhance the clarity of data analysis.
+PivotTables are an invaluable tool for dealing with large and complex datasets, such as business analysts, researchers, or financial professionals. They are particularly useful for summarizing and analyzing data, allowing us to spot trends, patterns, and anomalies quickly. Example uses could include creating comprehensive sales reports, performing customer segmentation, or analyzing financial data. PivotTables offer a flexible and efficient way to rearrange, group, and summarize data. They are also extremely helpful in preparing data for presentations or decision-making, as they can turn extensive datasets into concise tables and clear charts. In essence, PivotTables save time and enhance the clarity of data analysis.
 <br/><br/>
 
 ## How
 <br/>
 
-### Product Sales (Dataset 1)
+## Product Sales (Dataset 1)
 <br/>
 
 ## Step 1: Data Preparation
@@ -34,18 +36,19 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 
 - Click anywhere inside your dataset.
 - Navigate to the "Insert" tab on the Excel ribbon.
-- Click on "PivotTable."
+- Click on "PivotTable".
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_2.0.png" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">'PivotTable' option in ribbon.</h4>
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"PivotTable" option in ribbon.</h4>
 </div>
 
-- In the "Create PivotTable" dialog box, ensure your table range is correct and choose where you want the PivotTable to be placed (New Worksheet is often preferred for clarity). You can rename the Sheet where you PivotTable is populated for clarity. 
+- In the "Create PivotTable" dialog box, ensure your table range is correct and choose where you want the PivotTable to be placed (New Worksheet is often preferred for clarity). You can rename the Sheet where you PivotTable is populated. 
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_2.1.png" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Create PivotTable dialog box.</h4>
+<br/>
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_2.2.png" width="500" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">New sheet.</h4>
 </div>
@@ -55,14 +58,14 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 
 - In the PivotTable Fields pane, drag "Product Category" to the Rows field.
 - Notice the four different "PivotTable Fields" on the right.
-- 
+ 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_3.0.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Product Category" to Rows.</h4>
 </div>
 
-- The Rows field populates the rows in your PivotTable, the Columns field populates the columns in your PivotTable, and the Values field populates the intersection of the rows and columns in interior of your PivotTable.
-- The Filters field can be used to narrow down the scope of the data included in your PivotTable, by a particular attribute from your original dataset (i.e. only include a certain region).
+- The Rows field populates the rows in your PivotTable, the Columns field populates the columns in your PivotTable, and the Values field populates the intersection of the rows and columns in the interior of your PivotTable.
+- The Filters field can be used to narrow down the scope of the data included in your PivotTable by a particular attribute from your original dataset (i.e. only include a certain region).
 
 <br/>
 
@@ -78,12 +81,12 @@ PivotTables are an invaluable tool for dealing with large and complex datasets, 
 
 ## Step 4: Adding a Layer to Identify Top Salesperson
 
-- Drag "Salesperson" to the Rows area, placing it below "Product Category." This will breakdown the sales within each category by salesperson.
+- Drag "Salesperson" to the Rows area, placing it below "Product Category". This will breakdown the sales within each category by salesperson.
 - Now, the PivotTable shows total sales per category and further breaks it down by each salesperson.
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_4.0.png" width="800" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Updated Pivot Table with both categories and salesperson details.</h4>
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Updated PivotTable with both categories and salesperson details.</h4>
 </div>
 <br/><br/>
 
@@ -120,14 +123,15 @@ This PivotTable helps in quickly identifying which categories are most lucrative
 
 PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotTable to reflect the latest data. This makes them incredibly powerful for ongoing analysis.
 <br/><br/>
+<br/><br/>
 
-### Employee Attendance (Dataset 2)
+## Employee Attendance (Dataset 2)
 <br/>
 
 ## Step 1: Data Preparation
 
-— Ensure the dataset is in a table format with clear headers.
-— Each column should have a unique name (i.e. Date, Product Category, Salesperson, etc.).
+- Ensure the dataset is in a table format with clear headers.
+- Each column should have a unique name (i.e. Date, Product Category, Salesperson, etc.).
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_1.0.png" width="500" />
@@ -137,8 +141,8 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 
 ## Step 2: Inserting a PivotTable
 
-— Click anywhere inside your dataset.
-— Navigate to the "Insert" tab on the Excel ribbon and click "PivotTable".
+- Click anywhere inside your dataset.
+- Navigate to the "Insert" tab on the Excel ribbon and click "PivotTable".
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_2.0.png" width="500" />
@@ -148,7 +152,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"PivotTable" dialog box.</h4>
 </div>
 
-- In the "Create PivotTable" dialog box, ensure your table range is correct and choose where you want the Pivot Table to be placed (New Worksheet is often preferred for clarity). As with Dataset, you can rename the new Sheet for clarity.
+- In the "Create PivotTable" dialog box, ensure your table range is correct and choose where you want the Pivot Table to be placed (New Worksheet is often preferred for clarity). As with Dataset 1, you can rename the new Sheet.
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_2.2.png" width="500" />
@@ -158,7 +162,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 
 ## Step 3: Setting Up PivotTable
 
-- In the PivotTable Fields pane, drag "Department" to the Rows area.
+- In the "PivotTable Fields" pane, drag "Department" to the Rows area.
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_3.0.png" width="800" />
@@ -172,7 +176,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">"Status" to Columns.</h4>
 </div>
 
-- Drag 'Status' again to the Values area. The Field Setting should automatically set to "Count" (if not, adjust this setting accordingly).
+- Now drag "Status" to the Values area. The Field Setting should automatically set to "Count" (if not, adjust this setting accordingly).
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_3.2.png" width="800" />
@@ -204,7 +208,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_5.0.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">We sort departments and the associated employees smallest to largest.</h4>
 </div>
-<br/><br/>
+<br/>
 - This sorts the departments based upon the total hours worked. It will also sort each department in ascending order by employee.
 <br/><br/>
 
@@ -214,7 +218,7 @@ PivotTables are dynamic. As the dataset updates/grows, we can refresh the PivotT
 - Within each department, the top-listed employee is the one with the least hours.
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_2_Step_6.0.png" width="800" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Final PivotTable with sorted results, highlighting departments and employees with the most hours worked.</h4>
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Final PivotTable with sorted results, revealing departments and employees with the least hours worked.</h4>
 </div>
 
 This analysis can help human resource managers understand attendance patterns and workload distribution across departments and employees. Such insights are crucial for managing workforce efficiency, identifying departments or employees that may be overburdened and ensuring equitable workload distribution.
@@ -224,7 +228,7 @@ As we mentioned above in our first example using Sales Data, we can refresh our 
 
 ## Data
 
-### Here you can find the two pseudo-datasets used above in a single Excel spreadsheet (.xlsx), with the PivotTables generated according to the above instructions. Additionally, a third pseudo-dataset is included to try out your skills on something new.
+#### Here you can find the two pseudo-datasets used above in a single Excel spreadsheet (.xlsx), with the PivotTables generated according to the above instructions. Additionally, a third pseudo-dataset is included to try out your skills on something new.
 <br/>
 <div class="centered-content" style="text-align:center;">
 <h2 style="margin: 0;"><a href="https://myerberg.github.io/AdvancedDataScience/PivotTables/PivotTables_Tutorial.xlsx" target="_blank" style="color:#B5E853">Product Sales, Employee Attendance, & Inventory Management Data</a></h2>
