@@ -1,6 +1,6 @@
 <div class="centered-content" style="text-align:center;">
 
-  <img src="https://myerberg.github.io/assets/images/fiery-basketball-wallpaper.jpg" width="500" />
+  <img src="https://myerberg.github.io/DataScience/RidgeRegressionNBA/assets/images/fiery-basketball-wallpaper.jpg" width="500" />
   <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Let us explore the exciting intersection of data science and basketball.</h4>
   <h5 style="margin: 0;"><a href="https://images.freecreatives.com/wp-content/uploads/2016/03/Firey-Basketball-Wallpaper.jpg" target="_blank" style="color:#999999">SOURCE</a></h5>
 
@@ -71,7 +71,7 @@ For my project on professional basketball data analysis, I chose to utilize a <a
 
 <div class="centered-content" style="text-align:center;">
 
-  <img src="https://myerberg.github.io/assets/images/basketball-nba-wallpaper-score.jpg" width="500" />
+  <img src="https://myerberg.github.io/DataScience/RidgeRegressionNBA/assets/images/basketball-nba-wallpaper-score.jpg" width="500" />
   <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Properly adhering to the ethics of data science is a guaranteed “score”!</h4>
   <h5 style="margin: 0;"><a href="https://2.bp.blogspot.com/-1PGSQPL7kkM/UaleVvYkX9I/AAAAAAAAChk/YrkqvcaVQzQ/s1600/basketball-nba-wallpaper-29-730462.jpg" target="_blank" style="color:#999999">SOURCE</a></h5>
 
@@ -129,7 +129,7 @@ These transformations — handling missing/inconsistent values, removing irrelev
 
 <div class="centered-content" style="text-align:center;">
 
-  <img src="https://myerberg.github.io/assets/images/dataset-sample.png" width="500" />
+  <img src="https://myerberg.github.io/DataScience/RidgeRegressionNBA/assets/images/dataset-sample.png" width="500" />
   <h5 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Not all columns shown here in the cleaned version of the dataset were used, though they do provide context for further investigation.  </h5>
 
 </div>
@@ -327,19 +327,19 @@ for feature in features:
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
     <div style="margin: 10px;">
-        <img src="https://myerberg.github.io/assets/images/plot-1-regression-analysis-for-field-goal-percentage.png" width="400" />
+        <img src="https://myerberg.github.io/DataScience/RidgeRegressionNBA/assets/images/plot-1-regression-analysis-for-field-goal-percentage.png" width="400" />
     </div>
     <div style="margin: 10px;">
-        <img src="https://myerberg.github.io/assets/images/plot-2-regression-analysis-for-total-points-scored.png" width="400" />
+        <img src="https://myerberg.github.io/DataScience/RidgeRegressionNBA/assets/images/plot-2-regression-analysis-for-total-points-scored.png" width="400" />
     </div>
     <div style="margin: 10px;">
-        <img src="https://myerberg.github.io/assets/images/plot-3-regression-analysis-for-total-assists.png" width="400" />
+        <img src="https://myerberg.github.io/DataScience/RidgeRegressionNBA/assets/images/plot-3-regression-analysis-for-total-assists.png" width="400" />
     </div>
     <div style="margin: 10px;">
-        <img src="https://myerberg.github.io/assets/images/plot-4-regression-analysis-for-total-points-allowed.png" width="400" />
+        <img src="https://myerberg.github.io/DataScience/RidgeRegressionNBA/assets/images/plot-4-regression-analysis-for-total-points-allowed.png" width="400" />
     </div>
     <div style="margin: 10px;">
-        <img src="https://myerberg.github.io/assets/images/plot-5-regression-analysis-for-total-free-throws-made.png" width="400" />
+        <img src="https://myerberg.github.io/DataScience/RidgeRegressionNBA/assets/images/plot-5-regression-analysis-for-total-free-throws-made.png" width="400" />
     </div>   
 </div>
 <div class="centered-content" style="text-align:center;">
@@ -463,7 +463,7 @@ plt.show()
 
 <div class="centered-content" style="text-align:center;">
 
-    <img src="https://myerberg.github.io/assets/images/plot-6-original-ridge-regression-analysis.png" width="600" />
+    <img src="https://myerberg.github.io/DataScience/RidgeRegressionNBA/assets/images/plot-6-original-ridge-regression-analysis.png" width="600" />
     <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Notice the high R-squared and low MSE, which tell us our model has high predictive power.</h4>
 
 </div>
@@ -555,7 +555,7 @@ plt.show()
 
 <div class="centered-content" style="text-align:center;">
 
-  <img src="https://myerberg.github.io/assets/images/plot-7-improved-(post-threshold)-ridge-regression-analysis.png" width="600" />
+  <img src="https://myerberg.github.io/DataScience/RidgeRegressionNBA/assets/images/plot-7-improved-(post-threshold)-ridge-regression-analysis.png" width="600" />
   <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">The “magic” of data science in action!</h4>
   <h5 style="color:#999999; margin: 0;">On the surface, this plot appears to be very similar to our original Ridge regression plot. However, because we implemented our threshold to remove variables with minimal impact, we see improvement both in simplicity and comprehensibility. This ultimately makes our model more versatile and robust, where less computational resources are needed to draw our conclusions.</h5>
 
@@ -598,7 +598,7 @@ Our example of Ridge regression in NBA analytics is a testament to the broader c
 
 <div class="centered-content" style="text-align:center;">
 
-  <img src="https://myerberg.github.io/assets/images/michael-jordan-kobe-bryant.jpg" width="500" />
+  <img src="https://myerberg.github.io/DataScience/RidgeRegressionNBA/assets/images/michael-jordan-kobe-bryant.jpg" width="500" />
   <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Two of the all-time greats, MJ and Kobe!</h4>
   <h5 style="margin: 0;"><a href="https://www.solobasket.com/sites/default/files/michael_jordan_kobe.jpg" target="_blank" style="color:#999999">SOURCE</a></h5>
 
