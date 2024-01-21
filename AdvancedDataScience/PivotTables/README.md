@@ -228,7 +228,7 @@ As we mentioned above in our first example using Sales Data, we can refresh our 
 
 ## Data
 
-#### Here you can find the two pseudo-datasets used above in a single Excel spreadsheet (.xlsx), with the PivotTables generated according to the above instructions. Additionally, a third pseudo-dataset is included to try out your skills on something new.
+Here you can find the two pseudo-datasets used above in a single Excel spreadsheet (.xlsx), with the PivotTables generated according to the above instructions. Additionally, a third pseudo-dataset is included to try out your skills on something new.
 <br/>
 <div class="centered-content" style="text-align:center;">
 <h2 style="margin: 0;"><a href="https://myerberg.github.io/AdvancedDataScience/PivotTables/PivotTables_Tutorial.xlsx" target="_blank" style="color:#B5E853">Product Sales, Employee Attendance, & Inventory Management Data</a></h2>
