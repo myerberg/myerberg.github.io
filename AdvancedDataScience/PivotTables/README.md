@@ -1,9 +1,15 @@
+<div class="centered-content" style="text-align:center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/Intro.png" width="500" />
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Let us discover the power of PivotTables.</h4>
+</div>
+<br/><br/>
+
 ## Table of Contents
 [What](#what)<br/>
 [Why](#why)<br/>
 [How](#how)<br/>
-[&nbsp;&nbsp;Product Sales (Dataset 1)](#product-sales-dataset-1)<br/>
-[&nbsp;&nbsp;Employee Attendance (Dataset 2)](#employee-attendance-dataset-2)<br/>
+[Product Sales (Dataset 1)](#product-sales-dataset-1)<br/>
+[Employee Attendance (Dataset 2)](#employee-attendance-dataset-2)<br/>
 [Data](#data)<br/>
 <br/><br/>
 
