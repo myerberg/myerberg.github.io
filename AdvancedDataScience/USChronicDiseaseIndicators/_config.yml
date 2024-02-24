@@ -1,0 +1,10 @@
+# Site settings
+title: An Examination of Correlations in U.S. Chronic Disease Indicators
+description: Tyler Myerberg
+baseurl: ""
+url: "https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators"
+# Build settings
+theme: jekyll-theme-hacker
+markdown: kramdown
+plugins:
+  - jekyll-feed
