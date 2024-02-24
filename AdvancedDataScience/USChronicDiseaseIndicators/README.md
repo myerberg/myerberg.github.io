@@ -23,17 +23,21 @@ The Division of Population Health within the Centers for Disease Control and Pre
 
 This dataset contains over 1,000,000?????? entries, making it beyond the capabilities of using Excel to analyze it given its grid limitations. Therefore, using R was the logical approach. In terms of wrangling/cleaning the data, I was fortunate that the dataset well-maintained. Given this, the only step associated with data wrangling that was necessary was using functions within R to ignore cells with NA (empty) values.
 
+Additionally, I made the decision to remove outliers below the 1st percentile and above the 99th percentile for heart failure mortality and liver disease mortality. These outliers highly skewed the data and prevented me from telling the most insightful story.
+
 A visual examination of the dataset does show some columns lacking consistency in the thoroughness of their content; however, these were irrelevant for the purposes of my analysis given that I focused on mainly three columns of data: the Question column (represeting one of the 124 disease indicators), the DataValue column (representing the corresponding data value for its associated Question, and the State column.
 
 ## Visualizations
 
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/obesity_cholesterol_correlation_with_fit.png" width="500" />
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/obesity_cholesterol_correlation_with_fit.png" width="800" />
 <h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">This graph displays a statistically significant relationship between obesity and high cholesterol prevalence among U.S. adults from 2001 to 2021. Despite the significance (p < 0.001), the low R-value (0.09) and R^2 (0.009) suggest that obesity alone poorly predicts cholesterol levels, indicating other factors may play substantial roles in cholesterol variability.</h4>
 </div>
 
 <br/><br/>
+
+
 
 
 
