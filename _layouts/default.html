@@ -2,6 +2,8 @@
   {% assign site_settings = site.data.RidgeRegressionNBA %}
 {% elsif page.path contains 'AdvancedDataScience/PivotTables' %}
   {% assign site_settings = site.data.PivotTables %}
+{% elsif page.path contains 'AdvancedDataScience/USChronicDiseaseIndicators' %}
+  {% assign site_settings = site.data.USChronicDiseaseIndicators %}
 {% else %}
   {% assign site_settings = site %}
 {% endif %}
