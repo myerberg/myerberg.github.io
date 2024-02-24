@@ -20,12 +20,10 @@ We will examine...
 Here...
 ## Visualizations
 
-- Ensure the dataset is in a table format with clear headers.
-- Each column should have a unique name (i.e. Date, Product Category, Salesperson, etc.).
 
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/PivotTables/assets/images/DataSet_1_Step_1.0.png" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">An example dataset formatted correctly in Excel.</h4>
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/Visualization1.png" width="500" />
+<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Obesity...</h4>
 </div>
 <br/><br/>
 
