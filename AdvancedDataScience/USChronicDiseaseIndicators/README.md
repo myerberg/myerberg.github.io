@@ -7,15 +7,20 @@
 ## Table of Contents
 [Introduction](#introduction)<br/>
 [Data Summary](#data-summary)<br/>
+[Initial Questions](#initial-questions)<br/>
 [Visualizations](#visualizations)<br/>
 [Conclusion](#conclusion)<br/>
 [Sources](#sources)<br/>
 <br/><br/>
 
 ## Introduction
-The intentions of my analysis are rooted in better understanding confounding factors within public health by examining a publicly available U.S. government dataset on chronic disease indicators from 2001 to 2021. As my parents age and deal with their own personal health problems, I find myself more interested than ever to see what lifestyle adjustments they could potentially make in order to achieve the best possible health outcomes. In this way, this analysis includes a rather personal component, giving me added curiosity and incentive to discover insight.
+By using R to create regression analyses of the CDC's U.S. Chronic Disease Indicators vast dataset (2001-2021), I will demonstrate consistent relationships between associated variables.
 
-Among these 124 chronic indicators are a variety of interesting "questions"; in my examination of these indicators, I aimed to draw upon my pre-existing health knowledge to see if I could find interesting associations between different indicators. My goal in this data exploration is to uncover statistical validation for some of my correlation hypotheses. In the below Visualizations section, we will examine R values to determine degree of correlation, R² values to determine how well one variable predicts another, and p-values to determine the strength of the relationship. As you will see, I am able to demonstrate some relevant relationships through my statistical analysis. Nevertheless, given the multitudinous variables involved in health outcomes, it is very difficult to demonstrate direct correlations between two distinct health indicators.
+Among these 124 chronic indicators are a variety of interesting "questions"; in my examination of these indicators, I aimed to draw upon my pre-existing health knowledge to see if I could find interesting associations between different indicators. My goal in this data exploration is to uncover statistical validation for some of my correlation hypotheses. In the below Visualizations section, we will examine R values to determine degree of correlation, R² values to determine how well one variable predicts another, and p-values to determine the strength of the relationship.
+
+Consistent low p-values across my selected regressions tell us that the various variables are related, though we will see how low R and R² values mean that they are not strong predictors of each other. Essentially, this is the most interesting insight from this project: that health data is complex and determined by many interrelated variables.
+
+The relevant relationships demonstrated through my statistical analysis should not overshadow how multitudinous variables are involved in health outcomes. A key takeaway here is that it is very difficult to demonstrate strong correlations between two distinct health indicators.
 <br/><br/>
 
 ## Data Summary
@@ -26,6 +31,11 @@ This dataset contains 1,185,676 entries; therefore, R was well-suited for the ta
 Additionally, I made the decision to remove outliers below the 1st percentile and above the 99th percentile for heart failure mortality and liver disease mortality. These outliers highly skewed the data and prevented me from telling the most insightful story.
 
 A visual examination of the dataset does show some columns lacking consistency in the thoroughness of their content; however, these were irrelevant for the purposes of my analysis given that I focused on mainly three columns of data: the Question column (represeting one of the 124 disease indicators), the DataValue column (representing the corresponding data value for its associated Question, and the State column.
+
+## Initial Questions
+The intentions of my analysis are rooted in better understanding confounding factors within public health by examining a publicly available U.S. government dataset on chronic disease indicators from 2001 to 2021. As my parents age and deal with their own personal health problems, I find myself more interested than ever to see what lifestyle adjustments they could potentially make in order to achieve the best possible health outcomes. In this way, this analysis includes a rather personal component, giving me added curiosity and incentive to discover insight.
+
+Initially, I was expecting to potentially see some of regression demonstrate relatively high R and R² values. However, it quickly became clear that finding a strong relationship between two health-related variables was not possible, thereby supporting the aforementioned understanding that health outcomes are incredibly complex. Additionally, I found, as you will see below, some unexpected negative correlations because alcohol consumption and both heart failure and liver disease mortality. This could speak to a confounding variables, such as differences in populations across geographical regions of the U.S., or even that the dataset failed to captured adequate variation in alcohol consumption. In the relevant charts below, you will see how the data shows a general upward trend initially, but the relatively few data points representing high alcohol consumption ultimately turn the slope of the trend lines negative. Even after accounting for outliers outside of 1st and 99th percentiles, these negatively sloped trend lines still exist. However, I took this unexpected result as a further support of the general thesis of my project's insight: that health outcome data is complex and inherently avoids simplification.
 
 ## Visualizations
 
@@ -126,9 +136,9 @@ A visual examination of the dataset does show some columns lacking consistency i
 ## Conclusion
 As we have seen, it is clear that various indicators show interesting statistically significant relationships. Nevertheless, we cannot make direct conclusions about health outcomes using only two indicators, even after exploring polynomial fits. In healthcare, it is best to take a holistic approach to improve outcomes, given that the affect of one indicator on overall health is compounded across the wide-range of linked biological pathways.
 
-My conclusion for this data exploration is that certain lifestyle choices and government policies can effect individual health outcomes, but it can be difficult to make any sort of definite conclusion about what one indicator will reveal in terms of population-wide health. For example, higher alcohol consumption may be linked to higher incidence of liver disease, but this is certainly not a guarantee.
+My conclusion for this data exploration is that certain lifestyle choices and government policies can effect individual health outcomes, but it can be difficult to make any sort of definite conclusion about what one indicator will reveal in terms of population-wide health. For example, higher alcohol consumption may be linked to higher cigarette smoking among youth, but this is certainly not a universal guarantee.
 
-My hope for this project is that anyone who examines its statistical analyses keeps in mind their unique context, as well as remembering that this dataset, despite being vast, certainly is limited by the fact that it does not consistently capture every state/territory/metropolitan area for every unique indicator. Ultimately, my main takeaway from this project is the wisdom that we can impact our health with our own choices, and I hope to be able to use this sharpened understanding in my own life, for both myself and for the people I care most about.
+My hope for this project is that anyone who examines its statistical analyses keeps in mind their unique context, as well as remembering that this dataset, despite being vast, certainly is limited by the fact that it does not consistently capture every state/territory/metropolitan area for every unique indicator. Even more importantly, I hope that readers come away with an understanding that making health outcome predictions from a model between two variables is extremely difficult. Ultimately, my main takeaway from this project is the wisdom that we can impact our health with our own choices, and I hope to be able to use this sharpened understanding in my own life, for both myself and for the people I care most about.
 <br/><br/>
 
 ## Sources
