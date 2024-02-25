@@ -106,6 +106,20 @@ A visual examination of the dataset does show some columns lacking consistency i
 </div>
 
 <br/><br/>
+
+<div class="centered-content" style="text-align:center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/farmers_markets_vs_vegetable_consumption.png" width="1000" />
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The graph indicates a linear relationship between the number of farmers markets and vegetable consumption among U.S. adults, with the highest observed R of 0.173 and R² of 0.030, signifying a weak yet more pronounced correlation than previous models. Despite being statistically significant (p < 0.001), the low R² value shows that farmers market availability modestly predicts vegetable consumption.</h4>
+</div>
+
+<br/><br/>
+
+<div class="centered-content" style="text-align:center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/farmers_markets_vs_fruit_consumption.png" width="1000" />
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The graph shows a linear regression of fruit consumption against farmers market availability in the U.S., indicating a weak correlation with an R of 0.149 and R² of 0.022, slightly lower than for vegetables. Despite statistical significance (p < 0.001), these metrics underscore that other factors likely play a more substantial role in influencing fruit consumption habits among adults.</h4>
+</div>
+
+<br/><br/>
 <br/><br/>
 
 
@@ -126,6 +140,9 @@ Here you can download this vast dataset in a variety of formats. As mentioned ab
 </div>
 <div class="centered-content" style="text-align:center;">
 <h2 style="margin: 0;"><a href="https://www.cdc.gov/mmwr/pdf/rr/rr6401.pdf" target="_blank" style="color:#B5E853">CDC's Detailed Methodology for the Dataset</a></h2>
+</div>
+<div class="centered-content" style="text-align:center;">
+<h2 style="margin: 0;"><a href="https://blog.minitab.com/en/adventures-in-statistics-2/how-to-interpret-regression-analysis-results-p-values-and-coefficients" target="_blank" style="color:#B5E853">Interpreting p-values</a></h2>
 </div>
 <div class="centered-content" style="text-align:center;">
 <h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">Poly Source</a></h2>
