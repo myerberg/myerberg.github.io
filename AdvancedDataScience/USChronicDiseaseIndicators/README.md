@@ -1,4 +1,4 @@
-![cigarette_smoking_youth_vs_alcohol_use](https://github.com/myerberg/myerberg.github.io/assets/7750224/8e24f562-79a7-4899-ad40-924e1b050da5)<div class="centered-content" style="text-align:center;">
+<div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/CDC-image.png" width="500" />
 <h3 style="color:#B5E853; margin: 0.5em 0 0;">Can we discover insight among various chronic disease indicators in the U.S. from 2001 to 2021?</h3>
 </div>
