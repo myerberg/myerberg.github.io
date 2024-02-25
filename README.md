@@ -4,4 +4,4 @@ Thank you for your interest in my software projects.
 <br/>
 <h2 style="margin: 0;"><a href="/AdvancedDataScience/PivotTables" target="_blank" style="color:#B5E853">PivotTables Tutorial</a></h2>
 <br/>
-<h2 style="margin: 0;"><a href="/AdvancedDataScience/USChronicDiseaseIndicators" target="_blank" style="color:#B5E853">Examining Correlations Correlations in U.S. Chronic Disease Indicators</a></h2>
+<h2 style="margin: 0;"><a href="/AdvancedDataScience/USChronicDiseaseIndicators" target="_blank" style="color:#B5E853">Examining Relationships in U.S. Chronic Disease Indicators</a></h2>
