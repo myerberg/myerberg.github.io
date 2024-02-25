@@ -15,7 +15,7 @@
 ## Introduction
 The intentions of my analysis are rooted in better understanding confounding factors within public health by examining a publicly available U.S. government dataset on chronic disease indicators from 2001 to 2021. As my parents age and deal with their own personal health problems, I find myself more interested than ever to see what lifestyle adjustments they could potentially make in order to achieve the best possible health outcomes. In this way, this analysis includes a rather personal component, giving me added curiosity and incentive to discover insight.
 
-Among these 124 chronic indicators are a variety of interesting "questions"; in my examination of these indicators, I aimed to draw upon my pre-existing health knowledge to see if I could find interesting associations between different indicators. My goal in this data exploration is to uncover statistical validation for some of my correlation hypotheses. In the below Visualizations section, we will examine R values to determine degree of correlation, R² values to determine how well one variable predicts another, and p values to determine the strength of the relationship. As you will see, I am able to demonstrate some relevant relationships through my statistical analysis. Nevertheless, given the multitudinous variables involved in health outcomes, it is very difficult to demonstrate direct correlations between two distinct health indicators.
+Among these 124 chronic indicators are a variety of interesting "questions"; in my examination of these indicators, I aimed to draw upon my pre-existing health knowledge to see if I could find interesting associations between different indicators. My goal in this data exploration is to uncover statistical validation for some of my correlation hypotheses. In the below Visualizations section, we will examine R values to determine degree of correlation, R² values to determine how well one variable predicts another, and p-values to determine the strength of the relationship. As you will see, I am able to demonstrate some relevant relationships through my statistical analysis. Nevertheless, given the multitudinous variables involved in health outcomes, it is very difficult to demonstrate direct correlations between two distinct health indicators.
 <br/><br/>
 
 ## Data Summary
@@ -92,6 +92,18 @@ A visual examination of the dataset does show some columns lacking consistency i
 </div>
 
 <br/><br/>
+
+<div class="centered-content" style="text-align:center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/fluoridation_coverage_vs_no_tooth_loss_linear.png" width="1000" />
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The graph illustrates a linear relationship between fluoridation coverage and no tooth loss among U.S. adults, displaying a very weak correlation (R = 0.024, R² = 0.001). The p-value of 0.003, while still indicating statistical significance, suggests that the predictive power of fluoridation on tooth retention is relatively small compared to previous models with p-values of less than 0.001.</h4>
+</div>
+
+<br/><br/>
+
+<div class="centered-content" style="text-align:center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/fluoridation_coverage_vs_no_tooth_loss_poly.png" width="1000" />
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The polynomial model reveals an increased but still weak correlation between fluoridation coverage and no tooth loss among U.S. adults (R = 0.094, R² = 0.009), compared to the linear model. Despite the higher R and R² values, the significant p-value of 0.003 indicates the relationship, although statistically valid, explains a small proportion of the variance in adult tooth retention rates.</h4>
+</div>
 
 <br/><br/>
 <br/><br/>
