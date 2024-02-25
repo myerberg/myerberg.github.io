@@ -15,7 +15,7 @@
 ## Introduction
 The intentions of my analysis are rooted in better understanding confounding factors within public health by examining a publicly available U.S. government dataset on chronic disease indicators from 2001 to 2021. As my parents age and deal with their own personal health problems, I find myself more interested than ever to see what lifestyle adjustments they could potentially make in order to achieve the best possible health outcomes. In this way, this analysis includes a rather personal component, giving me added curiosity and incentive to discover insight.
 
-Among these 124 chronic indicators are a variety of interesting "questions"; in my examination of these indicators, I aimed to draw upon my pre-existing health knowledge to see if I could find interesting associations between different indicators. My goal in this data exploration is to uncover statistical validation for some of my correlation hypotheses. In the below Visualizations section, we will examine R^2 values to determine how well one variable predicts another. As you will see, I am able to demonstrate some relevant correlations through my statistical analysis. Nevertheless, given the multitudinous variables involved in health outcomes, it is very difficult to demonstrate direct correlations between two distinct health indicators.
+Among these 124 chronic indicators are a variety of interesting "questions"; in my examination of these indicators, I aimed to draw upon my pre-existing health knowledge to see if I could find interesting associations between different indicators. My goal in this data exploration is to uncover statistical validation for some of my correlation hypotheses. In the below Visualizations section, we will examine R values to determine degree of correlation, R² values to determine how well one variable predicts another, and p values to determine the strength of the relationship. As you will see, I am able to demonstrate some relevant relationships through my statistical analysis. Nevertheless, given the multitudinous variables involved in health outcomes, it is very difficult to demonstrate direct correlations between two distinct health indicators.
 <br/><br/>
 
 ## Data Summary
@@ -32,42 +32,42 @@ A visual examination of the dataset does show some columns lacking consistency i
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/obesity_cholesterol_correlation_with_fit.png" width="1000" />
-<h4 style="color:#B5E853; margin: 0.5em 0 0;">This graph displays a statistically significant relationship between obesity and high cholesterol prevalence among U.S. adults from 2001 to 2021. Despite the significance (p < 0.001), the low R-value (0.09) and R^2 (0.009) suggest that obesity alone poorly predicts cholesterol levels, indicating other factors may play substantial roles in cholesterol variability.</h4>
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">This graph displays a statistically significant relationship between obesity and high cholesterol prevalence among U.S. adults from 2001 to 2021. Despite the significance (p < 0.001), the low R-value (0.09) and R² (0.009) suggest that obesity alone poorly predicts cholesterol levels, indicating other factors may play substantial roles in cholesterol variability.</h4>
 </div>
 
 <br/><br/>
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/heart_failure_mortality_vs_alcohol_consumption.png" width="1000" />
-<h4 style="color:#B5E853; margin: 0.5em 0 0;">This graph reveals a statistically significant yet weak inverse relationship between U.S. adult alcohol consumption and heart failure mortality from 2001 to 2021. Despite the low R of 0.093 and R^2 of 0.009, indicating minimal variance explained, the model's p-value suggests the relationship is unlikely due to random chance.</h4>
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">This graph reveals a statistically significant yet weak inverse relationship between U.S. adult alcohol consumption and heart failure mortality from 2001 to 2021. Despite the low R of 0.093 and R² of 0.009, indicating minimal variance explained, the model's p-value suggests the relationship is unlikely due to random chance.</h4>
 </div>
 
 <br/><br/>
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/liver_disease_mortality_vs_alcohol_consumption.png" width="1000" />
-<h4 style="color:#B5E853; margin: 0.5em 0 0;">The graph depicts a linear regression analysis of U.S. adult alcohol consumption against liver disease mortality, highlighting a statistically significant but weak negative correlation (R = 0.099, R^2 = 0.010, p-value < 0.001). The low R^2 value suggests that alcohol consumption alone does not strongly predict liver disease mortality rates.</h4>
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The graph depicts a linear regression analysis of U.S. adult alcohol consumption against liver disease mortality, highlighting a statistically significant but weak negative correlation (R = 0.099, R² = 0.010, p-value < 0.001). The low R² value suggests that alcohol consumption alone does not strongly predict liver disease mortality rates.</h4>
 </div>
 
 <br/><br/>
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/heart_failure_mortality_poly_vs_alcohol_consumption.png" width="1000" />
-<h4 style="color:#B5E853; margin: 0.5em 0 0;">The polynomial regression yields a slightly improved but still weak correlation (R = 0.102, R^2 = 0.009) between alcohol consumption and heart failure mortality. A p-value of 0.000 suggests a relationship, yet the minimal increase in R and R^2 offers scant practical predictive improvement over the linear model.</h4>
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The polynomial regression yields a slightly improved but still weak correlation (R = 0.102, R² = 0.009) between alcohol consumption and heart failure mortality. A p-value of 0.000 suggests a relationship, yet the minimal increase in R and R² offers scant practical predictive improvement over the linear model.</h4>
 </div>
 
 <br/><br/>
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/liver_disease_mortality_poly_vs_alcohol_consumption.png" width="1000" />
-<h4 style="color:#B5E853; margin: 0.5em 0 0;">The polynomial regression slightly refines the correlation between alcohol consumption and liver disease mortality (R = 0.102, R^2 = 0.011, p-value < 0.001), but like the linear model, it demonstrates that alcohol consumption alone does not robustly predict mortality outcomes.</h4>
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The polynomial regression slightly refines the correlation between alcohol consumption and liver disease mortality (R = 0.102, R² = 0.011, p-value < 0.001), but like the linear model, it demonstrates that alcohol consumption alone does not robustly predict mortality outcomes.</h4>
 </div>
 
 <br/><br/>
 
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/smokeless_tobacco_use_youth_vs_alcohol_use.png" width="1000" />
-<h4 style="color:#B5E853; margin: 0.5em 0 0;">The graph shows a linear relationship between alcohol use and smokeless tobacco use among U.S. youth, with a very low R of 0.066 and an R^2 of 0.004, indicating a weak predictive power. The significant p-value (p < 0.001) suggests a relationship, although it accounts for a very small fraction of the variation in smokeless tobacco use.</h4>
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The graph shows a linear relationship between alcohol use and smokeless tobacco use among U.S. youth, with a very low R of 0.066 and an R² of 0.004, indicating a weak predictive power. The significant p-value (p < 0.001) suggests a relationship, although it accounts for a very small fraction of the variation in smokeless tobacco use.</h4>
 </div>
 
 <br/><br/>
@@ -75,6 +75,20 @@ A visual examination of the dataset does show some columns lacking consistency i
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/cigarette_smoking_youth_vs_alcohol_use.png" width="1000" />
 <h4 style="color:#B5E853; margin: 0.5em 0 0;">The chart illustrates a linear model between alcohol use and cigarette smoking among U.S. youth, revealing a weak positive correlation (R = 0.098, R² = 0.010) with a statistically significant p-value (p < 0.001). The model suggests a relationship exists, though it explains only a small portion of the variance in youth smoking behavior.</h4>
+</div>
+
+<br/><br/>
+
+<div class="centered-content" style="text-align:center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/pe_participation_vs_obesity_students_linear.png" width="1000" />
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The graph presents a linear analysis of daily physical education (PE) participation against obesity rates among U.S. high school students, uncovering a statistically significant but very weak correlation (R = 0.041, R² = 0.002). The model's negligible R² value, alongside a p-value of less than 0.001, suggests that while PE participation is associated with obesity levels, it is a minor predictor of the overall obesity rate among students.</h4>
+</div>
+
+<br/><br/>
+
+<div class="centered-content" style="text-align:center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/pe_participation_vs_obesity_students_poly.png" width="1000" />
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The polynomial model suggests a stronger correlation between PE participation and obesity among high school students compared to the linear model, with R increasing to 0.128 and R² to 0.016. Despite the low R², the significant p-value (p < 0.001) indicates a more complex, yet still weak, predictive relationship.</h4>
 </div>
 
 <br/><br/>
