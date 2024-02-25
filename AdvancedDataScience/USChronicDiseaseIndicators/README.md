@@ -148,7 +148,8 @@ Here you can download this vast dataset in a variety of formats. As mentioned ab
 <li><a href="https://www.statology.org/simple-linear-regression-in-r/" target="_blank" style="color:#B5E853">Linear Regression Line</a></li>
 <li><a href="https://statisticsglobe.com/add-polynomial-regression-line-plot-r" target="_blank" style="color:#B5E853">Polynomial Regression Line</a></li>
 <li><a href="https://dplyr.tidyverse.org/" target="_blank" style="color:#B5E853">dplyr Package</a></li>
+<li><a href="https://ggplot2.tidyverse.org" target="_blank" style="color:#B5E853">ggplot2 Package</a></li>
 <li><a href="https://www.rdocumentation.org/packages/readr/versions/2.1.5" target="_blank" style="color:#B5E853">readr Package</a></li>
-<li><a href="https://tidyr.tidyverse.org/" target="_blank" style="color:#B5E853">tidyr Package</a></li>
 <li><a href="https://scales.r-lib.org/" target="_blank" style="color:#B5E853">scales Package</a></li>
+<li><a href="https://tidyr.tidyverse.org/" target="_blank" style="color:#B5E853">tidyr Package</a></li>
 </ol>
