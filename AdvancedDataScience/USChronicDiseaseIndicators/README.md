@@ -105,5 +105,17 @@ Here you can download this vast dataset in a variety of formats. As mentioned ab
 <h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">Poly Source</a></h2>
 </div>
 <div class="centered-content" style="text-align:center;">
-<h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">Libraries Source</a></h2>
+<h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">Logistic Source</a></h2>
+</div>
+<div class="centered-content" style="text-align:center;">
+<h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">dplyr Source</a></h2>
+</div>
+<div class="centered-content" style="text-align:center;">
+<h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">readr Source</a></h2>
+</div>
+<div class="centered-content" style="text-align:center;">
+<h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">tidyr Source</a></h2>
+</div>
+<div class="centered-content" style="text-align:center;">
+<h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">scales Source</a></h2>
 </div>
