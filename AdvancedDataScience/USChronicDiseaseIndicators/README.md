@@ -21,7 +21,7 @@ Among these 124 chronic indicators are a variety of interesting "questions"; in 
 ## Data Summary
 The Division of Population Health within the Centers for Disease Control and Prevention (CDC) provides this publicly available dataset of U.S. Chronic Disease Indicators, with data ranging from 2001 to 2021. Within this "cross-cutting set" are 124 disease indicators, which allow for uniformity across different states, territories, and metropolitan areas in terms of specific definitions and collection/reporting processes. The CDC falls under the U.S. Department of Health & Human Services.
 
-This dataset contains over 1,000,000?????? entries, making it beyond the capabilities of using Excel to analyze it given its grid limitations. Therefore, using R was the logical approach. In terms of wrangling/cleaning the data, I was fortunate that the dataset well-maintained. Given this, the only step associated with data wrangling that was necessary was using functions within R to ignore cells with NA (empty) values.
+This dataset contains 1,185,676 entries; therefore, R was well-suited for the task given its ability to handle large datasets smoothly (Excel would be unusable given its limit of 1,048,576 rows). In terms of wrangling/cleaning the data, I was fortunate that the dataset well-maintained. Given this, safeguard functions within R to ignore cells with NA (empty) values were able to do most of the heavy lifting for my data wrangling process.
 
 Additionally, I made the decision to remove outliers below the 1st percentile and above the 99th percentile for heart failure mortality and liver disease mortality. These outliers highly skewed the data and prevented me from telling the most insightful story.
 
