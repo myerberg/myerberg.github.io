@@ -138,13 +138,13 @@ Here you can download this vast dataset in a variety of formats. As mentioned ab
 
 <h4>Dataset Source</h4>
 <ul>
-    <li><a href="https://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi">U.S. Chronic Disease Indicators (CDI) Dataset</a></li>
+    <li><a href="https://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi" target="_blank" style="color:#B5E853">U.S. Chronic Disease Indicators (CDI) Dataset</a></li>
     <li><a href="https://www.cdc.gov/mmwr/pdf/rr/rr6401.pdf" target="_blank" style="color:#B5E853">CDC's Detailed Methodology for the Dataset</a></li>
 </ul>
 
 <h4>Research Sources</h4>
 <ol>
-<li></li><a href="https://blog.minitab.com/en/adventures-in-statistics-2/how-to-interpret-regression-analysis-results-p-values-and-coefficients" target="_blank" style="color:#B5E853">Interpreting p-values</a></li>
+<li><a href="https://blog.minitab.com/en/adventures-in-statistics-2/how-to-interpret-regression-analysis-results-p-values-and-coefficients" target="_blank" style="color:#B5E853">Interpreting p-values</a></li>
 <li><a href="" target="_blank" style="color:#B5E853">Poly Source</a></li>
 <li><a href="" target="_blank" style="color:#B5E853">Logistic Source</a></li>
 <li><a href="" target="_blank" style="color:#B5E853">dplyr Source</a></li>
