@@ -145,10 +145,10 @@ Here you can download this vast dataset in a variety of formats. As mentioned ab
 <h4>Research Sources</h4>
 <ol>
 <li><a href="https://blog.minitab.com/en/adventures-in-statistics-2/how-to-interpret-regression-analysis-results-p-values-and-coefficients" target="_blank" style="color:#B5E853">Interpreting p-values</a></li>
-<li><a href="" target="_blank" style="color:#B5E853">Poly Source</a></li>
-<li><a href="" target="_blank" style="color:#B5E853">Logistic Source</a></li>
-<li><a href="" target="_blank" style="color:#B5E853">dplyr Source</a></li>
-<li><a href="" target="_blank" style="color:#B5E853">readr Source</a></li>
-<li><a href="" target="_blank" style="color:#B5E853">tidyr Source</a></li>
-<li><a href="" target="_blank" style="color:#B5E853">scales Source</a></li>
+<li><a href="https://www.statology.org/simple-linear-regression-in-r/" target="_blank" style="color:#B5E853">Linear Regression Line</a></li>
+<li><a href="https://statisticsglobe.com/add-polynomial-regression-line-plot-r" target="_blank" style="color:#B5E853">Polynomial Regression Line</a></li>
+<li><a href="https://dplyr.tidyverse.org/" target="_blank" style="color:#B5E853">dplyr Package</a></li>
+<li><a href="https://www.rdocumentation.org/packages/readr/versions/2.1.5" target="_blank" style="color:#B5E853">readr Package</a></li>
+<li><a href="https://tidyr.tidyverse.org/" target="_blank" style="color:#B5E853">tidyr Package</a></li>
+<li><a href="https://scales.r-lib.org/" target="_blank" style="color:#B5E853">scales Package</a></li>
 </ol>
