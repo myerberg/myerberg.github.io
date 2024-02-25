@@ -89,3 +89,9 @@ Here you can download this vast dataset in a variety of formats. As mentioned ab
 <div class="centered-content" style="text-align:center;">
 <h2 style="margin: 0;"><a href="https://www.cdc.gov/mmwr/pdf/rr/rr6401.pdf" target="_blank" style="color:#B5E853">CDC's Detailed Methodology for the Dataset</a></h2>
 </div>
+<div class="centered-content" style="text-align:center;">
+<h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">Poly Source</a></h2>
+</div>
+<div class="centered-content" style="text-align:center;">
+<h2 style="margin: 0;"><a href="" target="_blank" style="color:#B5E853">Libraries Source</a></h2>
+</div>
