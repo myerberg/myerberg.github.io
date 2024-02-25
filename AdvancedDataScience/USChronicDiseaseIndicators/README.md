@@ -1,6 +1,6 @@
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/Intro.png" width="500" />
-<h4 style="color:#B5E853; text-transform:uppercase; margin: 0.5em 0 0;">Can we discover insight among various chronic disease indicators in the U.S. from 2001 to 2021?</h4>
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/CDC-image.png" width="500" />
+<h3 style="color:#B5E853; margin: 0.5em 0 0;">Can we discover insight among various chronic disease indicators in the U.S. from 2001 to 2021?</h3>
 </div>
 <br/><br/>
 
