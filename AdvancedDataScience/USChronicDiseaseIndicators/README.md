@@ -42,36 +42,42 @@ Initially, I was expecting to potentially see some of regression demonstrate rel
 <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
 
 <div style="text-align: center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/obesity_cholesterol_correlation_with_fit.png" width="870" />
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/obesity_cholesterol_correlation_with_fit.png" width="1000" />
 <h4 style="color:#B5E853; margin: 0.5em 0 0;">This graph displays a statistically significant relationship between obesity and high cholesterol prevalence among U.S. adults from 2001 to 2021. Despite the significance (p < 0.001), the low R-value (0.09) and R² (0.009) suggest that obesity alone poorly predicts cholesterol levels, indicating other factors may play substantial roles in cholesterol variability.</h4>
 </div>
 
-<div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/heart_failure_mortality_vs_alcohol_consumption.png" width="870" />
+</div>
+
+<br/><br/>
+
+<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+
+<div style="text-align: center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/heart_failure_mortality_vs_alcohol_consumption.png" width="800" />
 <h4 style="color:#B5E853; margin: 0.5em 0 0;">This graph reveals a statistically significant yet weak inverse relationship between U.S. adult alcohol consumption and heart failure mortality from 2001 to 2021. Despite the low R of -0.093 and R² of 0.009, indicating minimal variance explained, the model's p-value suggests the relationship is unlikely due to random chance. Given this is counterintuitive, this could be due to limited data for high consumption or confounding geographical variables.</h4>
 </div>
 
-</div>
-
-<br/><br/>
-
-<div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/liver_disease_mortality_vs_alcohol_consumption.png" width="1000" />
+<div style="text-align: center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/liver_disease_mortality_vs_alcohol_consumption.png" width="800" />
 <h4 style="color:#B5E853; margin: 0.5em 0 0;">The graph depicts a linear regression analysis of U.S. adult alcohol consumption against liver disease mortality, highlighting a statistically significant but weak negative correlation (R = -0.099, R² = 0.010, p-value < 0.001). The low R² value suggests that alcohol consumption alone does not strongly predict liver disease mortality rates. Again, because this is counterintuitive, this could be due to limited data for high consumption or confounding geographical variables.</h4>
 </div>
 
-<br/><br/>
-
-<div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/heart_failure_mortality_poly_vs_alcohol_consumption.png" width="1000" />
-<h4 style="color:#B5E853; margin: 0.5em 0 0;">The polynomial regression yields a slightly improved but still weak correlation (R = -0.095, R² = 0.009) between alcohol consumption and heart failure mortality. A p-value of 0.000 suggests a relationship, yet the minimal increase in R and R² offers scant practical predictive improvement over the linear model. The negative correlation suggests a limitation given few heavy drinkers within our consumption data or from confounding geographical variables.</h4>
 </div>
 
 <br/><br/>
 
-<div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/liver_disease_mortality_poly_vs_alcohol_consumption.png" width="1000" />
+<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+
+<div style="text-align: center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/heart_failure_mortality_poly_vs_alcohol_consumption.png" width="800" />
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The polynomial regression yields a slightly improved but still weak correlation (R = -0.095, R² = 0.009) between alcohol consumption and heart failure mortality. A p-value of 0.000 suggests a relationship, yet the minimal increase in R and R² offers scant practical predictive improvement over the linear model. The negative correlation suggests a limitation given few heavy drinkers within our consumption data or from confounding geographical variables.</h4>
+</div>
+
+<div style="text-align: center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/liver_disease_mortality_poly_vs_alcohol_consumption.png" width="800" />
 <h4 style="color:#B5E853; margin: 0.5em 0 0;">The polynomial regression slightly refines the correlation between alcohol consumption and liver disease mortality (R = -0.102, R² = 0.011, p-value < 0.001), but like the linear model, it demonstrates that alcohol consumption alone does not robustly predict mortality outcomes. Here again, the negative correlation suggests limited heavy drinker consumption data or from confounding geographical variables.</h4>
+</div>
+
 </div>
 
 <br/><br/>
