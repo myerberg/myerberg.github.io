@@ -6,9 +6,9 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Data Summary](#data-summary)
+- [Dataset](#dataset)
 - [Initial Questions](#initial-questions)
-- [Visualizations](#visualizations)
+- [Discoveries and Insights](#discoveries-and-insights)
   - [Obesity and Cholesterol](#obesity-and-cholesterol)
   - [Alcohol Consumption and Mortality](#alcohol-consumption-and-mortality)
   - [Youth Tobacco Use](#youth-tobacco-use)
@@ -29,7 +29,7 @@ Consistent low p-values across my selected regressions tell us that the various 
 The relevant relationships demonstrated through my statistical analysis should not overshadow how multitudinous variables are involved in health outcomes. A key takeaway here is that it is very difficult to demonstrate strong correlations between two distinct health indicators.
 <br/><br/>
 
-## Data Summary
+## Dataset
 The Division of Population Health within the Centers for Disease Control and Prevention (CDC) provides this publicly available dataset of U.S. Chronic Disease Indicators, with data ranging from 2001 to 2021. Within this "cross-cutting set" are 124 disease indicators, which allow for uniformity across different states, territories, and metropolitan areas in terms of specific definitions and collection/reporting processes. The CDC falls under the U.S. Department of Health & Human Services.
 
 This dataset contains 1,185,676 entries; therefore, R was well-suited for the task given its ability to handle large datasets smoothly (Excel would be unusable given its limit of 1,048,576 rows). In terms of wrangling/cleaning the data, I was fortunate that the dataset well-maintained. Given this, safeguard functions within R to ignore cells with NA (empty) values were able to do most of the heavy lifting for my data wrangling process.
@@ -43,7 +43,7 @@ The intentions of my analysis are rooted in better understanding confounding fac
 
 Initially, I was expecting to potentially see some of regression demonstrate relatively high R and R² values. However, it quickly became clear that finding a strong relationship between two health-related variables was not possible, thereby supporting the aforementioned understanding that health outcomes are incredibly complex. Additionally, I found, as you will see below, some unexpected negative correlations because alcohol consumption and both heart failure and liver disease mortality. This could speak to a confounding variables, such as differences in populations across geographical regions of the U.S., or even that the dataset failed to captured adequate variation in alcohol consumption. In the relevant charts below, you will see how the data shows a general upward trend initially, but the relatively few data points representing high alcohol consumption ultimately turn the slope of the trend lines negative. Even after accounting for outliers outside of 1st and 99th percentiles, these negatively sloped trend lines still exist. However, I took this unexpected result as a further support of the general thesis of my project's insight: that health outcome data is complex and inherently avoids simplification.
 
-## Visualizations
+## Discoveries and Insights
 
 ### Obesity and Cholesterol
 <div class="centered-content" style="text-align:center;">
