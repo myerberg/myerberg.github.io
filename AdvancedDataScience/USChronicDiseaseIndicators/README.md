@@ -5,18 +5,18 @@
 <br/><br/>
 
 ## Table of Contents
-[Introduction](#introduction)<br/>
-[Data Summary](#data-summary)<br/>
-[Initial Questions](#initial-questions)<br/>
-[Visualizations](#visualizations)<br/>
-[Obesity and Cholesterol](#obesity-and-cholesterol)<br/>
-[Alcohol Consumption and Mortality](#alcohol-consumption-and-mortality)<br/>
-[Youth Tobacco Use](#youth-tobacco-use)<br/>
-[PE Participation and Obesity](#pe-participation-and-obesity)<br/>
-[Fluoridation and Tooth Loss](#fluoridation-and-tooth-loss)<br/>
-[Farmers Markets and Healthy Consumption](#farmers-markets-and-healthy-consumption)<br/>
-[Conclusion](#conclusion)<br/>
-[Sources](#sources)<br/>
+- [Introduction](#introduction)
+- [Data Summary](#data-summary)
+- [Initial Questions](#initial-questions)
+- [Visualizations](#visualizations)
+  - [Obesity and Cholesterol](#obesity-and-cholesterol)
+  - [Alcohol Consumption and Mortality](#alcohol-consumption-and-mortality)
+  - [Youth Tobacco Use](#youth-tobacco-use)
+  - [PE Participation and Obesity](#pe-participation-and-obesity)
+  - [Fluoridation and Tooth Loss](#fluoridation-and-tooth-loss)
+  - [Farmers Markets and Healthy Consumption](#farmers-markets-and-healthy-consumption)
+- [Conclusion](#conclusion)
+- [Sources](#sources)
 <br/><br/>
 
 ## Introduction
