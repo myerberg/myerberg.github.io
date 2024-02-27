@@ -8,6 +8,8 @@
 - [Introduction](#introduction)
 - [Dataset](#dataset)
 - [Initial Questions](#initial-questions)
+  - [Going Deeper](#going-deeper)
+  - [Data Wrangling in Detail](#data-wrangling-in-detail)
 - [Discoveries and Insights](#discoveries-and-insights)
   - [Obesity and Cholesterol](#obesity-and-cholesterol)
   - [Alcohol Consumption and Mortality](#alcohol-consumption-and-mortality)
@@ -42,19 +44,13 @@ A visual examination of the dataset shows some columns lacking consistency in th
 The intentions of my analysis are rooted in better understanding confounding factors within public health by examining a publicly available U.S. government dataset on chronic disease indicators from 2001 to 2021. As my parents age and deal with their own personal health problems, I find myself more interested than ever to see what lifestyle adjustments they could potentially make in order to achieve the best possible health outcomes. In this way, this analysis includes a rather personal component, giving me added curiosity and incentive to discover insight.
 
 This data exploration examines the following 6 questions by using 13 total regression visualizations and their associated statistical metrics.<br/>
-1. **Obesity and Cholesterol**: Is there a statistically significant relationship between obesity and cholesterol levels among adults?
-2. **Alcohol Consumption and Mortality**: How does alcohol consumption correlate with heart failure and liver disease mortality rates?
-3. **Youth Tobacco Use**: What is the relationship between youth tobacco use (smokeless tobacco and cigarette smoking) and alcohol consumption?
-4. **PE Participation and Obesity**: Can a significant relationship be established between participation in physical education (PE) and obesity rates among high school students?
-5. **Fluoridation and Tooth Loss**: Does community water fluoridation have a measurable impact on the prevalence of tooth loss among adults?
-6. **Farmers Markets and Healthy Consumption**: Does the availability of farmers markets measurably effect vegetable and fruit consumption within communities?
 <ol>
-    <li style="color: #B5E853"><b>Obesity and Cholesterol:</b> Is there a statistically significant relationship between obesity and cholesterol levels among adults?</li>
-    <li style="color: #B5E853"><b>Alcohol Consumption and Mortality:</b> How does alcohol consumption correlate with heart failure and liver disease mortality rates?</li>
-    <li style="color: #B5E853"><b>Youth Tobacco Use:</b> What is the relationship between youth tobacco use (smokeless tobacco and cigarette smoking) and alcohol consumption?</li>
-    <li style="color: #B5E853"><b>PE Participation and Obesity:</b> Can a significant relationship be established between participation in physical education (PE) and obesity rates among high school students?</li>
-    <li style="color: #B5E853"><b>Fluoridation and Tooth Loss:</b> Does community water fluoridation have a measurable impact on the prevalence of tooth loss among adults?</li>
-    <li style="color: #B5E853"><b>Farmers Markets and Healthy Consumption:</b> Does the availability of farmers markets measurably affect vegetable and fruit consumption within communities?</li>
+  <li><font color="#B5E853">**Obesity and Cholesterol**: Is there a statistically significant relationship between obesity and cholesterol levels among adults?</font></li>
+  <li><font color="#B5E853">**Alcohol Consumption and Mortality**: How does alcohol consumption correlate with heart failure and liver disease mortality rates?</font></li>
+  <li><font color="#B5E853">**Youth Tobacco Use**: What is the relationship between youth tobacco use (smokeless tobacco and cigarette smoking) and alcohol consumption?</font></li>
+  <li><font color="#B5E853">**PE Participation and Obesity**: Can a significant relationship be established between participation in physical education (PE) and obesity rates among high school students?</font></li>
+  <li><font color="#B5E853">**Fluoridation and Tooth Loss**: Does community water fluoridation have a measurable impact on the prevalence of tooth loss among adults?</font></li>
+  <li><font color="#B5E853">**Farmers Markets and Healthy Consumption**: Does the availability of farmers markets measurably affect vegetable and fruit consumption within communities?</font></li>
 </ol>
 
 Initially, I was expecting to potentially see some of the regressions demonstrate relatively high R and R² values. However, it quickly became clear that finding a strong relationship between two health-related variables was extremely unlikely, thereby supporting the aforementioned understanding that health outcomes are incredibly complex. Additionally, I found, as you will see below, some unexpected negative correlations because alcohol consumption and both heart failure and liver disease mortality. This could speak to a confounding variable, such as differences in populations across geographical regions of the U.S., or even that the dataset failed to capture adequate variation in alcohol consumption. In the relevant charts below, you will see how the data shows a general upward trend initially, but the relatively few data points representing high alcohol consumption ultimately turn the slope of the trend lines negative. Even after accounting for outliers outside of 1st and 99th percentiles, these negatively sloped trend lines still exist. However, I took this unexpected result as further support of the general thesis of my project's insight: that health outcome data is complex and inherently avoids simplification.
