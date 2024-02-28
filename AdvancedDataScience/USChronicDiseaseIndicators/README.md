@@ -11,6 +11,7 @@
   - [Going Deeper](#going-deeper)
   - [Data Wrangling in Detail](#data-wrangling-in-detail)
   - [Potential Bias](#potential-bias)
+- [Follow-Up Questions](#follow-up-questions)
 - [Discoveries and Insights](#discoveries-and-insights)
   - [Obesity and Cholesterol](#obesity-and-cholesterol)
   - [Alcohol Consumption and Mortality](#alcohol-consumption-and-mortality)
@@ -185,6 +186,14 @@ In the 13 visualizations below and their associated captions, we examine relevan
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/farmers_markets_vs_fruit_consumption.png" width="1000" />
 <h4 style="color:#B5E853; margin: 0.5em 0 0;">The graph shows a linear regression of fruit consumption against farmers market availability in the U.S., indicating a weak correlation with an R of 0.149 and R² of 0.022, slightly lower than for vegetables. Despite statistical significance (p < 0.001), these metrics underscore that other factors likely play a more substantial role in influencing fruit consumption habits among adults.</h4>
 </div>
+
+## Follow-Up Questions
+
+<ol>
+  <li><font color="#B5E853"><b>Mortality Predicting Alcohol Consumption</b>: Does higher heart failure mortality and higher liver disease mortality together (among adults) together predict higher alcohol consumption?</font></li>
+  <li><font color="#B5E853"><b>Cholesterol, Lack of Leisure-Time, and Cholesterol</b>: Does higher cholesterol and lack of leisure-time physical activity together (among adults) predict higher obesity?</font></li>
+  <li><font color="#B5E853"><b>Fruit and Vegetable Consumption and Tooth Loss</b>: Is there a relationship between higher fruit and vegetable consumption together (among adults) and less tooth loss?</font></li>
+</ol>ol>
 
 <br/><br/>
 <br/><br/>
