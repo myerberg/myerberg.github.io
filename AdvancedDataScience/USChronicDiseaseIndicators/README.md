@@ -12,6 +12,7 @@
   - [Data Wrangling in Detail](#data-wrangling-in-detail)
   - [Potential Bias](#potential-bias)
 - [Follow-Up Questions](#follow-up-questions)
+  - [Mortality Predicting Alcohol Consumption](#mortality-predicting-alcohol-consumption)
 - [Discoveries and Insights](#discoveries-and-insights)
   - [Obesity and Cholesterol](#obesity-and-cholesterol)
   - [Alcohol Consumption and Mortality](#alcohol-consumption-and-mortality)
@@ -188,12 +189,37 @@ In the 13 visualizations below and their associated captions, we examine relevan
 </div>
 
 ## Follow-Up Questions
+Given the difficulty in drawing conclusions from the above relationships demonstrated in these 13 visualizations, I devised 3 additional follow-up questions to explore the predictive power of "combined" relationships, where two variables together are evaluated on their collective ability to predict a third variable. After initially attempting Ridge regressions to combine variables, I realized given the vast dataset size I had to create "summed" variables to represent my combined variables.
 
 <ol>
   <li><font color="#B5E853"><b>Mortality Predicting Alcohol Consumption</b>: Does higher heart failure mortality and higher liver disease mortality together (among adults) together predict higher alcohol consumption?</font></li>
-  <li><font color="#B5E853"><b>Cholesterol, Lack of Leisure-Time, and Cholesterol</b>: Does higher cholesterol and lack of leisure-time physical activity together (among adults) predict higher obesity?</font></li>
+  <li><font color="#B5E853"><b>Cholesterol, Lack of Leisure-Time, and Obesity</b>: Does higher cholesterol and lack of leisure-time physical activity together (among adults) predict higher obesity?</font></li>
   <li><font color="#B5E853"><b>Fruit and Vegetable Consumption and Tooth Loss</b>: Is there a relationship between higher fruit and vegetable consumption together (among adults) and less tooth loss?</font></li>
-</ol>ol>
+</ol>
+
+### Mortality Predicting Alcohol Consumption
+<div class="centered-content" style="text-align:center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/mortality_alcohol.png" width="1000" />
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">This plot illustrates the weak negative correlation between combined heart failure and liver disease mortality rates and alcohol consumption across U.S. locations. Mortality rates were summed to form a single predictor variable. The linear model suggests minimal predictive power with an R value of -0.370 and an R² value of 0.137, yet the relationship is statistically significant (p-value < 0.001).</h4>
+</div>
+
+<br/><br/>
+
+### Cholesterol, Lack of Leisure-Time, and Obesity
+<div class="centered-content" style="text-align:center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/cholesterol_no_leisure_obesity.png" width="1000" />
+<h4 style="color:#B5E853; margin: 0.5em 0 0;"></h4>
+</div>
+
+<br/><br/>
+
+### Fruit and Vegetable Consumption and Tooth Loss
+<div class="centered-content" style="text-align:center;">
+<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/.png" width="1000" />
+<h4 style="color:#B5E853; margin: 0.5em 0 0;"></h4>
+</div>
+
+<br/><br/>
 
 <br/><br/>
 <br/><br/>
