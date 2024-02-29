@@ -39,13 +39,13 @@ The relevant relationships demonstrated through my statistical analysis should n
 <br/><br/>
 
 ## Dataset
-The Division of Population Health within the Centers for Disease Control and Prevention (CDC) provides this publicly available dataset of U.S. Chronic Disease Indicators, with data ranging from 2001 to 2021. Within this "cross-cutting set" are 124 disease indicators, which allow for uniformity across different states in terms of specific definitions and collection/reporting processes. The CDC falls under the U.S. Department of Health & Human Services.
+The Division of Population Health within the Centers for Disease Control and Prevention (CDC) provides this publicly available dataset of U.S. Chronic Disease Indicators, with data ranging from 2001 to 2021. Within this "cross-cutting set" are 124 disease indicators, which allow for uniformity across different states and territories in terms of specific definitions and collection/reporting processes. The CDC falls under the U.S. Department of Health & Human Services.
 
 This dataset contains 1,185,676 entries; therefore, R was well-suited for the task given its ability to handle large datasets smoothly (Excel would be unusable given its limit of 1,048,576 rows). In terms of wrangling/cleaning the data, I was fortunate that the dataset well-maintained. Given this, safeguard functions within R to ignore cells with NA (empty) values were able to do most of the heavy lifting for my data wrangling process. I elaborate upon the data wrangling process in more detail within the Initial Questions below.
 
 Additionally, I made the decision to remove outliers below the 1st percentile and above the 99th percentile within the variables constituting heart failure mortality and liver disease mortality. These outliers highly skewed the data and prevented me from telling an insightful story.
 
-A visual examination of the dataset shows some columns lacking consistency in the thoroughness of their content; however, these were irrelevant for the purposes of my analysis given that I focused on mainly three columns of data: the Question column (represeting one of the 124 disease indicators), the DataValue column (representing the corresponding data value for its associated Question), and the LocationAbbr (state) column.
+A visual examination of the dataset shows some columns lacking consistency in the thoroughness of their content; however, these were irrelevant for the purposes of my analysis given that I focused on mainly three columns of data: the Question column (represeting one of the 124 disease indicators), the DataValue column (representing the corresponding data value for its associated Question), and the LocationAbbr (state/territory) column.
 <br/><br/>
 
 ## Initial Questions
@@ -79,9 +79,9 @@ For handling missing values (denoted by 'NA'), I filtered out rows where the key
 
 Let us use the relationship between obesity and cholesterol as an illustrative example within the context of my R code. I initially segment the comprehensive dataset into two subsets, one each for obesity and cholesterol prevalence, by employing the <b>filter()</b> function from the <b>dplyr</b> package, I was able to sift through the dataset, selecting records that correspond to specific "Questions" (i.e. "Obesity among adults aged >= 18 years" and "High cholesterol prevalence among adults aged >= 18 years").
 
-After filtering for the "Question" column, the <b>select()</b> function was pivotal in simplifying the dataset to include two more "essential columns," which encompassed LocationAbbr (state) and DataValue (the numerical data representing the prevalence rates).
+After filtering for the "Question" column, the <b>select()</b> function was pivotal in simplifying the dataset to include two more "essential columns," which encompassed LocationAbbr (state/territory) and DataValue (the numerical data representing the prevalence rates).
 
-Selecting by LocationAbbr is more than merely a matter of convenience; it was a strategic choice that underpins the comparability of data points across the two health indicators. This selection strategy ensures that each data point is anchored to a specific geographical identifier, thus enabling a meaningful comparison between obesity and cholesterol rates within the same locales. Subsequently, the DataValue column in each subset is appropriately renamed to Obesity and Cholesterol respectively through the <b>rename()</b> function. The R code then merges the obesity and cholesterol data frames into a single data frame for analysis by using the <b>left_join()</b> function, with the LocationAbbr column serving as the common key to align data points by state.
+Selecting by LocationAbbr is more than merely a matter of convenience; it was a strategic choice that underpins the comparability of data points across the two health indicators. This selection strategy ensures that each data point is anchored to a specific geographical identifier, thus enabling a meaningful comparison between obesity and cholesterol rates within the same locales. Subsequently, the DataValue column in each subset is appropriately renamed to Obesity and Cholesterol respectively through the <b>rename()</b> function. The R code then merges the obesity and cholesterol data frames into a single data frame for analysis by using the <b>left_join()</b> function, with the LocationAbbr column serving as the common key to align data points by state/territory.
 
 This pre-processing phase culminates in a structured dataset that facilitates an intuitive understanding and lays a solid foundation for regression analysis. By ensuring that each subset contains aligned geographical identifiers alongside the corresponding health data, the stage is set for a rigorous examination of the potential correlation between obesity and cholesterol levels through regression models.
 
@@ -209,7 +209,7 @@ Given the difficulty in drawing conclusions from the above relationships demonst
 ### Mortality Predicting Alcohol Consumption
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/mortality_alcohol.png" width="1000" />
-<h4 style="color:#B5E853; margin: 0.5em 0 0;">This plot illustrates the weak negative correlation between combined heart failure and liver disease mortality rates and alcohol consumption across U.S. states, each uniquely marked. Mortality rates were summed to form a single predictor variable. The linear model suggests minimal predictive power with an R value of -0.370 and an R² value of 0.137, yet the relationship is statistically significant (p-value < 0.001).</h4>
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">This plot illustrates the weak negative correlation between combined heart failure and liver disease mortality rates and alcohol consumption across U.S. locations, each uniquely marked. Mortality rates were summed to form a single predictor variable. The linear model suggests minimal predictive power with an R value of -0.370 and an R² value of 0.137, yet the relationship is statistically significant (p-value < 0.001).</h4>
 </div>
 
 <br/><br/>
@@ -217,13 +217,13 @@ Given the difficulty in drawing conclusions from the above relationships demonst
 ### Cholesterol, Lack of Leisure-Time, and Obesity
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/cholesterol_no_leisure_obesity.png" width="1000" />
-<h4 style="color:#B5E853; margin: 0.5em 0 0;">The plot illustrates the impact of a combined risk factor—sum of high cholesterol prevalence and lack of leisure-time physical activity on obesity rates. Each state is uniquely marked by color and shape for more visual distinction. Despite a statistically significant model (p-value = 0.000), the R-value of 0.301 and R-squared of 0.091 suggest only a modest correlation between the combined risk factor and obesity prevalence.</h4>
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The plot illustrates the impact of a combined risk factor—sum of high cholesterol prevalence and lack of leisure-time physical activity on obesity rates. Each location is uniquely marked by color and shape for more visual distinction. Despite a statistically significant model (p-value = 0.000), the R-value of 0.301 and R-squared of 0.091 suggest only a modest correlation between the combined risk factor and obesity prevalence.</h4>
 </div>
 
 <br/><br/>
 
 ### Fruit and Vegetable Consumption and Tooth Loss
-This plot could not be created due to NA values stemming from the stringent filtering criteria applied after creating a CombinedConsumption variable. Essentially, after attempting to join the data frames, there were insufficient non-NA observations to construct a valid linear model.
+This plot could not be created due to NA values stemming from the stringent filtering criteria applied after creating a CombinedConsumption variable. Essentially, after attempting to join the data frames, there were insufficient non-NA observations to construct a valid linear model between the combined variable and the No Tooth Loss variable.
 <br/><br/>
 
 ## Conclusion
@@ -231,7 +231,7 @@ As we have seen, it is clear that various indicators show interesting statistica
 
 My conclusion for this data exploration is that certain lifestyle choices, government policies, and community resources can effect individual health outcomes, but it can be difficult to make any sort of definitive conclusion about what one indicator will reveal in terms of population-wide health. For example, higher alcohol consumption may be linked to higher cigarette smoking among youth, but this is certainly not a universal guarantee. Additionally, it is important to note the possible presence of confounding variables, such as geographic representation within the U.S., where different regions contain significantly different populations that are difficult to compare. We must also consider the presence and impact of possible biases (noncoverage, nonresponse, and measurement errors). The limited scope of the dataset for some particular indicators could also help explain the negative correlations we saw between alcohol consumption and two mortality types (heart failure and liver disease).
 
-My hope for this project is that anyone who examines its statistical analyses keeps in mind their unique context, as well as remembering that this dataset, despite being vast, is limited by the fact that it does not consistently capture every state for every unique indicator. Even more importantly, I hope that readers come away with an understanding that making health outcome predictions from a model between two variables is extremely difficult. Ultimately, my main takeaway from this project is the insightful wisdom that we can impact our health with our own choices, and I hope to be able to use this sharpened understanding in my own life, for both myself and for the people I care most about.
+My hope for this project is that anyone who examines its statistical analyses keeps in mind their unique context, as well as remembering that this dataset, despite being vast, is limited by the fact that it does not consistently capture every state/territory for every unique indicator. Even more importantly, I hope that readers come away with an understanding that making health outcome predictions from a model between two variables is extremely difficult. Ultimately, my main takeaway from this project is the insightful wisdom that we can impact our health with our own choices, and I hope to be able to use this sharpened understanding in my own life, for both myself and for the people I care most about.
 <br/><br/>
 
 ## Sources
