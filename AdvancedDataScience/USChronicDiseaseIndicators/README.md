@@ -31,6 +31,8 @@ Among these 124 chronic indicators are a variety of interesting "questions"; in 
 
 Consistent low p-values (defined as less than 0.05) across my selected regressions tell us that the various variables are related, though we will see how low R and R² values mean that they are not strong predictors of each other. Essentially, this is the most interesting insight from this project: that health data is complex and determined by many interrelated variables, where no two variables in isolation can effectively predict one another.
 
+Additionally, my follow-up questions, where I created combined variables to attempt to emulate multiple health-related variables impacting another health variable, continued to demonstrate low correlations. Though the correlations were slightly higher, they were still not high enough to demonstrate predictive power; this continues to speak to the main insight from this study, where health outcomes are incredibly complex to predict.
+
 The relevant relationships demonstrated through my statistical analysis should not overshadow the important understanding that multitudinous variables are involved in determining health outcomes. Our key takeaway is that it is very difficult to demonstrate strong correlations between two distinct health indicators.
 <br/><br/>
 
@@ -46,7 +48,7 @@ A visual examination of the dataset shows some columns lacking consistency in th
 ## Initial Questions
 The intentions of my analysis are rooted in better understanding confounding factors within public health by examining a publicly available U.S. government dataset on chronic disease indicators from 2001 to 2021. As my parents age and deal with their own personal health problems, I find myself more interested than ever to see what lifestyle adjustments they could potentially make in order to achieve the best possible health outcomes. In this way, this analysis includes a rather personal component, giving me added curiosity and incentive to discover insight.
 
-This data exploration examines the following 6 questions by using 13 total regression visualizations and their associated statistical metrics.<br/>
+This data exploration examines the following 6 questions by using 16 total regression visualizations and their associated statistical metrics.<br/>
 <ol>
   <li><font color="#B5E853"><b>Obesity and Cholesterol</b>: Is there a statistically significant relationship between obesity and cholesterol levels among adults?</font></li>
   <li><font color="#B5E853"><b>Alcohol Consumption and Mortality</b>: How does alcohol consumption correlate with heart failure and liver disease mortality rates?</font></li>
@@ -90,7 +92,7 @@ The CDI's standardized definitions and methodologies allow for consistent data c
 Despite the thoughtful structured framework for the CDC's data collection methods, the BRFSS data might exhibit biases due to several factors. This includes the exclusion of specific groups like college students and military personnel (noncoverage bias), the possibility of individuals opting not to participate or to skip questions (nonresponse bias), and potential inaccuracies stemming from participants' desire to present themselves in a favorable light or from memory lapses (measurement errors). To address these concerns, the BRFSS expanded its reach in 2011 by incorporating data from individuals who only use cell phones and by implementing a revised weighting methodology. This shift means that data gathered after this year establishes a new reference point, thereby presenting a possible bias underlying comparisons between data before and after 2011.
 
 ## Discoveries and Insights
-In the 13 visualizations below and their associated captions, we examine relevant statistical metrics and discuss their implications within their context. This exploration's theme, rooted in the insight that health data eludes simplification, is discussed across 6 distinct examples.
+In the 16 visualizations below and their associated captions, we examine relevant statistical metrics and discuss their implications within their context. This exploration's theme, rooted in the insight that health data eludes simplification, is discussed across 6 distinct examples.
 <br/><br/>
 
 ### Obesity and Cholesterol
@@ -189,7 +191,7 @@ In the 13 visualizations below and their associated captions, we examine relevan
 </div>
 
 ## Follow-Up Questions
-Given the difficulty in drawing conclusions from the above relationships demonstrated in these 13 visualizations, I devised 3 additional follow-up questions to explore the predictive power of "combined" relationships, where two variables together are evaluated on their collective ability to predict a third variable. After initially attempting Ridge regressions to combine variables, I realized given the vast dataset size I had to create "summed" variables to represent my combined variables.
+Given the difficulty in drawing conclusions from the above relationships demonstrated in these first 13 visualizations, I devised 3 additional follow-up questions to explore the predictive power of "combined" relationships, where two variables together are evaluated on their collective ability to predict a third variable. After initially attempting Ridge regressions to combine variables, I realized given the vast dataset size I had to create "summed" variables to represent my combined variables.
 
 <ol>
   <li><font color="#B5E853"><b>Mortality Predicting Alcohol Consumption</b>: Does higher heart failure mortality and higher liver disease mortality together (among adults) together predict higher alcohol consumption?</font></li>
@@ -226,7 +228,7 @@ Given the difficulty in drawing conclusions from the above relationships demonst
 
 
 ## Conclusion
-As we have seen, it is clear that various indicators show interesting statistically significant relationships. Nevertheless, we cannot make direct conclusions about health outcomes using only two indicators, even after exploring polynomial fits. In healthcare, it is best to take a holistic approach to improve outcomes, given that the affect of one indicator on overall health is compounded across the wide-range of linked biological pathways.
+As we have seen, it is clear that various indicators show interesting statistically significant relationships. Nevertheless, we cannot make direct conclusions about health outcomes using only two indicators, even after exploring polynomial fits. After creating combined variables in the follow-up questions, we continued to see a similar limitation in predictive power. In healthcare, it is best to take a holistic approach to improve outcomes, given that the affect of one indicator on overall health is compounded across the wide-range of linked biological pathways.
 
 My conclusion for this data exploration is that certain lifestyle choices, government policies, and community resources can effect individual health outcomes, but it can be difficult to make any sort of definitive conclusion about what one indicator will reveal in terms of population-wide health. For example, higher alcohol consumption may be linked to higher cigarette smoking among youth, but this is certainly not a universal guarantee. Additionally, it is important to note the possible presence of confounding variables, such as geographic representation within the U.S., where different regions contain significantly different populations that are difficult to compare. We must also consider the presence and impact of possible biases (noncoverage, nonresponse, and measurement errors). The limited scope of the dataset for some particular indicators could also help explain the negative correlations we saw between alcohol consumption and two mortality types (heart failure and liver disease).
 
