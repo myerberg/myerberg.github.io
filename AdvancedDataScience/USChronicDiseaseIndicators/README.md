@@ -21,6 +21,7 @@
 - [Follow-Up Questions](#follow-up-questions)
   - [Mortality Predicting Alcohol Consumption](#mortality-predicting-alcohol-consumption)
   - [Cholesterol, Lack of Leisure-Time, and Obesity](#cholesterol-lack-of-leisure-time-and-obesity)
+  - [Fruit and Vegetable Consumption and Tooth Loss](#fruit-and-vegetable-consumption-and-tooth-loss)
 - [Conclusion](#conclusion)
 - [Sources](#sources)
 <br/><br/>
@@ -49,7 +50,7 @@ A visual examination of the dataset shows some columns lacking consistency in th
 ## Initial Questions
 The intentions of my analysis are rooted in better understanding confounding factors within public health by examining a publicly available U.S. government dataset on chronic disease indicators from 2001 to 2021. As my parents age and deal with their own personal health problems, I find myself more interested than ever to see what lifestyle adjustments they could potentially make in order to achieve the best possible health outcomes. In this way, this analysis includes a rather personal component, giving me added curiosity and incentive to discover insight.
 
-This data exploration examines the following 6 questions by using 16 total regression visualizations and their associated statistical metrics.<br/>
+This data exploration examines the following 6 questions by using 15 total regression visualizations and their associated statistical metrics.<br/>
 <ol>
   <li><font color="#B5E853"><b>Obesity and Cholesterol</b>: Is there a statistically significant relationship between obesity and cholesterol levels among adults?</font></li>
   <li><font color="#B5E853"><b>Alcohol Consumption and Mortality</b>: How does alcohol consumption correlate with heart failure and liver disease mortality rates?</font></li>
@@ -93,7 +94,7 @@ The CDI's standardized definitions and methodologies allow for consistent data c
 Despite the thoughtful structured framework for the CDC's data collection methods, the BRFSS data might exhibit biases due to several factors. This includes the exclusion of specific groups like college students and military personnel (noncoverage bias), the possibility of individuals opting not to participate or to skip questions (nonresponse bias), and potential inaccuracies stemming from participants' desire to present themselves in a favorable light or from memory lapses (measurement errors). To address these concerns, the BRFSS expanded its reach in 2011 by incorporating data from individuals who only use cell phones and by implementing a revised weighting methodology. This shift means that data gathered after this year establishes a new reference point, thereby presenting a possible bias underlying comparisons between data before and after 2011.
 
 ## Discoveries and Insights
-In the 16 visualizations below and their associated captions, we examine relevant statistical metrics and discuss their implications within their context. This exploration's theme, rooted in the insight that health data eludes simplification, is discussed across 6 distinct examples.
+In the 15 visualizations below and their associated captions, we examine relevant statistical metrics and discuss their implications within their context. This exploration's theme, rooted in the insight that health data eludes simplification, is discussed across 6 distinct examples.
 <br/><br/>
 
 ### Obesity and Cholesterol
@@ -199,7 +200,7 @@ Given the difficulty in drawing conclusions from the above relationships demonst
   <li><font color="#B5E853"><b>Cholesterol, Lack of Leisure-Time, and Obesity</b>: Does higher cholesterol and lack of leisure-time physical activity together (among adults) predict higher obesity?</font></li>
   <li><font color="#B5E853"><b>Fruit and Vegetable Consumption and Tooth Loss</b>: Is there a relationship between higher fruit and vegetable consumption together (among adults) and less tooth loss?</font></li>
 </ol>
-
+<br/><br/>
 ### Mortality Predicting Alcohol Consumption
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/mortality_alcohol.png" width="1000" />
@@ -218,8 +219,7 @@ Given the difficulty in drawing conclusions from the above relationships demonst
 
 ### Fruit and Vegetable Consumption and Tooth Loss
 <div class="centered-content" style="text-align:center;">
-<img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/.png" width="1000" />
-<h4 style="color:#B5E853; margin: 0.5em 0 0;"></h4>
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">This plot could not be created due to NA values stemming from the stringent filtering criteria applied after creating a CombinedConsumption variable. Essentially, after attempting to join the data frames, there were insufficient non-NA observations to construct a valid linear model.</h4>
 </div>
 
 <br/><br/>
@@ -254,6 +254,7 @@ Here you can download this vast dataset in a variety of formats. The CSV version
 <li><a href="https://statisticsglobe.com/add-polynomial-regression-line-plot-r" target="_blank" style="color:#B5E853">Polynomial Regression Line</a></li>
 <li><a href="https://dplyr.tidyverse.org/" target="_blank" style="color:#B5E853">dplyr Package</a></li>
 <li><a href="https://ggplot2.tidyverse.org" target="_blank" style="color:#B5E853">ggplot2 Package</a></li>
+<li><a href="https://cran.r-project.org/web//packages/RColorBrewer/RColorBrewer.pdf" style="color:#B5E853">RColorBrewer Package</a></li>
 <li><a href="https://www.rdocumentation.org/packages/readr/versions/2.1.5" target="_blank" style="color:#B5E853">readr Package</a></li>
 <li><a href="https://scales.r-lib.org/" target="_blank" style="color:#B5E853">scales Package</a></li>
 <li><a href="https://tidyr.tidyverse.org/" target="_blank" style="color:#B5E853">tidyr Package</a></li>
