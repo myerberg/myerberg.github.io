@@ -27,15 +27,15 @@
 <br/><br/>
 
 ## Introduction
-By using R to create regression analyses of the CDC's U.S. Chronic Disease Indicators vast dataset (2001-2021), I will demonstrate consistent relationships between associated variables.
+By using R to create regression analyses of the CDC's U.S. Chronic Disease Indicators vast dataset (2001-2021), I will demonstrate interesting relationships between associated variables.
 
-Among these 124 chronic indicators are a variety of interesting "questions"; in my examination of these indicators, I aimed to draw upon my pre-existing health knowledge to see if I could find interesting associations between different indicators. My goal in this data exploration is to uncover statistical validation for some of my correlation hypotheses. In the below Discoveries and Insights section, we will examine R values to determine degree of correlation, R² values to determine how well one variable predicts another, and p-values to determine the strength of the relationship.
+Among these 124 chronic indicators are a variety of compelling "questions"; in my examination of these indicators, I aim to draw upon my pre-existing health knowledge to see if I could find interesting associations between different indicators. My goal in this data exploration was to uncover statistical validation for some of my correlation hypotheses. In the below "Discoveries and Insights" and "Follow-Up Questions" sections, we will examine R values to determine degree of correlation, R² values to determine how well one variable predicts another, and p-values to determine the strength of the relationship.
 
 Consistent low p-values (defined as less than 0.05) across my selected regressions tell us that the various variables are related, though we will see how low R and R² values mean that they are not strong predictors of each other. Essentially, this is the most interesting insight from this project: that health data is complex and determined by many interrelated variables, where no two variables in isolation can effectively predict one another.
 
-Additionally, my follow-up questions, where I created combined variables to attempt to emulate multiple health-related variables impacting another health variable, continued to demonstrate low correlations. Though the correlations were slightly higher, they were still not high enough to demonstrate predictive power; this continues to speak to the main insight from this study, where health outcomes are incredibly complex to predict.
+Additionally, for my follow-up questions, where I create combined variables to attempt to emulate multiple health-related variables impacting in conjunction another health variable, continues to demonstrate low correlations. Though the correlations are slightly higher, they are still not high enough to demonstrate predictive power; this continues to speak to the main insight from this study, where health outcomes are incredibly complex to predict.
 
-The relevant relationships demonstrated through my statistical analysis should not overshadow the important understanding that multitudinous variables are involved in determining health outcomes. Our key takeaway is that it is very difficult to demonstrate strong correlations between two distinct health indicators.
+The relevant relationships demonstrated through my statistical analysis should not overshadow the important understanding that multitudinous variables are involved in determining health outcomes. Our key takeaway is that it is very difficult to demonstrate strong correlations between two (or three, as we will see in the follow-up questions) health indicators.
 <br/><br/>
 
 ## Dataset
@@ -51,7 +51,7 @@ A visual examination of the dataset shows some columns lacking consistency in th
 ## Initial Questions
 The intentions of my analysis are rooted in better understanding confounding factors within public health by examining a publicly available U.S. government dataset on chronic disease indicators from 2001 to 2021. As my parents age and deal with their own personal health problems, I find myself more interested than ever to see what lifestyle adjustments they could potentially make in order to achieve the best possible health outcomes. In this way, this analysis includes a rather personal component, giving me added curiosity and incentive to discover insight.
 
-This data exploration examines the following 6 questions by using 15 total regression visualizations and their associated statistical metrics.<br/>
+This data exploration initially examines the following 6 questions by using 13 total regression visualizations and their associated statistical metrics. I follow these initial questions with 3 additional questions that address my initial findings (discussed below in the "Follow-Up Questions" section).<br/>
 <ol>
   <li><font color="#B5E853"><b>Obesity and Cholesterol</b>: Is there a statistically significant relationship between obesity and cholesterol levels among adults?</font></li>
   <li><font color="#B5E853"><b>Alcohol Consumption and Mortality</b>: How does alcohol consumption correlate with heart failure and liver disease mortality rates?</font></li>
@@ -67,6 +67,8 @@ Initially, I was expecting to potentially see some of the regressions demonstrat
 As I aimed to explore my initial low correlations more deeply, I attempted various polynomial fits within the context of the relationships which seemed to demonstrate a curve. These polynomial fits ultimately provided little improvement, as is discussed below in the Discoveries and Insights section. Additionally, in examining the six diverse relationships (Obesity and Cholesterol, Alcohol Consumption and Mortality, Youth Tobacco Use, PE Participation and Obesity, Fluoridation and Tooth Loss, and Farmers Markets and Healthy Consumption), I provide a comprehensive analysis of health data outcomes by covering a wide spectrum of public health topics. This approach ensured a multifaceted examination of how lifestyle factors, environmental policies, and community resources influence health.
 
 By venturing beyond conventional associations, such as obesity and cholesterol, and exploring more esoteric relationships like fluoridation and tooth loss or the impact of farmers markets on healthy consumption, the analysis gained depth. This diversity allows for the identification of both direct and indirect health determining factors, offering nuanced insights into the complex web of factors that contribute to public health outcomes. It aims to reflect a thorough exploration of health data, capturing a broad and detailed picture of health influences, thereby providing a rich foundation for understanding and addressing public health challenges.
+
+My follow-up questions allowed me to dig even deeper, where I attempted to construct combined metrics of two variables together to predict a third variable. We will see marginally more significant correlations here, but generally they remain low enough to support this project's overall thesis: that health-related outcomes are incredibly complex to predict.
 
 ### Data Wrangling in Detail
 Data wrangling served as a critical process for preparing and transforming the Chronic Disease Indicators data across the 6 different health-related relationships.
@@ -96,7 +98,7 @@ Despite the thoughtful structured framework for the CDC's data collection method
 <br/><br/>
 
 ## Discoveries and Insights
-In the 15 visualizations below and their associated captions, we examine relevant statistical metrics and discuss their implications within their context. This exploration's theme, rooted in the insight that health data eludes simplification, is discussed across 6 distinct examples.
+In the 15 visualizations below and their associated captions, we examine relevant statistical metrics and discuss their implications within their context. This exploration's theme, rooted in the insight that health data eludes simplification, is discussed across 6 distinct examples and 3 follow-up examples.
 <br/><br/>
 
 ### Obesity and Cholesterol
@@ -221,11 +223,11 @@ Given the difficulty in drawing conclusions from the above relationships demonst
 <br/><br/>
 
 ### Fruit and Vegetable Consumption and Tooth Loss
-This plot could not be created due to NA values stemming from the stringent filtering criteria applied after creating a CombinedConsumption variable. Essentially, after attempting to join the data frames, there were insufficient non-NA observations to construct a valid linear model.</h4>
+This plot could not be created due to NA values stemming from the stringent filtering criteria applied after creating a CombinedConsumption variable. Essentially, after attempting to join the data frames, there were insufficient non-NA observations to construct a valid linear model.
 <br/><br/>
 
 ## Conclusion
-As we have seen, it is clear that various indicators show interesting statistically significant relationships. Nevertheless, we cannot make direct conclusions about health outcomes using only two indicators, even after exploring polynomial fits. After creating combined variables in the follow-up questions, we continued to see a similar limitation in predictive power. In healthcare, it is best to take a holistic approach to improve outcomes, given that the affect of one indicator on overall health is compounded across the wide-range of linked biological pathways.
+As we have seen, it is clear that various indicators show interesting statistically significant relationships. Nevertheless, we cannot make direct conclusions about health outcomes using only two indicators, even after exploring polynomial fits. After creating combined variables in the follow-up questions, we continued to see a similar limitation in predictive power. In healthcare, it is best to take a holistic approach to improve outcomes, given that the effect of one or two indicators on overall health is compounded across the wide-range of linked biological pathways.
 
 My conclusion for this data exploration is that certain lifestyle choices, government policies, and community resources can effect individual health outcomes, but it can be difficult to make any sort of definitive conclusion about what one indicator will reveal in terms of population-wide health. For example, higher alcohol consumption may be linked to higher cigarette smoking among youth, but this is certainly not a universal guarantee. Additionally, it is important to note the possible presence of confounding variables, such as geographic representation within the U.S., where different regions contain significantly different populations that are difficult to compare. We must also consider the presence and impact of possible biases (noncoverage, nonresponse, and measurement errors). The limited scope of the dataset for some particular indicators could also help explain the negative correlations we saw between alcohol consumption and two mortality types (heart failure and liver disease).
 
