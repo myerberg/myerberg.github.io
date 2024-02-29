@@ -46,6 +46,7 @@ This dataset contains 1,185,676 entries; therefore, R was well-suited for the ta
 Additionally, I made the decision to remove outliers below the 1st percentile and above the 99th percentile within the variables constituting heart failure mortality and liver disease mortality. These outliers highly skewed the data and prevented me from telling an insightful story.
 
 A visual examination of the dataset shows some columns lacking consistency in the thoroughness of their content; however, these were irrelevant for the purposes of my analysis given that I focused on mainly three columns of data: the Question column (represeting one of the 124 disease indicators), the DataValue column (representing the corresponding data value for its associated Question), and the LocationAbbr (state/region/metropolitan area) column.
+<br/><br/>
 
 ## Initial Questions
 The intentions of my analysis are rooted in better understanding confounding factors within public health by examining a publicly available U.S. government dataset on chronic disease indicators from 2001 to 2021. As my parents age and deal with their own personal health problems, I find myself more interested than ever to see what lifestyle adjustments they could potentially make in order to achieve the best possible health outcomes. In this way, this analysis includes a rather personal component, giving me added curiosity and incentive to discover insight.
@@ -92,6 +93,7 @@ The CDI data encompasses a wide range of indicators related to various health as
 The CDI's standardized definitions and methodologies allow for consistent data collection and analysis across different regions. This standardization is crucial for accurately assessing and comparing the prevalence of chronic diseases and their risk factors across the U.S. Furthermore, the publicly accessible data ensures transparency, helping to mitigate bias.
 
 Despite the thoughtful structured framework for the CDC's data collection methods, the BRFSS data might exhibit biases due to several factors. This includes the exclusion of specific groups like college students and military personnel (noncoverage bias), the possibility of individuals opting not to participate or to skip questions (nonresponse bias), and potential inaccuracies stemming from participants' desire to present themselves in a favorable light or from memory lapses (measurement errors). To address these concerns, the BRFSS expanded its reach in 2011 by incorporating data from individuals who only use cell phones and by implementing a revised weighting methodology. This shift means that data gathered after this year establishes a new reference point, thereby presenting a possible bias underlying comparisons between data before and after 2011.
+<br/><br/>
 
 ## Discoveries and Insights
 In the 15 visualizations below and their associated captions, we examine relevant statistical metrics and discuss their implications within their context. This exploration's theme, rooted in the insight that health data eludes simplification, is discussed across 6 distinct examples.
@@ -191,6 +193,7 @@ In the 15 visualizations below and their associated captions, we examine relevan
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/farmers_markets_vs_fruit_consumption.png" width="1000" />
 <h4 style="color:#B5E853; margin: 0.5em 0 0;">The graph shows a linear regression of fruit consumption against farmers market availability in the U.S., indicating a weak correlation with an R of 0.149 and R² of 0.022, slightly lower than for vegetables. Despite statistical significance (p < 0.001), these metrics underscore that other factors likely play a more substantial role in influencing fruit consumption habits among adults.</h4>
 </div>
+<br/><br/>
 
 ## Follow-Up Questions
 Given the difficulty in drawing conclusions from the above relationships demonstrated in these first 13 visualizations, I devised 3 additional follow-up questions to explore the predictive power of "combined" relationships, where two variables together are evaluated on their collective ability to predict a third variable. After initially attempting Ridge regressions to combine variables, I realized given the vast dataset size I had to create "summed" variables to represent my combined variables.
@@ -218,15 +221,8 @@ Given the difficulty in drawing conclusions from the above relationships demonst
 <br/><br/>
 
 ### Fruit and Vegetable Consumption and Tooth Loss
-<div class="centered-content" style="text-align:center;">
-<h4 style="color:#B5E853; margin: 0.5em 0 0;">This plot could not be created due to NA values stemming from the stringent filtering criteria applied after creating a CombinedConsumption variable. Essentially, after attempting to join the data frames, there were insufficient non-NA observations to construct a valid linear model.</h4>
-</div>
-
+This plot could not be created due to NA values stemming from the stringent filtering criteria applied after creating a CombinedConsumption variable. Essentially, after attempting to join the data frames, there were insufficient non-NA observations to construct a valid linear model.</h4>
 <br/><br/>
-
-<br/><br/>
-<br/><br/>
-
 
 ## Conclusion
 As we have seen, it is clear that various indicators show interesting statistically significant relationships. Nevertheless, we cannot make direct conclusions about health outcomes using only two indicators, even after exploring polynomial fits. After creating combined variables in the follow-up questions, we continued to see a similar limitation in predictive power. In healthcare, it is best to take a holistic approach to improve outcomes, given that the affect of one indicator on overall health is compounded across the wide-range of linked biological pathways.
