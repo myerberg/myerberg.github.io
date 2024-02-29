@@ -198,7 +198,7 @@ In the 15 visualizations below and their associated captions, we examine relevan
 <br/><br/>
 
 ## Follow-Up Questions
-Given the difficulty in drawing conclusions from the above relationships demonstrated in these first 13 visualizations, I devised 3 additional follow-up questions to explore the predictive power of "combined" relationships, where two variables together are evaluated on their collective ability to predict a third variable. After initially attempting Ridge regressions to combine variables, I realized given the vast dataset size I had to create "summed" variables to represent my combined variables.
+Given the difficulty in drawing conclusions from the above relationships demonstrated in these first 13 visualizations, I devised 3 additional follow-up questions to explore the predictive power of "combined" relationships, where two variables together are evaluated on their collective ability to predict a third variable. After initially attempting Ridge regressions to combine variables, I realized given the vast dataset size I had to create "summed" variables to represent my combined variables. Additionally, I labeled the data points by Location to provide supplemental insight.
 
 <ol>
   <li><font color="#B5E853"><b>Mortality Predicting Alcohol Consumption</b>: Does higher heart failure mortality and higher liver disease mortality together (among adults) together predict higher alcohol consumption?</font></li>
