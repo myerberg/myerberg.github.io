@@ -13,6 +13,7 @@
   - [Potential Bias](#potential-bias)
 - [Follow-Up Questions](#follow-up-questions)
   - [Mortality Predicting Alcohol Consumption](#mortality-predicting-alcohol-consumption)
+  - [Cholesterol, Lack of Leisure-Time, and Obesity](#cholesterol-lack-of-leisure-time-and-obesity)
 - [Discoveries and Insights](#discoveries-and-insights)
   - [Obesity and Cholesterol](#obesity-and-cholesterol)
   - [Alcohol Consumption and Mortality](#alcohol-consumption-and-mortality)
