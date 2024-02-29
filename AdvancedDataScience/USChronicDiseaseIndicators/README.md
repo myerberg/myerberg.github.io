@@ -200,7 +200,7 @@ Given the difficulty in drawing conclusions from the above relationships demonst
 ### Mortality Predicting Alcohol Consumption
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/mortality_alcohol.png" width="1000" />
-<h4 style="color:#B5E853; margin: 0.5em 0 0;">This plot illustrates the weak negative correlation between combined heart failure and liver disease mortality rates and alcohol consumption across U.S. locations. Mortality rates were summed to form a single predictor variable. The linear model suggests minimal predictive power with an R value of -0.370 and an R² value of 0.137, yet the relationship is statistically significant (p-value < 0.001).</h4>
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">This plot illustrates the weak negative correlation between combined heart failure and liver disease mortality rates and alcohol consumption across U.S. locations, each uniquely marked. Mortality rates were summed to form a single predictor variable. The linear model suggests minimal predictive power with an R value of -0.370 and an R² value of 0.137, yet the relationship is statistically significant (p-value < 0.001).</h4>
 </div>
 
 <br/><br/>
@@ -208,7 +208,7 @@ Given the difficulty in drawing conclusions from the above relationships demonst
 ### Cholesterol, Lack of Leisure-Time, and Obesity
 <div class="centered-content" style="text-align:center;">
 <img src="https://myerberg.github.io/AdvancedDataScience/USChronicDiseaseIndicators/assets/images/cholesterol_no_leisure_obesity.png" width="1000" />
-<h4 style="color:#B5E853; margin: 0.5em 0 0;"></h4>
+<h4 style="color:#B5E853; margin: 0.5em 0 0;">The plot illustrates the impact of a combined risk factor—sum of high cholesterol prevalence and lack of leisure-time physical activity on obesity rates. Each state is uniquely marked by color and shape for more visual distinction. Despite a statistically significant model (p-value = 0.000), the R-value of 0.301 and R-squared of 0.091 suggest only a modest correlation between the combined risk factor and obesity prevalence.</h4>
 </div>
 
 <br/><br/>
