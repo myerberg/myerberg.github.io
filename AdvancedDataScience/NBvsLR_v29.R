@@ -1,5 +1,5 @@
 # Tyler Myerberg
-# 3.18.24
+# 3.26.24
 # Logistic Regression vs. Naive Bayes - Spam/Ham SMS Classification
 
 # Load necessary libraries
@@ -7,7 +7,7 @@
 # dplyr: Used for data manipulation, transforming spam/ham into binary labels with mutate() and selecting relevant columns with select()
 library(dplyr)
 
-# naivebayes: Implements Naive Bayes model training with Laplace smoothing on oversampled data using the naive_bayes() function
+# naivebayes: Implements Naive Bayes model training with Laplace smoothing on using the naive_bayes() function
 library(naivebayes)
 
 # ggplot2: Utilized for plotting ROC curves and creating visual comparisons between models using the ggplot() function
@@ -19,16 +19,16 @@ library(caret)
 # tm: Supports text preprocessing tasks like converting to lowercase, removing punctuation/numbers, and excluding stopwords with functions like tolower(), removePunctuation(), and removeWords()
 library(tm)
 
-# glmnet: Employed for fitting a logistic regression model with cross-validation on TF-IDF transformed text data using 'cv.glmnet()' function
+# glmnet: Employed for fitting a logistic regression model with cross-validation on TF-IDF transformed text data using cv.glmnet() function
 library(glmnet)
 
-# pROC: Provides functionality for computing ROC curves and AUC statistics for model evaluation using 'roc()' and 'auc()' functions
+# pROC: Provides functionality for computing ROC curves and AUC statistics for model evaluation using roc() and auc() functions
 library(pROC)
 
 # text2vec: Utilized for tokenization, creation of a vocabulary, and building a Document-Term Matrix from text data using itoken(), create_vocabulary(), and create_dtm() functions
 library(text2vec)
 
-# Matrix: Converts Document-Term Matrices into sparse matrices for efficient logistic regression modeling with glmnet using the as() function with the "CsparseMatrix" method
+# Matrix: Converts Document-Term Matrices into sparse matrices for efficient logistic regression modeling with glmnet using the as() function with CsparseMatrix
 library(Matrix)
 
 # ROSE: Applied to oversample the minority class in the training data, addressing class imbalance to improve model performance using the ovun.sample() function
@@ -50,7 +50,7 @@ clean_text <- function(x) {
 # Applies clean_text function to data$v2, storing results in data$text
 data$text <- sapply(data$v2, clean_text)
 
-# Data preparation
+# Data preparation, transforming spam and ham into binary labels
 data <- data %>%
   mutate(v1 = as.factor(ifelse(v1 == "spam", 1, 0))) %>%
   select(v1, v2)
@@ -67,20 +67,20 @@ trainDataOversampled <- ovun.sample(v1 ~ ., data = trainData, method = "over", N
 # Train a Naive Bayes model with Laplace smoothing on the oversampled training data
 model_nb <- naive_bayes(v1 ~ ., data = trainDataOversampled, laplace = 1)
 
-# Generates NB model predictions for 'testData'
+# Generates NB model predictions for testData
 predictions_nb <- predict(model_nb, testData)
 
 # Evaluate model performance
 confMat_nb <- confusionMatrix(predictions_nb, testData$v1)
 print(confMat_nb)
 
-# Generate probability predictions for the positive class
+# Generate probability predictions
 prob_predictions_nb <- predict(model_nb, testData, type = "prob")[,2]
 
 # Compute the ROC curve
 roc_nb <- roc(testData$v1, prob_predictions_nb)
 
-# Create a data frame for Naive Bayes ROC
+# Create a data frame for Naive Bayes ROC (FPR is False Positive Rate, TPR is True Positive Rate)
 roc_data_nb <- data.frame(
   FPR = 1 - roc_nb$specificities,
   TPR = roc_nb$sensitivities,
@@ -93,13 +93,13 @@ auc_nb <- auc(roc_nb)
 # Plot the Naive Bayes ROC curve using ggplot2
 ggplot() + 
   geom_line(aes(x = 1 - roc_nb$specificities, y = roc_nb$sensitivities), color = "blue") + 
-  geom_line(aes(x = c(0, 1), y = c(0, 1)), linetype = "dashed") + 
+  geom_line(aes(x = c(0, 1), y = c(0, 1)), linetype = "dashed") +  # Draw no-skill line
   geom_text(aes(x = 0.75, y = 0.68, label = "No-skill line"), color = "darkblue") +  # Label for the no-skill line
   labs(title = "ROC Curve for Naive Bayes Model", 
        subtitle = paste0("AUC: ", round(auc_nb, 3)),  # Add subtitle for AUC
        x = "False Positive Rate (1 - Specificity)", 
        y = "True Positive Rate (Sensitivity)",
-       caption = "The ROC curve demonstrates the trade-off between sensitivity and specificity at various threshold settings.\nAn AUC of 0.607 tells us that the model has a moderate ability to discriminate between the positive and negative classes; specifically,\nthere is a 60.7% chance that the model will rank a randomly chosen positive instance higher than a randomly chosen negative instance.") +  # caption
+       caption = "The ROC curve demonstrates the trade-off between sensitivity and specificity at various threshold settings.\nAn AUC of 0.607 tells us that the model has a moderate ability to discriminate between the positive and negative classes; specifically,\nthere is a 60.7% chance that the model will rank a randomly chosen positive instance higher than a randomly chosen negative instance.") +
   theme_minimal() +
   theme(plot.title = element_text(hjust = 0.5),  # Center title
         plot.subtitle = element_text(hjust = 0.5),  # Center subtitle
@@ -121,7 +121,7 @@ clean_text <- function(x) {
 # Applies clean_text function to data$v2, storing results in data$text
 data$text <- sapply(data$v2, clean_text)
 
-# Transform 'spam'/'ham' into binary labels
+# Transform spam and ham into binary labels
 data$v1 <- as.factor(ifelse(data$v1 == "spam", 1, 0))
 
 # Split the data into training and testing sets
@@ -152,7 +152,7 @@ y_train <- as.numeric(trainData$v1) # Ensure binary numeric format
 # Fit logistic regression model with cross-validation
 cv_fit <- cv.glmnet(X_train_sparse, y_train, family = "binomial")
 
-# Generate probability predictions for the positive class
+# Generate probability predictions
 prob_predictions_lr <- predict(cv_fit, newx = X_test_sparse, s = "lambda.min", type = "response")
 
 # Convert probabilities to binary predictions
@@ -176,7 +176,7 @@ auc_lr <- auc(roc_data_lr)
 # Compute the ROC curve for Logistic Regression predictions
 roc_lr <- roc(response = as.numeric(as.character(testData$v1)), predictor = prob_predictions_lr)
 
-# Create a data frame for plotting with ggplot2
+# Create a data frame for plotting with ggplot2 (FPR is False Positive Rate, TPR is True Positive Rate)
 roc_data_lr <- data.frame(
   FPR = 1 - roc_lr$specificities,
   TPR = roc_lr$sensitivities
@@ -185,19 +185,19 @@ roc_data_lr <- data.frame(
 # Plot the Logistic Regression ROC curve using ggplot2
 ggplot() + 
   geom_line(aes(x = 1 - roc_lr$specificities, y = roc_lr$sensitivities), color = "blue") + 
-  geom_line(aes(x = c(0, 1), y = c(0, 1)), linetype = "dashed") + 
+  geom_line(aes(x = c(0, 1), y = c(0, 1)), linetype = "dashed") +  # Draw no-skill line
   geom_text(aes(x = 0.75, y = 0.68, label = "No-skill line"), color = "darkblue") +  # Label for the no-skill line
   labs(title = "ROC Curve for Logistic Regression Model", 
        subtitle = paste0("AUC: ", round(auc_lr, 3)),  # Add subtitle for AUC
        x = "False Positive Rate (1 - Specificity)", 
        y = "True Positive Rate (Sensitivity)",
-       caption = "The ROC curve illustrates the balance between sensitivity and specificity at different thresholds. With an AUC of 0.961, this model has a\n96.1% chance of ranking a randomly chosen positive instance higher than a negative one. This is significant improvement over Naive Bayes.") +  # caption
+       caption = "The ROC curve illustrates the balance between sensitivity and specificity at different thresholds. With an AUC of 0.961, this model has a\n96.1% chance of ranking a randomly chosen positive instance higher than a negative one. This is significant improvement over Naive Bayes.") +
   theme_minimal() +
   theme(plot.title = element_text(hjust = 0.5),  # Center title
         plot.subtitle = element_text(hjust = 0.5),  # Center subtitle
         plot.caption = element_text(hjust = 0.5))  # Center caption
 
-# Combine the data frames with an additional 'Model' column for distinguishing the models in the plot
+# Combine the data frames with an additional Model column for distinguishing the models in the plot
 roc_data_nb$Model <- 'Naive Bayes'
 roc_data_lr$Model <- 'Logistic Regression'
 roc_data_combined <- rbind(roc_data_nb, roc_data_lr)
@@ -205,7 +205,7 @@ roc_data_combined <- rbind(roc_data_nb, roc_data_lr)
 # Create the combined NB/LR ROC plot with ggplot2
 roc_plot <- ggplot(roc_data_combined, aes(x = FPR, y = TPR, color = Model)) +
   geom_line() +  # Draw ROC curves
-  geom_abline(linetype = "dashed", color = "gray", slope = 1, intercept = 0) +  # No-skill line
+  geom_abline(linetype = "dashed", color = "gray", slope = 1, intercept = 0) +  # Draw no-skill line
   geom_text(aes(x = 0.5, y = 0.5, label = "No-skill line"), color = "darkblue", vjust = 2.5) +  # Label for the no-skill line
   scale_color_manual(values = c("Naive Bayes" = "blue", "Logistic Regression" = "red")) +  
   labs(title = "ROC Curve Comparison", 
@@ -246,7 +246,7 @@ roc_plot_with_ribbon <- ggplot() +
   geom_ribbon(data = ribbon_data, aes(x = FPR, ymin = TPR_Base, ymax = TPR_NB), fill = "skyblue", alpha = 0.5) +
   geom_ribbon(data = ribbon_data, aes(x = FPR, ymin = TPR_Base, ymax = TPR_LR), fill = "lightgreen", alpha = 0.5) +
   geom_line(data = roc_data, aes(x = FPR, y = TPR, color = Model)) +
-  geom_abline(linetype = "dashed", color = "gray", slope = 1, intercept = 0) +  # No-skill line
+  geom_abline(linetype = "dashed", color = "gray", slope = 1, intercept = 0) +  # Draw no-skill line
   geom_text(aes(x = 0.5, y = 0.5, label = "No-skill line"), color = "darkblue", vjust = 3.4) +  # Label for the no-skill line
   scale_color_manual(values = c("Naive Bayes" = "blue", "Logistic Regression" = "red")) +
   labs(title = "ROC Curve Comparison with AUC Values",
@@ -258,7 +258,7 @@ roc_plot_with_ribbon <- ggplot() +
   theme_minimal() +
   theme(plot.title = element_text(hjust = 0.5, size = 16), # Center and adjust the size of the title
         plot.subtitle = element_text(hjust = 0.5), # Center the subtitle
-        legend.position = "right", # Place legend to the right
+        legend.position = "right", # Move legend to right
         plot.caption = element_text(hjust = 0.5), # Center the caption
         legend.title = element_text(hjust = 0.5)) # Center the legend title
 
@@ -271,12 +271,12 @@ nb_confint <- confMat_nb$byClass['95% CI']
 lr_accuracy <- confusion_matrix_lr$overall['Accuracy']
 lr_confint <- confusion_matrix_lr$byClass['95% CI']
 
-# Assuming you have a confusionMatrix object called confMat_nb for Naive Bayes
+# Calculates NB CI bounds and width
 nb_confint_lower <- confMat_nb$overall['AccuracyLower']
 nb_confint_upper <- confMat_nb$overall['AccuracyUpper']
 nb_ci_width <- nb_confint_upper - nb_confint_lower
 
-# Assuming you have a confusionMatrix object called confusion_matrix_lr for Logistic Regression
+# Calculating LR CI bounds and width
 lr_confint_lower <- confusion_matrix_lr$overall['AccuracyLower']
 lr_confint_upper <- confusion_matrix_lr$overall['AccuracyUpper']
 lr_ci_width <- lr_confint_upper - lr_confint_lower
@@ -299,7 +299,7 @@ metrics_data <- data.frame(
   Model = rep(c("Naive Bayes", "Logistic Regression"), each = 6)
 )
 
-# Adjust the factor levels for the 'Metric' column to control the order of bars
+# Adjust the factor levels for the Metric column to control the order of bars
 metrics_data$Metric <- factor(metrics_data$Metric, levels = c("Accuracy", "95% CI Range", "Balanced Accuracy", "Sensitivity", "Specificity", "AUC"))
 
 # Create metrics bar graph using ggplot2
