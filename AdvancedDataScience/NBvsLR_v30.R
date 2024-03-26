@@ -1,6 +1,7 @@
 # Tyler Myerberg
 # 3.26.24
 # Logistic Regression vs. Naive Bayes - Spam/Ham SMS Classification
+# Dataset Source: https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset/data
 
 # Load necessary libraries
 
